@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Calculator</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+
+</head>
+<body>
+    <h1>Math Calculator</h1>
+    <form method="post" action="/math">
+        <label for="operation">Select an Operation:</label>
+        <select name="operation" id="operation">
+            <option value="add">Addition</option>
+            <option value="subtract">Subtraction</option>
+            <option value="multiply">Multiplication</option>
+            <option value="divide">Division</option>
+        </select>
+
+        <br>
+
+        <label for="operand1">Operand 1:</label>
+        <input type="number" name="operand1" id="operand1" required>
+
+        <br>
+
+        <label for="operand2">Operand 2:</label>
+        <input type="number" name="operand2" id="operand2" required>
+
+        <br>
+
+        <button type="submit" name="calculator">Calculate</button>
+    </form>
+</body>
+</html>

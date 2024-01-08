@@ -1,0 +1,14 @@
+INFO:root:Log this line of excecution
+INFO:root:This is my print
+WARNING:root:This is a warning
+ERROR:root:This is my syntx error
+ERROR:root:this is an error
+ERROR:root:this is an error
+ERROR:root:this is an error
+WARNING:root:sudhar jao
+WARNING:root:sudhar jao
+CRITICAL:root:Critical
+WARNING:root:sudhar jao
+CRITICAL:root:Critical
+WARNING:root:sudhar jao
+CRITICAL:root:Critical

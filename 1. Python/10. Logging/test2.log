@@ -1,0 +1,37 @@
+2023-10-16 16:02:05,284 root CRITICAL
+2023-10-16 16:02:38,716 root CRITICAL
+2023-10-16 16:03:11,405 root ERROR
+2023-10-16 16:03:28,181 root ERROR This is an error
+2023-10-16 16:07:29,939 parso.cache DEBUG pickle loaded: C:\Users\vinay\anaconda3\lib\site-packages\jedi\third_party\typeshed\stdlib\3\builtins.pyi
+2023-10-16 16:07:29,982 parso.cache DEBUG pickle loaded: C:\Users\vinay\anaconda3\lib\site-packages\jedi\third_party\typeshed\stdlib\3\sys.pyi
+2023-10-16 16:08:02,952 parso.python.diff DEBUG diff parser start
+2023-10-16 16:08:02,953 parso.python.diff DEBUG line_lengths old: 7; new: 9
+2023-10-16 16:08:02,954 parso.python.diff DEBUG -> code[equal] old[1:6] new[1:6]
+2023-10-16 16:08:02,954 parso.python.diff DEBUG copy old[1:3] new[1:3]
+2023-10-16 16:08:02,957 parso.python.diff DEBUG parse_part from 4 to 9 (to 8 in part parser)
+2023-10-16 16:08:02,957 parso.python.diff DEBUG -> code[replace] old[7:7] new[7:9]
+2023-10-16 16:08:02,957 parso.python.diff DEBUG diff parser end
+2023-10-16 16:08:26,776 parso.python.diff DEBUG diff parser start
+2023-10-16 16:08:26,777 parso.python.diff DEBUG line_lengths old: 9; new: 13
+2023-10-16 16:08:26,777 parso.python.diff DEBUG -> code[equal] old[1:8] new[1:8]
+2023-10-16 16:08:26,777 parso.python.diff DEBUG copy old[1:3] new[1:3]
+2023-10-16 16:08:26,779 parso.python.diff DEBUG parse_part from 4 to 13 (to 12 in part parser)
+2023-10-16 16:08:26,779 parso.python.diff DEBUG -> code[replace] old[9:9] new[9:13]
+2023-10-16 16:08:26,779 parso.python.diff DEBUG diff parser end
+2023-10-16 16:12:17,697 root INFO Loop me hu bhay
+2023-10-16 16:12:17,698 root INFO Loop me hu bhay
+2023-10-16 16:12:17,698 root INFO Loop me hu bhay
+2023-10-16 16:12:17,698 root INFO Loop me hu bhay
+2023-10-16 16:12:17,698 root INFO Loop me hu bhay
+2023-10-16 16:12:17,699 root INFO KYa mai list hoo?
+2023-10-16 16:12:17,699 root INFO Ha bhai list to hu ab iterate krta hu
+2023-10-16 16:12:17,699 root INFO Ha bhai list to hu ab iterate krta hu
+2023-10-16 16:12:17,699 root INFO Ha bhai list to hu ab iterate krta hu
+2023-10-16 16:12:17,699 root INFO Loop me hu bhay
+2023-10-16 16:12:17,699 root INFO Loop me hu bhay
+2023-10-16 16:16:50,283 parso.python.diff DEBUG diff parser start
+2023-10-16 16:16:50,283 parso.python.diff DEBUG line_lengths old: 13; new: 1
+2023-10-16 16:16:50,283 parso.python.diff DEBUG -> code[replace] old[1:13] new[1:1]
+2023-10-16 16:16:50,284 parso.python.diff DEBUG parse_part from 1 to 1 (to 0 in part parser)
+2023-10-16 16:16:50,285 parso.python.diff DEBUG diff parser end
+2023-10-16 16:16:56,696 root INFO final ans is [1, 2, 3, 4, 2, 3, 4] and ['Vinayak', 'Chhabra']

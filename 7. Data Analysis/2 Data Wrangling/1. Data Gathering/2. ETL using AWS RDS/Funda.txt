@@ -1,0 +1,10 @@
+SO funda is this , we hve database available in aws now what we will do is we will fetch that data locally and apply some transformation , then upload that data into another data base
+
+- this is called ETL pipeline
+- Where fetching is called Extract , applying transformation on data is called Transform and uploading that data into another data base is called load.
+
+
+--------Plan-----------
+- company wants to make a dream 11 predictor
+- data science team demands the data in a particular format ie columns - matchid player dream11points
+- and that data will be stored in another database of aws and data science team will work on that data

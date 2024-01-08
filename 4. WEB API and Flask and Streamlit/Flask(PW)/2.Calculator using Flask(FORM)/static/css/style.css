@@ -1,0 +1,28 @@
+/* Add specific styles for the calculator form */
+form {
+    text-align: left;
+    padding: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Style the select dropdown */
+select {
+    background-color: #f8f8f8;
+}
+
+/* Style the number input fields */
+input[type="number"] {
+    background-color: #f8f8f8;
+}
+
+/* Style the Calculate button */
+button {
+    background-color: #008CBA;
+}
+
+button:hover {
+    background-color: #005F80;
+}

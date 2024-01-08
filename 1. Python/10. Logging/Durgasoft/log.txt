@@ -1,0 +1,265 @@
+WARNING:root:warning
+ERROR:root:error
+CRITICAL:root:critical message
+WARNING:root:warning
+ERROR:root:error
+CRITICAL:root:critical message
+WARNING:root:warning
+ERROR:root:error
+CRITICAL:root:critical message
+WARNING:root:warning
+ERROR:root:error
+CRITICAL:root:critical message
+DEBUG
+INFO
+WARNING
+ERROR
+CRITICAL
+DEBUG
+INFO
+WARNING
+ERROR
+CRITICAL
+DEBUG
+INFO
+WARNING
+ERROR
+CRITICAL
+DEBUG
+INFO
+WARNING
+ERROR
+CRITICAL
+DEBUG
+INFO
+WARNING
+ERROR
+CRITICAL
+DEBUG
+INFO
+WARNING
+ERROR
+CRITICAL
+DEBUG
+DEBUG
+DEBUG
+DEBUG
+DEBUG
+DEBUG
+DEBUG
+DEBUG
+INFO
+WARNING
+ERROR
+CRITICAL
+DEBUG
+INFO
+WARNING
+ERROR
+CRITICAL
+DEBUG
+INFO
+WARNING
+ERROR
+CRITICAL
+DEBUG
+DEBUG
+DEBUG
+DEBUG
+DEBUG
+CRITICAL
+WARNING
+CRITICAL
+WARNING
+CRITICAL
+WARNING
+DEBUG
+INFO
+WARNING
+ERROR
+CRITICAL
+CRITICAL
+WARNING
+CRITICAL
+WARNING
+CRITICAL
+WARNING
+CRITICAL
+WARNING
+DEBUG
+DEBUG
+DEBUG
+DEBUG
+DEBUG
+CRITICAL
+WARNING
+2023-12-18 06:45:32,279:CRITICAL:critc
+2023-12-18 06:45:32,286:WARNING:warn
+2023-12-18 06:47:24,165:CRITICAL:critc
+2023-12-18 06:47:24,168:WARNING:warn
+2023-12-18 07:03:28,585:DEBUG:diff parser start
+2023-12-18 07:03:28,585:DEBUG:line_lengths old: 9; new: 8
+2023-12-18 07:03:28,585:DEBUG:-> code[replace] old[1:2] new[1:1]
+2023-12-18 07:03:28,585:DEBUG:parse_part from 1 to 1 (to 1 in part parser)
+2023-12-18 07:03:28,585:DEBUG:-> code[equal] old[3:8] new[2:7]
+2023-12-18 07:03:28,603:DEBUG:parse_part from 2 to 8 (to 7 in part parser)
+2023-12-18 07:03:28,603:DEBUG:-> code[replace] old[9:9] new[8:8]
+2023-12-18 07:03:28,603:DEBUG:diff parser end
+2023-12-18 07:03:50,283:DEBUG:diff parser start
+2023-12-18 07:03:50,283:DEBUG:line_lengths old: 8; new: 11
+2023-12-18 07:03:50,283:DEBUG:-> code[equal] old[1:7] new[1:7]
+2023-12-18 07:03:50,283:DEBUG:copy old[1:1] new[1:1]
+2023-12-18 07:03:50,301:DEBUG:parse_part from 2 to 11 (to 10 in part parser)
+2023-12-18 07:03:50,301:DEBUG:-> code[replace] old[8:8] new[8:11]
+2023-12-18 07:03:50,302:DEBUG:diff parser end
+2023-12-18 07:03:54,791:INFO:A new request came
+2023-12-18 07:03:57,357:ERROR:division by zero
+Traceback (most recent call last):
+  File "C:\Users\vinay\AppData\Local\Temp\ipykernel_6644\1272627650.py", line 5, in <cell line: 2>
+    print(x/y)
+ZeroDivisionError: division by zero
+2023-12-18 07:29:22,685:INFO:A new request came
+2023-12-18 07:29:25,359:INFO:Request completly processed
+2023-12-18 07:29:56,525:INFO:A new request came
+2023-12-18 07:29:59,115:ERROR:division by zero
+Traceback (most recent call last):
+  File "C:\Users\vinay\AppData\Local\Temp\ipykernel_6644\1446229985.py", line 5, in <cell line: 2>
+    print(x/y)
+ZeroDivisionError: division by zero
+2023-12-18 07:29:59,116:INFO:Request completly processed
+2023-12-18 07:30:30,204:INFO:A new request came
+2023-12-18 07:30:31,965:ERROR:invalid literal for int() with base 10: 'r'
+Traceback (most recent call last):
+  File "C:\Users\vinay\AppData\Local\Temp\ipykernel_6644\1446229985.py", line 4, in <cell line: 2>
+    y = int(input("enter 2n no:"))
+ValueError: invalid literal for int() with base 10: 'r'
+2023-12-18 07:30:31,966:INFO:Request completly processed
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 2; new: 3
+DEBUG:parso.python.diff:-> code[insert] old[1:0] new[1:1]
+DEBUG:parso.python.diff:parse_part from 1 to 2 (to 2 in part parser)
+DEBUG:parso.python.diff:-> code[equal] old[1:1] new[2:2]
+DEBUG:parso.python.diff:-> code[replace] old[2:2] new[3:3]
+DEBUG:parso.python.diff:parse_part from 3 to 3 (to 2 in part parser)
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 3; new: 3
+DEBUG:parso.python.diff:-> code[equal] old[1:2] new[1:2]
+DEBUG:parso.python.diff:copy old[2:2] new[1:2]
+DEBUG:parso.python.diff:-> code[replace] old[3:3] new[3:3]
+DEBUG:parso.python.diff:parse_part from 3 to 3 (to 2 in part parser)
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 3; new: 6
+DEBUG:parso.python.diff:-> code[equal] old[1:2] new[1:2]
+DEBUG:parso.python.diff:copy old[2:2] new[1:2]
+DEBUG:parso.python.diff:-> code[replace] old[3:3] new[3:6]
+DEBUG:parso.python.diff:parse_part from 3 to 6 (to 5 in part parser)
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 6; new: 7
+DEBUG:parso.python.diff:-> code[equal] old[1:5] new[1:5]
+DEBUG:parso.python.diff:copy old[2:4] new[1:4]
+DEBUG:parso.python.diff:parse_part from 5 to 6 (to 6 in part parser)
+DEBUG:parso.python.diff:-> code[replace] old[6:6] new[6:7]
+DEBUG:parso.python.diff:parse_part from 7 to 7 (to 6 in part parser)
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 7; new: 7
+DEBUG:parso.python.diff:-> code[equal] old[1:6] new[1:6]
+DEBUG:parso.python.diff:copy old[2:6] new[1:6]
+DEBUG:parso.python.diff:-> code[replace] old[7:7] new[7:7]
+DEBUG:parso.python.diff:parse_part from 7 to 7 (to 6 in part parser)
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 7; new: 7
+DEBUG:parso.python.diff:-> code[equal] old[1:6] new[1:6]
+DEBUG:parso.python.diff:copy old[2:6] new[1:6]
+DEBUG:parso.python.diff:-> code[replace] old[7:7] new[7:7]
+DEBUG:parso.python.diff:parse_part from 7 to 7 (to 6 in part parser)
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 7; new: 7
+DEBUG:parso.python.diff:-> code[equal] old[1:6] new[1:6]
+DEBUG:parso.python.diff:copy old[2:6] new[1:6]
+DEBUG:parso.python.diff:-> code[replace] old[7:7] new[7:7]
+DEBUG:parso.python.diff:parse_part from 7 to 7 (to 6 in part parser)
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 7; new: 12
+DEBUG:parso.python.diff:-> code[equal] old[1:2] new[1:2]
+DEBUG:parso.python.diff:copy old[2:2] new[1:2]
+DEBUG:parso.python.diff:-> code[insert] old[3:2] new[3:3]
+DEBUG:parso.python.diff:parse_part from 3 to 4 (to 4 in part parser)
+DEBUG:parso.python.diff:-> code[equal] old[3:5] new[4:6]
+DEBUG:parso.python.diff:copy old[4:4] new[5:5]
+DEBUG:parso.python.diff:parse_part from 6 to 8 (to 8 in part parser)
+DEBUG:parso.python.diff:-> code[insert] old[6:5] new[7:7]
+DEBUG:parso.python.diff:-> code[equal] old[6:6] new[8:8]
+DEBUG:parso.python.diff:-> code[replace] old[7:7] new[9:12]
+DEBUG:parso.python.diff:parse_part from 9 to 12 (to 11 in part parser)
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 12; new: 12
+DEBUG:parso.python.diff:-> code[equal] old[1:11] new[1:11]
+DEBUG:parso.python.diff:copy old[2:9] new[1:9]
+DEBUG:parso.python.diff:parse_part from 10 to 12 (to 11 in part parser)
+DEBUG:parso.python.diff:-> code[replace] old[12:12] new[12:12]
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 12; new: 15
+DEBUG:parso.python.diff:-> code[equal] old[1:11] new[1:11]
+DEBUG:parso.python.diff:copy old[2:9] new[1:9]
+DEBUG:parso.python.diff:parse_part from 10 to 12 (to 14 in part parser)
+DEBUG:parso.python.diff:-> code[replace] old[12:12] new[12:15]
+DEBUG:parso.python.diff:parse_part from 13 to 15 (to 14 in part parser)
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 15; new: 15
+DEBUG:parso.python.diff:-> code[equal] old[1:14] new[1:14]
+DEBUG:parso.python.diff:copy old[2:12] new[1:12]
+DEBUG:parso.python.diff:parse_part from 13 to 15 (to 14 in part parser)
+DEBUG:parso.python.diff:-> code[replace] old[15:15] new[15:15]
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 15; new: 15
+DEBUG:parso.python.diff:-> code[equal] old[1:14] new[1:14]
+DEBUG:parso.python.diff:copy old[2:12] new[1:12]
+DEBUG:parso.python.diff:parse_part from 13 to 15 (to 14 in part parser)
+DEBUG:parso.python.diff:-> code[replace] old[15:15] new[15:15]
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 15; new: 15
+DEBUG:parso.python.diff:-> code[equal] old[1:14] new[1:14]
+DEBUG:parso.python.diff:copy old[2:12] new[1:12]
+DEBUG:parso.python.diff:parse_part from 13 to 15 (to 14 in part parser)
+DEBUG:parso.python.diff:-> code[replace] old[15:15] new[15:15]
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 15; new: 18
+DEBUG:parso.python.diff:-> code[equal] old[1:14] new[1:14]
+DEBUG:parso.python.diff:copy old[2:12] new[1:12]
+DEBUG:parso.python.diff:parse_part from 13 to 15 (to 17 in part parser)
+DEBUG:parso.python.diff:-> code[replace] old[15:15] new[15:18]
+DEBUG:parso.python.diff:parse_part from 16 to 18 (to 17 in part parser)
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 18; new: 18
+DEBUG:parso.python.diff:-> code[equal] old[1:17] new[1:17]
+DEBUG:parso.python.diff:copy old[2:15] new[1:15]
+DEBUG:parso.python.diff:parse_part from 16 to 18 (to 17 in part parser)
+DEBUG:parso.python.diff:-> code[replace] old[18:18] new[18:18]
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 18; new: 19
+DEBUG:parso.python.diff:-> code[equal] old[1:17] new[1:17]
+DEBUG:parso.python.diff:copy old[2:15] new[1:15]
+DEBUG:parso.python.diff:parse_part from 16 to 18 (to 18 in part parser)
+DEBUG:parso.python.diff:-> code[replace] old[18:18] new[18:19]
+DEBUG:parso.python.diff:parse_part from 19 to 19 (to 18 in part parser)
+DEBUG:parso.python.diff:diff parser end
+DEBUG:Vinayaklogger:debug message
+INFO:Vinayaklogger:info message
+WARNING:Vinayaklogger:warning message
+ERROR:Vinayaklogger:error message
+CRITICAL:Vinayaklogger:critical message

@@ -1,0 +1,3 @@
+https://campusx-official-normal-distribution-vs-t-distributi-app-28si1q.streamlit.app/
+https://campusx-official-z-distribution-conf-confidence-interval-bx6u60.streamlit.app/
+https://campusx-official-confidence-interval-viz-app-kwg6wq.streamlit.app/

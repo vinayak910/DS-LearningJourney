@@ -1,0 +1,7 @@
+-data ko gather krne ke baad bhot saari problem hoti hai 
+- to use assess krte hai mtlb look at the problems aur baad me clean krte hai
+-there two types of unclean data 1. Dirty 2. Messy
+-How to assess problems . 2 ways - 1. Naked eye , 2. Using Code
+-Write down the problems with the data in two category 1 Dirty data , 2. Messy data
+-Dirty data have further more types, which is incomplete , validity , accuracy , inconsistancy
+-After jotting down problems , you have to label them (for Dirty data)

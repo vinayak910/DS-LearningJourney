@@ -1,0 +1,10 @@
+2023-10-16 15:58:26,639 sudhar jao
+2023-10-16 15:58:27,303 Critical
+2023-10-16 15:59:07,580 this is an error message
+2023-10-16 15:59:51,649 pickle loaded: C:\Users\vinay\anaconda3\lib\logging\__init__.py
+2023-10-16 16:01:13,776 diff parser start
+2023-10-16 16:01:13,776 line_lengths old: 1; new: 1
+2023-10-16 16:01:13,777 -> code[replace] old[1:1] new[1:1]
+2023-10-16 16:01:13,777 parse_part from 1 to 1 (to 0 in part parser)
+2023-10-16 16:01:13,778 diff parser end
+2023-10-16 16:01:21,239 This is a critical case

@@ -1,3 +1,5 @@
+-----------Funda-----------
+
 SO funda is this , we hve database available in aws now what we will do is we will fetch that data locally and apply some transformation , then upload that data into another data base
 
 - this is called ETL pipeline
@@ -8,3 +10,19 @@ SO funda is this , we hve database available in aws now what we will do is we wi
 - company wants to make a dream 11 predictor
 - data science team demands the data in a particular format ie columns - matchid player dream11points
 - and that data will be stored in another database of aws and data science team will work on that data
+- now the dream11pts will be calculated based on the rules described in their website
+
+
+--------Concept----------
+OLTP - Online transactional Processing(normal database) (running data base) the app communicate with db on daily bases
+- fb,insta, swiggy all have OLTP
+- Generally it is preffered for data analytics to not to work on OLTP
+- So what we do is we make OLAP from OLTP
+- OLAP separate database which is used by data analytics team
+- So after this we can conclude that the database which is on aws is OLTP , now after fetching and transforming and storing in another database . that database is called OLAP which will be used by data analytics or data science team
+- This whole process is called ETL.
+
+----------Some other pts----------
+OLTP is called database
+OLAP is called Data warehosue , it is also a database but special type of database
+

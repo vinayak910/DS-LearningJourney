@@ -1,0 +1,12 @@
+----Building an IPL web app-------
+this ipl web app will be using IPL Api service , for the development of their website
+---------------------------------------------------------------------------------------
+make an html form
+with the 2 dropdowns:
+team1 and teams2
+
+we will give a button , when clicked it will hit the teamvsteam api which will return json of total wins lose , and draw , and we will show it in this ipl web app.
+-------------------------------------------------------------------------------------
+
+Basically we are developing our application , and the data needed for making our application is available through IPL Service api , we will use that api to develop our won application
+

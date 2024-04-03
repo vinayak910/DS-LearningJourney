@@ -1,0 +1,104 @@
+Linear regression when the relationship between input and output col is linear.
+
+But what if the relation between input and output is non linear. 
+Then fitting a straight line , or plain would not be the best solution.
+
+Instead we can you polynomial regression.
+
+
+
+============================================================================================================================================================
+
+
+Simple Poynomial (2d data)
+----------------------------
+
+Example we have x which is input and y which is output.
+
+Now we will decide a degree of polynomial , lets say degree = 2.
+
+The input column will be divided into 3 columns. x^0 , x^1 , x^3
+
+lets say we have data
+
+-------
+x | y
+35| 250
+-------
+
+
+Degree 2 polynomial means
+
+x^0 -> 35^0 = 1
+x^1 -> 35^1 = 35
+x^2 -> 35^2 
+
+
+New data will be 
+
+-------------------------------
+x^0    x^1      x^2      y
+-------------------------------
+1       35      35^2     250
+-------------------------------
+
+equation for this will be ->  y = B0x^0 + B1x^1 + B2x^2
+
+
+
+============================================================================================================================================================
+
+
+
+
+Multiple poynomial (more than 2d)
+-----------------------------------
+
+     ----------------------
+Ex :  x1    x2    y  
+    -----------------------                      (3d)
+      35    40    250
+-   ----------------------
+
+
+lets say degree = 2 , then new data will be
+
+-----------------------------------------------------------------------
+x1^0       x1^1       x1^2       x2^0       x2^1       x2^2       y
+-----------------------------------------------------------------------
+35^0       35         35^2       40^0        40         40^2      250
+-----------------------------------------------------------------------
+
+
+
+equation for this will be : 
+
+
+y = B0 + B1*x1^1 + B2*x1^2 + B3*x2^1 + B4*x2^2
+
+
+
+============================================================================================================================================================
+
+
+
+How to set right value for degree?
+-----------------------------------
+
+
+if low degree , the model may underfit
+if very high , then model may overfit
+Find the value between very low and very high
+
+
+
+
+============================================================================================================================================================
+
+
+ques Why do we call polynomial regression a linear regression even though the concept of poynomial is used on input columns?
+
+-  because , in linear regression we see the relation between y and coef(B1 , B0 ) not with the input columns.
+- and In linear regresssion the relation between y and coef is not polynomial.
+- Similarly in polynomial regression also , the relationship between y and coef is still not polynomial. but with input column is.
+- hence polynomial is also called linear regression 

@@ -16,10 +16,12 @@ Relation between x and y
 -  the test result will tell if there is a relation bw x and y.
 
 
+
+
 Concepts required for doing F -test
 -------------------------------------
 
-Tss , Rss , Ess and df
+1. Tss , Rss , Ess and df
 
 
 
@@ -27,5 +29,85 @@ Tss : Total sum of squared
 Rss : Residual sum of squared 
 Ess : Explained sum of square
 
+refer to register
 
 
+
+2. Degree of Freedom(df_total)
+
+
+
+ Degree of freedom(df_total) = n - 1
+ df_total represents overall variability in the dataset
+
+
+How?
+
+the df_total in linear regression is divided into 2 components
+
+1. df for model(k) : No of input columns 
+2. df for residual : No of data points - (number of parameters including intercept) -> n - (k + 1)   where K+ 1 is no of parameters(coef and intercept) and n is number of rows
+
+the total df is :
+
+df_total = df_model + df_residual
+
+df_total = k + n - (k + 1)
+df_total  = n - 1 
+
+this is the mathematical formulation for degree of freedom
+
+
+Intution of degree of freedom for residual (n + (k - 1)
+-------------------------------------------
+
+setup 1 : 1 input , 1 output .
+
+- ques can linear regression be fitted with one point?
+ans : No . 
+
+- ques : can linear regression be fitted with 2 points
+ans : still no , because it exactly passed through those points. Therefore it cant explain the variabilty. As it cant move after passing through 2 points
+
+Therefore , regression line required minimum three points to explain the variabilty of dataset and the third point allow the line to move freely. Thats where the concept of independent comes.
+
+
+Therefore , in this case degree of freedom will be 1. as 1 point is allowing regression line to move freely.
+
+mathematical ans : n - (k + 1) = 3 - 1 - 1 = 1
+where k is no input col and n is number of points
+
+
+
+lets say there are 5 points , then degree of freedom will be 
+
+n - (k + 1) =>   5 - (1 +1) = 3. 
+therefore 3 points are allowing line to explain variability
+
+
+
+if 200 points -> 200 - 1 - 1 = 198
+
+
+
+
+Setup 2 : no of  input columns = 2 , 1 output
+
+In this , plan will be fitted , the question is how much minimum points are required to explain the variability of dataset
+
+= n - (k + 1)
+= n - (2 + 1)
+n - 3. 
+
+if n = 3 , then no variability. But if n = 4 , 4 - 3 = 1 . 1 is the first degree of freedom. Therefore minimum 4 points are required for plain to explain variabilty of dataset.
+
+Therefore df residual is freedom to move. A way to introduce variability.
+
+
+
+F - test for overall significance
+---------------------------------
+
+The F-test for overall significance is a statistical test used to determine whether a linear regression model is statistically significant, meaning it provides a better fit to the data than just using the mean of the dependent variable. 
+
+- means whether our model is good or not. what if our model error is more than mean error . ie there is no contribution of independent variable in predicting target variable.

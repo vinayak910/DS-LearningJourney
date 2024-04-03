@@ -1,0 +1,131 @@
+                                  MAE : 
+                             -----------------
+
+- mean absolute error
+- sum of absolute (Mod) difference between predicted and actual is Total error
+- when you divide total error by n(no of values) is MAE
+
+
+
+Advantage
+----------
+
+- the loss/ans is in terms of y , so better interpretation 
+- robust to outliers(as no squaring is done)
+
+
+Disadvantage
+--------------
+
+- Since it is modulus function , hence it cant be differentiable at 0. And in technqiues like gradient decent . You need to differentiate . Hence this metric/loss function is not reliable at that time.
+
+
+
+
+============================================================================================================================================================
+
+                                   
+				   MSE : 
+			    --------------------
+
+
+
+- Mean squared error
+- sum of square of difference between actual value and predicted value divide by n is Mean Squared Error
+
+
+Advantage
+----------
+- it is differentiable at every point 
+
+
+
+Disadvantage
+-------------
+- unit not in terms of y , hence difficult to interpret
+- penalize the outliers (Not robust to outliers)
+
+
+
+
+============================================================================================================================================================
+
+
+                                       RMSE
+				-------------------
+
+
+- same as mse but square root on mse
+
+
+Advantage
+----------
+- differentiable 
+- unit in terms of y 
+
+
+Disadvantage
+-----------
+
+- penalize the outliers
+
+
+============================================================================================================================================================
+
+
+- The above metrics tells how much mistake our regression model is making , and these depend on context , like in terms of  self driving 1.5 could error will be high , but for some other case , it may be low
+
+- Now time to measure how good our model is performing 
+
+
+
+
+============================================================================================================================================================
+
+                                           R2 Score
+					---------------
+
+- basically it tells how much our model/regression line is better than mean . 
+- also known as coefficient of determinant
+
+
+formula 
+---------
+
+1 - SSr/SSm
+
+- SSr : Sum of squared error in regression line  (square of difference of actual value and predicted value)
+- SSm : Sum of squared error in mean line (square of difference of actual value and mean value)
+
+
+Interpretation
+----------------
+
+- R2 score = 0 , means there is no difference between best fit line and mean line . 
+- R2 Score = 1 , if there is perfect line (means you regression line did not do any mistake)
+- R2 Score <1 (-ve) means you regression line is worst than mean line 
+
+- lets's say R2 score is 0.80 , it means cgpa /input col is able to explain 80% of variance in lpa column . 
+- rest 20% may be natural cause , or cannot be calculated using mathematics 
+
+
+
+Disadvantage
+-------------
+
+- if you add more col , the r2 score will start increasing . No problem
+- but ven if you start adding irrevalant col there is still chance that this will effect the r2 score
+
+
+
+============================================================================================================================================================
+
+
+
+					Adjusted R2 score
+				----------------------------------
+
+
+- To tackle the problem of r2 score
+- if you add revelant cols the adujusted r2 score will incrase
+- if you add irrevlant , it will decrease unlike r2 score

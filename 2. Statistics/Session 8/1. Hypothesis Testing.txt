@@ -1,0 +1,84 @@
+Why?
+------
+Example - nitish sir avg duration of watch time is 6 min , he wants to increase this avg time , after researching he got to know that these famouse youtubers use normal board whereas nitish sir uses Digital tools. So to know that the normal board method actually will have a more acg watch time or not , he made a one video using normal board method , and the avg watch time on that video was 12 min ,. Now the ques is that will that be sufficient to prove the second method is actually better , maybe the reason for increased time for that particular video maybe sir was looking more handsome , or the topic was trending. So this will not be sufficient. So what he did is he made 4 more videos with the famous method . Now duration lets say was 8 , 9 , 7 , 5 , 12. Now the ques is will that be sufficient to prove? the ans is still no. That's where hypothesis testing comes.
+
+
+Hypothesis Testing
+-------------------
+
+- statistical inference used to decide whether the data at hand sufficiently supports a particular hypothesis
+
+- in our case we had the data of 8 , 9 , 7 , 5 , 12 . So will it be enought to support that hypothesis ie hypothesis was :  using normal board will give more avg view time(population mean) than using digital board
+
+
+==============================================================================================================================================================
+
+   What part
+------------
+
+
+
+- Hypothesis testing contains multiple steps 
+- 1st step is to choose a null hypothesis
+- basically you choose a statement /hypothesis. Ex : in youtube we wanted to know if new teaching style can give more avg view duration .
+- Now to test this  , i will choose null hypothesis : which will say new technique doesnt have any effect on avg view duration 
+
+- now there is a second thing which is called alternative hypothesis : statement which contradicts the null hypothesis and claims there is a significant effect .
+
+- now these 2 things cant be happen at the same time .
+- so after test either null hypothesis will be right or Alternative hypothesis
+
+- so we gather the evidence/data and  try to reject null hypothesis , if we reject 
+it automatically means alternative is correct. rather than proving altenative we try to reject null hypothesis
+
+
+
+1. Null hypothesis
+-------------------
+
+- statement that assumes there is no significant effect .
+- the value is still same as before .
+
+2. Alternative Hypothesis
+--------------------------
+
+- statement that assumes there is a significant effect.
+- the value has changed 
+
+
+
+Important Points
+------------------
+
+
+- so we try to reject null hypothesis , if we reject 
+it automatically means alternative is correct. rather than proving altenative we try to reject null hypothesis
+
+- lets say we fail to reject null hypothesis , that doesn't mean null hypothesis was true , maybe there wasnt enough evidence to support alternative hypothesis
+
+
+
+
+
+
+the youtube example in Hypothesis testing : 
+
+
+1. Null Hypothesis -> H0 : u = 6 min ( avg view duration is same as before)
+2. Alternative Hypothesis -> H1 : u > 6 min (avg view duration is increased)
+
+
+============================================================================================================================================================
+
+   How
+----------
+
+Two techniques of hypothesis testing 
+-------------------------------------
+
+1. Rejection Region Approach
+2. P value approach 
+
+
+
+

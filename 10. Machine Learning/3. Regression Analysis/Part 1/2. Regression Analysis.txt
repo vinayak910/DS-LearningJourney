@@ -1,0 +1,31 @@
+There are 4 sections in Regression analysis
+1. Tells about the data we have
+2. goodness of fit (study the relation between x and y)
+3. Coef
+4. Assumptions
+
+
+
+
+Relation between x and y
+--------------------------
+
+- F statistic and Prob(F statistic) tells if there is a relation between x and y
+- In this you do a test called F -test for overall significance (closely related to anova)
+
+-  the test result will tell if there is a relation bw x and y.
+
+
+Concepts required for doing F -test
+-------------------------------------
+
+Tss , Rss , Ess and df
+
+
+
+Tss : Total sum of squared
+Rss : Residual sum of squared 
+Ess : Explained sum of square
+
+
+

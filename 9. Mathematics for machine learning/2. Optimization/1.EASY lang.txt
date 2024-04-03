@@ -1,0 +1,172 @@
+Parametric vs Non parametric function
+
+Parametric
+-----------
+
+- assumes the distribution about the data we are going to feed to the model
+- no of paramters will be equal irrespective of no of rows
+ex : Linear regression is Parametric function , as it assumes the data we are going to feed will be linear , and the number of parameters will remain same irrespective of rows.
+
+
+Non Parametric
+---------------
+
+- doesn't assumes the distribution about the data we are going to feed to the model
+- not necessarily the no of paramaters will be equal , it may change when the rows increased or decreased 
+ex : decision trees
+
+
+
+
+============================================================================================================================================================
+
+
+Optimization
+--------------
+
+- Generally optimization is applied on Parametric ML models . 
+
+lets say we have a equation of multiple linear regression which is b0 + b1x1 + b2x2
+
+in optimization , we start with random values of weights/parameters .
+lets say b0 = 0.2 , b1 = 2 , b2 = 3
+
+- now using these we find the value of y/prediction.
+
+- Now we need to know how much our prediction is off using the random values of parameters. So we decide a loss function.
+- loss function will tell how much mistake are we making.
+- then based on the loss function value , in our case mse can be our loss fn. we will update the next values of parameters/weights.
+- this whole process is called optimization
+
+
+
+============================================================================================================================================================
+
+
+Loss function
+---------------
+
+- loss function tells the difference between actual value and predicted value
+- we try find the values for which our loss function is minimum
+- ex we have mse as loss function (actual - predicted)^2 . where predicted = b0 + b1x1 + b2x2 .  now we try to find such values of b0 , b1 , b2 for which our loss function will be minimum
+
+
+
+Why there are multiple loss functions
+-------------------------------------
+
+- refer to pdf
+
+
+
+============================================================================================================================================================
+
+
+Converting our problem to graphical problem 
+---------------------------------------------
+
+
+- lets keeping the values of b1 , b2 constant .
+- now we try different values of b0 . for different b0 value , our loss function will be different. 
+- and the relation between b0 and loss function is square .
+- when plotting the graph between b0 and loss function , you will see a graph like parabola (square relation)
+- now that problem is converted into graphical you can see.
+- for certain value of b0 , the loss function will be zero.
+- now you know , if you have a graph , and you have to reach the minimum point of the graph , the criteria is the point where the y/loss value is minimum at that point the slope will be zero.
+
+- therefore you will differentiate the loss function wrt b0 and put it equal to zero. There you will get the value of b0 for which the loss function graph will be minimum.
+
+
+Problem with putting differntiation equation = 0. 
+--------------------------------------------------
+
+- Non Convex : what if we have multiple local minima(Non convex) ,therefore multiple times slope will be zero . hence no guarantee , we will find the optimum value of b0 for which loss function will be zero 
+
+- Complexity: For some models, the loss function can be highly complex, and finding the analytical solution by setting the gradient to zero might computationally expensive or even impossible. This is particularly true for deep learning models, where the loss functions involve a large number of parameters and complex relationships between them
+
+- refer to pdf
+
+
+============================================================================================================================================================
+
+Convex and Non convex functions
+--------------------------------
+
+Non convex function
+--------------------
+- When line segment cross a graph is non convex function
+- Non convex can have multiple minima and maxima
+
+Convex function
+-----------------
+- when it doesnt cross then it is convex function
+- convex function have only 1 minima (global minima)
+
+============================================================================================================================================================
+
+
+since , we cant directly put equation = 0 , then what is the technique?
+------------------------------------------------------------------------
+
+
+There are different optimization technique
+- gradient descent
+- newton 
+- quadratic 
+
+
+In machine learning, the most famous technique is Gradient Descent
+- gradient descent is used in Linear Regression , Logistic regression , Perceptron , Deep learning 
+- SVM , PCA uses quadratic optimization technique
+
+
+============================================================================================================================================================
+
+Gradient descent rough theory
+------------------------------
+
+Gradient descent solves problem like complexity(complex loss function) , scalability(High dimensions).
+
+- in this we start with random value of b0 or any other parameter , then to reach the value where the loss function is minimum(minima) , We need to decide which direction to move.
+- so we find the slope at the point which we start with b0 value. 
+- that slope will decide the direction of slope
+- new b0 = old b0 - Slope at old b0
+
+- to reduce the drastic jump we use the concept of learning rate .ex 0.01
+- By this , we can reach minima or close to minima by solving the problem of scalablilty.
+
+
+But one problem which isnt solved is non convexity. There is still a chance that we may reach the local minima , not global.
+
+Soln : Different variants for gradient descent such as Momentum GD , Adam etc. 
+- momentum Gd can prevent get out from local minima
+
+
+Note : 
+- In Convex , it is guarantee that you will reach or close to global minima. 
+- IN non convex , there is not guarantee that you will reach global minima , you can use different technqiues which can increase the chance of reaching global minima
+
+
+
+============================================================================================================================================================
+
+Problems faced in optimization
+--------------------------------
+
+1. Non convexity - you may get stuck at local minima , and other problem in non convex function is saddle point. Which means the gradient at some place is very close to plain , in this the slope is very small , hence the changes in b0 will be very small .
+
+2. Ill conditioning : gradient in some direction are larger. impact is oscilation and converge slowly
+
+3. Vanishing and exploding gradients : 
+- IN some case , the differentiation (slope) become very small (close to zero or zero) resulting in no change in values. called as Vanishing gradient.
+
+- In some cases , the differentiation (slope) becomes very large resulting in huge jumps which can lead to overshooting the optimal solution
+
+4. Overfitting
+
+5. Scalabilty : in deep learning , there are thousands of dimensions are their . Hence thousands of differentiation which makes it slow. and in chat gpt , there are billions of parameters.
+
+============================================================================================================================================================
+
+
+

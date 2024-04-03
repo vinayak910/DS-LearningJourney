@@ -1,0 +1,32 @@
+Q Why cant single table hold all the data?
+ans: Because of two major reasons 
+	1. data reduncy
+	2. anomalies
+---------------------------------------------------------------------
+
+	1. data reduncy means repeatition of data
+	2. Different anomalies. a- Insertion , b. deletion , c. Update
+
+-------------------------------------------------------------------------
+
+solution - Data Normalization:
+	data should be stored in different tables rather than one , to reduce 
+	data reduncy and dependency.
+
+-----------------------------------------------------------------------------
+--------------------------------------------------------------------------
+different levels of normalization: refer pdf
+
+1nf: 	each data should be in each different column(No comma separatedvalues 	in single column)
+------------------------------------------------------------------
+
+2nf : should be in 1nf
+      should not partial dependent
+      means the non key attributes should not be dependent partially but on the whole primary key.
+
+ex - Composite primary key made up of 2 keys , if non key attributes is dependent on only one of part of composite primary key then it is not in 2nf.
+-----------------------------------------------------------------------
+
+3nf: should be in 2nf
+     should not be transitive dependent
+     transitive dependent - when non attribute key is dependent on another     	non attribute key.

@@ -1,0 +1,104 @@
+1. Bernoulli Distributions
+<------------------------->
+
+ - probability distribution that models binary outcome
+- where the outcome can be either success(represented by one) or Failure(represented by 0)
+
+Ex : Tossing a coin will result in binary outcome
+considering Head success(1) and tail faliure(0)
+
+ex : rolling a dice and getting a 5
+success(1) -> getting 5  -> P(getting 5) = 1/6
+failure(0)->anything else -> p(not 5) = 5/6
+
+
+
+equation for pmf
+<---------------->
+
+y = P(X = x) = p^x(1 - p)^1-x
+
+
+where 'p' is the probability of success . therefore '1 - p' will be probability of failure
+
+Ex : Coin toss . and considering H to be success (1) and T to be failure (0). 
+
+-> probability of success will be ->    given that H event is success(1) ---> P(X = 1) = (1/2)^1 * (1/2)^0 = 1/2
+    which means probability of success is 1/2(ie probability of getting head is 1/2)
+
+-> Probability of failure -> P(X = 0) 1/2^0 * (1/2)^1 = 1/2
+    which means probability of failure ie prob of getting tail is also 1/2
+
+- refer to graph
+
+
+NOTE - Generally used in other distribution ie Binomial distribution
+
+
+
+Parameters of Bernoulii
+<----------------------->
+
+1. p : which is the probability of success
+
+
+
+
+============================================================================================================================================================
+
+
+
+2. BINOMIAL DISTRIBUTION
+<------------------------>
+
+- special case of Bernoulli 
+- probability distribution that describes the number of successes in fixed number of independentent bernoulli trials with 2 possible outcomes (success or failure).
+
+- simple words : 
+When you conduct bernoulli distribution n times .
+ex : coin toss 5 times 
+
+
+
+
+equation for PMF
+<--------------->
+
+refer to pdf file
+
+
+
+Parameters of Binomial distribution
+<------------------------------------>
+1. N : number of trials
+2. P : probability of success
+
+- if P value is 0.5 graph looks like normal
+- if p value is more , then graph will be right shifted
+- if p value is less , then grpah will be left shifted
+
+refer to jupyter notebook
+
+Different questions on Binomial Distribution
+<-------------------------------------------->
+The Probability of anyone watching this lecture in the future and then liking it is 0.5.(p of success). What is the 
+probability that
+
+q1: Noone out of 3 people will like it .
+ans =>  n = 3 ,  x = 0(desired result) , p = 0.5(probability of success)
+
+refer to PMF and put values
+
+
+
+
+Applications of Binomial Distribution
+<-------------------------------------->
+
+1. Binary Classfication
+
+2. Hypothesis Testing
+
+3. Logistic regression
+
+4. A/B Testing

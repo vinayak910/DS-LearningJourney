@@ -1,0 +1,56 @@
+Before understanding Central theorm learn Sampling Distribution
+
+
+Sampling Distribution
+<--------------------->
+
+- Samples:not possible to reach every member of population , hence draw samples from population then based on sample we try to infer for the population .
+
+- Sampling Distribution : we do is we draw out set of samples multiple times , the times can be multiple but the size of sample must be described.and from each set of samples we calculate a descripting stat ie can be mean , median etc. and that distribution of descriptive stat is Sampling Distribution
+
+
+Ex: lets say humne 100 bar 50- 50 logo ke set ko nikala , total samples =  100*50 = 5000, now un 50 - 50 samples hai unke har ek set ka mean nikala ie (sample mean as these all are samples from population), now you have 100 sample means and that is called sampling distirbution of mean. Here size of sample is 50.
+
+
+
+
+WHy sampling distribution is important?
+----------------------------------------
+
+- because it allows us to estimate variability of sample statistics (ie sample means ki kya kya possible values hai) , which is useful for making inference about the population
+- we can compute confidence intervals , perform hypothesis testing and make predictions about population based on sample data
+
+
+============================================================================================================================================================
+
+Central Limit Theorm 
+----------------------
+
+- it states that the distributions of sample means (Sampling Distribution of means) will make a normal distribution
+- simple words : 
+when you plot the distribution of sampling distribution of samples mean , you will get the normal distribution regardless of the type of population distribution , even if it is log normal , exp , uniform or any random , but when you plot the sampling distribution of samples you will get the normal distribution but there are certain assumptions
+
+
+Assumptions for Central Limit theorm
+--------------------------------------
+
+1. sample size should be large enough. Generally greater than equal to 30.
+2. samples drawn is drawn from finite or infinite population with finite variance
+3. Random variables in sample are independent and identically distributed
+
+
+Key takeaways from Central limit theorm
+---------------------------------------
+1. the mean of sampling distribution mean will be same as of population (Hence proved : we predicted the population mean)
+2. let's say population variance is sigma^2 then the variance of sampling distribution will be sigma^2/n where n is the sample size
+
+
+
+Benefit
+---------
+ex: you have to find the avg salary of population of india
+
+ans: you can reach every person , instead you make sampling distribution of mean . and then calculate mean of that sampling distribution , which will be same as population mean . hence we found out the avg salary of population using central limit theorm.
+
+
+refer to jupyter file

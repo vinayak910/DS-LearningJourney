@@ -1,0 +1,188 @@
+P value
+---------
+
+P - value is the probability of getting sample more extreme ( Strong evidence against null hypothesis ) than our own sample given the null Hypothesis is True.
+
+
+Understanding through experiment
+---------------------------------
+
+Tell if the coin is fair , or coin is rigged ie P(H) > p(T)
+
+
+H0 : P(H) = P(T)
+H1 : P(H)>P(T)
+
+
+- Toss a coin 100 times (will make binomial distribution . refer to pdf file)
+- lets say we got head 53 times . Hence therefore Probability is 0.07.
+- Now based on Single experiment we cannot reject the null hypothesis 
+- now read the definition again of P value
+- our sample is where 53 heads comes
+- hmare sample se zada head aane ka probabilty is P value P(H>53) . Region after 53 is P value.
+
+- Interpretation : if head comes greater than 53 , then hum aur zada against hai against Null Hypothesis , as null hypothesis was P (H) = P(T) , but agar head or zada ara hai , lets say 60 , 68 , 70 . Than means hum or against hai Null Hypothesis ke
+
+- IN our case head came 53 times , therefore p Value = P(H>53) ==> P(H = 54) + P(H = 55) + P(H = 56)............. refer to graph
+
+
+understanding interpretation through tool 
+--------------------------------------------
+
+Ex 1 : 
+
+input no of heads = 53 ,
+output :  P value = 0.3086
+
+interpretation - If you do this experiment 100 times , and P value is 0.3 , then it means out of these 100 times 30 times 53 aa skta hai 
+
+
+Ex 2 : 
+
+input no of heads = 60
+output : P value = 0.02
+
+interpretation : If you do this exp 100 times ,and P value is 0.02 , then it means out of these 100 times 2 times 60 aa skta hai
+
+
+Ex 3 : 
+input head = 80 
+output : P value = 0
+
+interpretation  :if you do this exp 100 times and P value is 0.000001 , out of 100 times 0 times 80 will appear. That means ye event is too much unlikely and agar ye event hora hai coin ke saath , then coin is rigged.
+
+
+
+
+
+
+When to reject null hypothesis 
+--------------------------------
+
+1. With significance level 
+
+- generally significance level/alpha value is 0.05 or 0.01 
+- if P value < = alpha , then we can reject the null hypothesis
+
+Ex1 :  P value 0.02 when head is 60 times , since 0.02 < 0.01 (P value<=alpha) we can reject the null hypothesis
+ex2 : P value 0.30 when head is 53 times , since 0.30 >0.01 (P value> alpha ) we cannot reject the null hypothesis
+
+
+2. In some cases you wont have significance level(alpha) then you can use these rule of thum
+
+- very small If p value<0.01 -> strong evidence against null hypothesis. hence can be rejected
+- small if 0.01<=p value<0.05 -> moderate evidence , can still reject.
+- Large , if 0.01<p value<=0.05 -> weak evidence , more investigation
+- Very large if p >=0.02, weak or no evidence against null hypothesis , hence cant be rejected 
+
+
+Conlusion : By using P value approach you can actually measure the strength of an evidence
+
+
+
+============================================================================================================================================================
+
+
+P value in context of z test 
+------------------------------
+
+
+Q1 Suppose a company is evaluating the impact of a new training program on the productivity of its employees. The 
+company has data on the average productivity of its employees before implementing the training program. The 
+average productivity was 50 units per day. After implementing the training program, the company measures the 
+productivity of a random sample of 30 employees. The sample has an average productivity of 53 units per day and 
+the pop std is 4. The company wants to know if the new training program has significantly increased productivity.
+
+
+q2 Suppose a snack food company claims that their Lays wafer packets contain an average weight of 50 grams per 
+packet. To verify this claim, a consumer watchdog organization decides to test a random sample of Lays wafer 
+packets. The organization wants to determine whether the actual average weight differs significantly from the 
+claimed 50 grams. The organization collects a random sample of 40 Lays wafer packets and measures their 
+weights. They find that the sample has an average weight of 49 grams, with a pop standard deviation of 5 
+grams
+
+refer to register 
+
+
+
+
+============================================================================================================================================================
+
+
+T - Test
+-----------
+
+- statistical test used to compare the means of two samples or to compare mean of sample to population mean
+
+- used when population std is not available 
+- also performs good , when sample size is small 
+
+
+
+Types of T - Test
+-----------------
+
+1. one sample t -test 
+---------------------
+
+- compare the mean of sample to known population mean
+- null hypothesis says no difference between sample mean and population mean 
+- Alternateive hypothesis says there is difference between sample mean an known population mean 
+
+assumptions : 
+
+- Normality - Population from which the sample is drawn is normally distributed , even if the sample is normally distributed we can say population is normally distributed
+
+- Independence - the value of observation should not influence each other
+
+- random sampling
+
+- Unknown population std 
+
+refer to register and jupyter 
+
+
+
+
+
+
+
+2. Independent Two sample test
+----------------------------------
+
+- used to compare mean of two independent samples 
+- lets say two classes sec A and sec B , then drawing samples  from sec a and sec b and caculuating their mean and giving hypothesis that sec a avg marks are better than avg marks of sec b 
+- Null Hypothesis says no different between avg of thier marks
+- Alternative hypothesis says there is a difference between the avg of marks
+
+
+assumptions : 
+
+- Independence
+- normality
+- Equal variances
+
+
+Ex in titanic data there is a hypthesis ie avg age of male > avg age of female 
+
+
+3. Paired T test (dependent Two sample test )
+----------------------------------------------
+
+- used to compare means of tow samples that are dependent or paired 
+- Ex : test marks before training and test marks after training (notice that sample are same , only difference is before and after)
+
+
+Assumptions:
+
+- Paired Observations : the set of sample must be related in some way . Example marks of student before extra classes and after extra classes . In this students are related ie it is in both set of samples
+
+- Normality : difference between two set of samples must be normallly distributed
+
+- independence of pairs : outcome of one pair should not affect the other.
+
+
+
+NOTE - if samples are less than 30 then we have to perform normality test and if sample are >30 , then CLT will automatically handle it.
+
+

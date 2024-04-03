@@ -1,0 +1,71 @@
+
+
+what problem does covariance solves?
+<------------------------------------->
+
+- there is a problem with variance ie variance only describes the spread of a single variable around its mean. It doesn't account for the relationship between two variables.
+
+- refer to pdf and see diagram
+
+
+
+covariance
+<---------->
+- used to tell type of relationship between 2 numerical columns 
+
+- how 2 variables are linearly related
+- measures how much 2 variables change togther
+- ex one value increase , does the other value also increases or does it decrease 
+
+
+- types of relationship which covariance tells is
+
+1. if covariance value is negative which means One increase ,other decrease
+2. if covariance value is positive one increase , other increase
+3. if covariance value is 0 or close to zero No relation
+
+
+Problem with covariance
+<----------------------->
+
+- it only tells the direction of relationship but not quantifies how strong the linear relationship between 2 columns
+- because it is heavily affected by scaling
+
+
+
+Benefit of covariance
+<--------------------->
+
+- tell the type of relationship
+- used for calculating correlation
+
+
+
+
+============================================================================================================================================================
+
+What problem does correlation solve ?
+
+- using covariance we were not able to quantify the relationship 
+- but correlation quantify the strength of relation
+
+
+Correlation
+<----------->
+
+- statistical measure that not only tell type of relationship between 2 variables but also quantify the strength of relation
+- correlation range ->  [-1 1]
+
+Benefit : unlike covariance , correlation doesnt depend on scale
+
+
+
+
+============================================================================================================================================================
+
+Note : 
+- correlation doesnt imply causation
+- if two things are correlated doesnt mean data 1 caused data 2 ie one variable is not reason for the other variable behiviour
+- so one must not make report on this. there might be other reason for change in variable.
+- but still if you think that one variable caused another variable , you need to bring evidence , perform different tests
+

@@ -1,0 +1,83 @@
+statistics
+<---------->
+
+- branch of mathematics
+- where you collect , analyse , interpret and present data.
+- used to make sense out of data to draw conclusions and make decision based on data.
+
+=================================================================================================================================================
+
+applications
+<------------>
+
+- there are other branches of mathematics as well .
+- but i think the one branch that benefitted business and economics the most is statistics
+- one of those branches that can be easily applied in different domains
+
+ex : 
+1. business and finance -> data analysis
+2. Medical : effectiveness of new medicine (clinical trials)
+3. Government and politics : surveys , polling
+4. Environment Science : Climate research 
+
+=================================================================================================================================================
+
+
+Types of statistics
+<-------------------->
+
+1. Descriptive statistics 
+
+- data is their and you make a description or summary about the data.
+- ex mean , median , five no summary , graphs 
+
+2. Inferentials
+
+- statistics that you use for prediction is called inferential stat...
+- to know the concept of inferential you need to understand -> Population and sample
+
+
+
+Population and sample
+<---------------------->
+
+ex - given task to calculate avg salary in india
+
+
+- india population ->  145 Cr
+- Now its impossbile to reach every person in india and ask about their salary and then find mean
+
+- so you draw a sample lets say 50000 which should be representable(ie do not contain one kind of groups)
+- now you find avg salary of that sample , now from that number we will try to infer/predict the avg salary of india.
+
+
+so 
+Population ----> refer to entire group of individuals that we are interested in studying 
+sample --------> subset of the population
+
+ex 
+population : everyone that watches cricket is population
+sample : people who watched cricket in stadium is a sample
+
+
+
+Conclusion : Inferential statistics
+<----------------------------------->
+
+- all about making inferences/prediction about the population based on sample 
+
+=================================================================================================================================================
+
+
+Things to be careful when creating samples
+<------------------------------------------>
+
+- sample size (enough to make inference)
+- random ( no bias )
+- represenative : variation should be representative(finding avg salary : (male , female) , (low salary , high salary ) , (belong from rajasthan , up )
+
+
+===================================================================================================================================================
+
+
+

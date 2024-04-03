@@ -1,0 +1,35 @@
+F- distribution 
+-----------------
+
+- distribution related to chi square distribution 
+- lets say you have two chi square distribution and you divide both the distributions with their respective degree of freedoms. and do the division of both you will get F distribution.
+
+-  F - Distribution ->  (chi1/df1)/(chi2/df2)
+
+
+
+- it is the continous probabibilty distribution (PDF)
+- there are no negative values and tail is on the right side
+- used in ANOVA Test(Analysis of variance)
+
+
+
+
+Parameters 
+-------------
+
+1. Numerator df
+2. Denomiator df 
+
+
+
+Used for
+-----------
+
+1. Used two test equality of two variances 
+2. Used in Anova
+
+
+
+
+

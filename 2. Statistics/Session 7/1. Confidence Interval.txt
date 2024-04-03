@@ -1,0 +1,220 @@
+**Some recap**
+
+
+Parameter vs Statistic
+-----------------------
+
+Parameter 
+
+- numerical value that describes the characterstics of population such as mean , std of population(pop mean , pop std)
+- difficult to obtain data of entire population . hence these values are unknown and is estimated based on sample data
+
+Statistic
+
+- numerical value that describes the characterstics of sample such as mean and std of sample(sample mean , sample std)
+- using this values you can estimate about parameters
+
+
+
+
+
+Point Estimate
+----------------
+
+- single value calculated from sample that serves as best guess or approax for unknown population parameter
+- Problem is point estimates are not reliable
+- ex : Asking dhoni run in next match. Point estimate chances are way too less , so having interval would be more better.
+- So rather than point estimate , what if we provide range in which our population parameter will exists , this range is called Confidence interval 
+
+
+
+Confidence Interval
+--------------------
+- is a range of values within which we expect particular population parameter  , like a mean .
+- its a way to express uncertainity around estimate obtained from sample data
+- now with confidence interval , there is one more thing which we talk about is Confidence level
+
+
+Confidence Level
+---------------
+- usually expressed as percentage like 95% indicates how sure we are that the value lies within the interval 
+- ex : we are 95% sure that mean of population will lie in this interval [30 , 35]
+
+Confidence interval = Point estimate +/- Margin of error
+
+ex : let say point estimate is 20 , and margin of error is 2. Then interval will be [18 , 22]. and there will be confidence level too.
+
+
+
+
+
+Ways to calculate CI
+----------------------
+
+1. Z procedure : applied when population std is known 
+2. T procedure : applied when population std is unknown 
+
+
+
+
+============================================================================================================================================================
+
+
+
+
+
+Z - Procedure (used less , as generally population std is unknown )
+---------------
+
+Assumptions:
+
+1. random sampling 
+2. Known population std
+3. Z-procedure assumes underlying population distribution is normal. However , if the population distribution is not normal , Central Limit theorm can be applied. Considering sample size>=30
+
+
+
+Problem statement:
+-------------------
+
+Campusx youtube channel subscribers : 77k , find the avg age of these 77k . Calculate confidence interval with the confidence of 95%.
+given : population std = 15 , pop distribution is normal and random sampling 
+
+
+
+formula for calculating confidence interval using Z - procedure
+----------------------------------------------------------------
+
+=> CI = point estimate +- (Margin of error)
+
+=> point estimate +- [Z(alpha/2) * (population std/root(n))] (refer to pdf file)
+
+here ,  point estimate = x bar(sample mean) , 1 - alpha = 95% , n = sample size  
+
+
+ (refer to register to know the intution and How to calculate Z(alpha/2) value 
+
+
+
+
+
+Interpreting Confidence Interval
+---------------------------------
+
+
+1. Interpretation
+
+campusx youtube subscribers 77k 
+- lets say we have a confidence interval of [14 - 42] with confidence level of 95% 
+
+wrong interpretation : the probability of my subscriber avg age between 14 to 42 is 95%
+
+
+right interpretation : if we made 100 times random sample from 77k subscribers , then 95 times out of 100 times the avg age will fall in the range of [14 - 42]
+
+refer to chat gpt - https://chat.openai.com/share/40281c2e-00b9-4d64-b3c4-b2ac61f10610
+refer to tool : 
+
+
+2. Interval range : 
+
+if the confidence level is higher then the interval range will also be more
+if confidence level is low , then the interval range will be less
+if we are 100 percent confident , then interval range from -infinity to infinity
+
+example 
+we will be 95% sure that dhoni will make the run between 20 to 80
+but we will be less sure lets say 30 percent sure that dhoni will make 80 to 90 
+
+
+
+
+
+Factors affecting margin of error (CI = point estimate +- (Margin of error))
+----------------------------------
+
+1. Confidence level (1 - alpha)
+
+- if confidence level is more lets say 95% then the margin error will be more too.
+- if confidence level is less lets asy 30 then the margin error will be low 
+
+2. Population std 
+
+- high std  => high margin of error
+- low std => low margin of error 
+
+3. sample size
+
+- inversely proportianal
+- more sample size , less margin of error
+
+
+
+
+
+
+
+
+
+============================================================================================================================================================
+
+
+T Procedure (when std in unknown . Used more as generally both pop parameters are unknown)
+------------
+
+- used when std in unknown . Used more as generally both pop parameters are unknown
+- also used when sample size is low(<30)
+
+
+
+Assumptions of T procedure
+---------------------------
+
+1. Random sampling
+2. 
+3. Approaximately normal distribution (if not then can apply CLT)
+4. Independent observations (if not then not proper results)
+
+
+
+
+Formula for t procedure
+-------------------------
+
+- in this we dont have a population std , so why dont we replace it with sample std
+
+CI = point estimate +- (Z(alpha/2)* sample_std/root(n))
+
+but it comes with one problem
+
+ie When you will convert the samples into standard normal variate it didnt stay normal distribution , instead it became some other distribution known as strudent T distribution . 
+
+- it didnt stay normal because we are want to calculate pop mean based on sample mean (which vary from sample to sample) therefore uncertain , now we include other uncertain quantity ie sample std (which also varies from sample to sample)
+
+proof : formula for for standard normal variate will be 
+
+refer to pdf file 
+
+
+Student T distribution 
+-----------------------
+
+- Unlike normal , it is a theoritical distribution . Doesnt exist in real life
+- this was made to handle the uncertainity we were getting , due to the fact that data didnt remain normal 
+
+
+
+Parameters of T distribution
+---------------------------
+- it has only one parameter ie Degree of freedom
+- degree of freedom = n - 1 , where n is the sample size
+
+
+diff between Normal and Student t distribution
+------------------------------------------------
+
+- tail is more fatter , outliers are more 
+- as you increase degree of freedom (more samples ) , the t distribution will look like normal . 
+
+
+NOTE : Since we are not using Z distribution , we will not use Z table instead we will use T table

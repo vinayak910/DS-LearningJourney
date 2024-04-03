@@ -1,0 +1,65 @@
+Gradient Descent
+--------------------
+
+Gradient descent is the optimization technqiue in which if you give a differentiable function it will find the minimum value of it.
+
+ques : same thing OLS do
+ans : In Ols , you are required to do inverse operation. If there are higher dimensions , then the inverse operation will take too much time.hence ols is not suitable for higher dimension
+
+Intution 
+----------
+
+- start with random values of parameters. 
+- and you are required to find the value of parameter for which the loss function is minimum.
+- since you start with random value of parameters.
+- you will take small small steps towards the descendent to reach the minima.
+
+
+
+Mathematically
+-----------------
+
+- intialize the value of parameters
+- now you are require to update the value of parameters
+- newp = oldp - learning rate*slope at old p
+- you will do this in loop until you reach the minima
+
+
+Q - When to stop?
+1 way - if the change between old parameter and new parameter is neglible , it indicates that you have converge.
+2 way - choose high number of epochs. there is good chance that after high number of epochs , you have converged
+
+
+
+refer to register to see the formulation and graphs
+
+
+
+Things that affect the Gradient descent
+-----------------------------------------
+
+1. Learning rate
+-------------------
+
+- choosing optimum value of learning rate is cruical in gradient descent
+- as small learning rate will take too much time to converge and large learning rate will make large jumps in zig zag and may never converge
+
+
+2. Loss function
+-----------------
+
+- our loss function was mse , which is convex function. ie means it has 1 minima. 
+
+- But in case loss function is non convex ie means it has more than 1 minima. In this if the intialization of parameters are close to local minima , you will converge at local minima. and you will never reach the best solution(global minima)
+
+- other problem with non convex loss function is the saddle points. The surface is plain. Hence the slope change is slow. Hence small steps. and take more time to converge.
+
+- hence gradien descent is very sensitive to loss function
+
+
+
+3. Data
+-----------
+
+- if the scale of features are equal then you will converge the solution faster.
+- if not , then the you will converge slower due to the difference in scale of features.

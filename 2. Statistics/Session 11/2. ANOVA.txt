@@ -1,0 +1,44 @@
+ANOVA
+-------
+
+
+- Two types of test
+
+1. One way anova
+2. two way anova
+
+
+
+
+
+
+One way ANOVA Test 
+-------------------
+
+- it is used to compare means of more than 2 groups 
+- it is called one way anova there is only one independent factor/variable with multiple groups
+ex: Avg age of male , female , other gender. IN these there are three groups. 
+     gender : one independent variable with multiple groups
+	
+
+- this test is similar to two sample t test , the diff is . In 2 sample T test , you compare mean of two independent groups , IN one way anova you compare mean of multiple groups
+
+
+
+
+Steps for One way Anova
+------------------------
+
+1. Define null and alternative hypothesis
+----------------------------------------------
+
+- H0 : means of all groups are equal 
+- H1 : atleast one group mean is significantly different from other.
+
+2. Calculate 
+
+
+
+
+
+

@@ -1,0 +1,342 @@
+Chi Square Distribution 
+------------------------
+
+- continuous Probability distribution 
+- very related to normal distribution (created from normal distribution) used in statistical hypothesis Testing
+- used for two test 1. Goodness of Fit 2. Test for independence
+
+
+
+
+How Chi square distribution are made?
+--------------------------------------
+
+refer to jupyter notebook
+
+- 1st graph - we created sample from standard normal distribution . and then square the sample. Then made kde plot . It is chi square distribution with Degree of Freedom = 1 (Z^2)
+- 2nd graph - we created 2 samples set from 2 standard Normal Distribution . And then sum the square of two samples. It is also chi Square distribution with degree of freedom = 2  ( Z1^2 + Z2^2)
+-3rd graph - we created 3 samples from 3 Z , and then sum the squares of three set of samples. It is a chi squar distribution with degree of freedom 3 . (Z1^2 + Z2^2 + Z3^2)
+
+
+refer to pdf file to see the equation for chi square
+
+
+Parameter for chi square
+--------------------------
+
+- degree of freedom (K)
+
+if you increase degree of freedom , then your distribution will start looking like normal distribution 
+
+
+
+Properties for chi square distribution
+----------------------------------------
+
+1. Continuous and define for non negative values(as you are squaring )
+2. right skewed , as you start increasing K , the skewness will decrease 
+3. Mean of chi square of distribution = degree of freedom and variance is 2k (2 Times degree of freedom)
+4. As you increase degree of freeom , it will start looking like normal 
+
+
+
+
+
+==========================================================================================================================================================================
+
+
+Chi square test 
+----------------
+
+- T-test and Z test are for continous numerical variable where we do hypothesis testing like comparing mean of sample with of population
+- whereas chi square used for categorical 
+
+- gernally used for 2 tests 
+1. Chi square Goodness of fit
+2. Test for independence 
+
+- it is based on Chi square distribution 
+
+
+
+Main difference between Goodness of fit and test for independence 
+----------------------------------------------------------------
+
+goodness used for 1 categorical column whereas independence used for two categorical columns 
+
+
+
+
+
+
+
+
+
+
+
+============================================================================================================================================================ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Goodness of fit 
+                  ------------------
+
+- used for one catergorical column
+- in this you verify that if the values for categorical column /matches a expected theortical distribution or not such as Binomial , uniform etc
+
+ex - 
+Rolling a dice 60 times , expected outcome each value occur 10 times each . As all have equal probabilities (will be uniform distribution)
+but lets say actual outcome somewhat differs , because it isnt necessary that they all have equal occurence.
+so chi square test will be used to check that it will still follow uniform distribution , and if not that means coin is rigged
+
+
+
+
+Steps
+--------
+
+1. Define null and alternative hypothesis
+-------------------------------------------
+
+- H0 : observed data follows expected theoritical distribution 
+- H1 : observed data doesnt follow expected theoritical distribution 
+
+
+
+Ex : H0 : Dice follows a uniform distribution 	 , H1 : Dice doesnt follow uniform distribution 
+
+
+
+2. Calculate expected frequency for each category . 
+----------------------------------------------------
+
+- it will be based on expected theoritical distributon
+
+Ex : rolling a dice 60 times for unifrom distribution expected frequency for each category will be 10.
+
+-------------------------------------------------------------------------
+categories            1        2        3        4        5         6
+-------------------------------------------------------------------------
+observed data         5        15       5        15       5         15
+-------------------------------------------------------------------------
+expected fequency     10       10       10        10      10        10
+-------------------------------------------------------------------------
+
+
+
+3. Calculate test statistic
+-----------------------------
+
+substract expected value from observed value, square it . Then divide by expected value. Do that for each observation 
+
+In our case :
+
+chi square.test statistic = ((5-10)^2)/10 + ((15 - 10)^2)/10 + /...............................
+
+
+Now , when calculating test statistic , the above distribution will follow a chi square distribution . As we know 
+chi square distribution = X1^2 + X2^2 +..... , similary we can see the squares and they are adding , hence this distrbiution will follow chi square distribution .
+
+
+
+
+4. Plot a chi square distribution graph for Degree of freedom (n - 1 ) ->  (6 - 1 = 5)
+-----------------------------------------------------------------------------------
+
+- plot the chi square statistic value , and the area to the right will be P value
+
+
+
+5. Interpreting the result 
+-------------------------------
+
+- If P value <signficance level (alpha)  , then means we reject the null hypothesis , ie H0 : follows uniform distribition is rejected. and cooin is rigged
+- If p value > signifiance level , then means we cannot reject the null hypothesis . hence prove that it follows a uniform distribution. 
+
+
+
+
+refer to register to see pracitical approach for dice roll 60 times
+
+
+
+
+
+
+
+
+
+Examples Where H0 : assumes a uniform distribution 
+---------------------------------------------------
+
+Ques1 . Suppose we have a six-sided fair die, and we want to test if the die is indeed fair. We roll the 
+die 60 times and record the number of times each side comes up. We'll use the Chi-Square 
+Goodness-of-Fit test to determine if the observed frequencies are consistent with a fair die 
+(i.e., a uniform distribution of the sides).
+Observed frequencies:
+- Side 1: 12 times
+- Side 2: 8 times
+- Side 3: 11 times
+- Side 4: 9 times
+- Side 5: 10 times
+- Side 6: 10 times
+
+
+
+
+Ques 2 : Suppose a marketing team at a retail company wants to understand the distribution of visits to 
+their website by day of the week. They have a hypothesis that visits are uniformly distributed 
+across all days of the week, meaning they expect an equal number of visits on each day. They 
+collected data on website visits for four weeks and want to test if the observed distribution 
+matches the expected uniform distribution.
+Observed frequencies (number of website visits per day of the week for four weeks):
+• Monday: 420
+• Tuesday: 380
+• Wednesday: 410
+• Thursday: 400
+• Friday: 410
+• Saturday: 430
+• Sunday: 390
+
+H0 : Uniform (Every day no of users should be same)
+h1 : Not uniform 
+
+- expected values : 405 users on each day
+
+- now calculate chi square statistic : which is 11. 
+
+- Now find degree of freedom : n - 1 -> 7 - 1 = 6
+
+- Plot a chi square for df = 6. 
+- Place a chi square statistic (11) , the area to the right is P value . You can find P value using inbuilt function in jupyter notebook
+
+
+
+Examples
+
+
+
+
+Assumptions of Goodness of fit
+----------------------------------
+
+1. Independence - each category should be independent
+
+2. Categorical data 
+
+3. Expected frequency : each category expected frequency should be atleast 5. Small expected frequency can lead to inaccurate results 
+
+4. Expected distrbution : in starting only , you must define a theoritical distribution and calculate expected frequency accordingly  . 
+ex : in our case , we assumed our theoritical distribution to be Uniform and the decide expected frequency to be each .
+
+
+
+============================================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+Parametric Vs Non Parametric test
+-----------------------------------
+
+
+Parametric Tests:
+
+- that make assumptions about the population distribution,typically assuming that the data are normally distributed.
+- These tests rely on parameters (such as mean and variance) of the population distribution when calculating their respective test statistic , Ex : Z test statistic uses population std 
+
+
+
+
+Non Parametric Test: 
+
+-  that do not make assumptions about the population distribution.
+- Doesnt rely on the population parameters when calculating their Test statistics
+
+
+
+
+
+Interview Question 
+-------------------
+
+q : Chi square test parametric or non parametric?
+Ans : Non parametric , as it doesnt use any population parameters to calculate its test statistic
+
+
+
+
+
+
+
+
+
+
+
+
+
+============================================================================================================================================================
+
+
+
+
+
+
+
+Test for independence
+------------------------
+
+- have two categoricals column 
+- used to check if there is dependence between 2 categorical columns or they are independent
+- ex Pclass and Survived , we will apply chi square test to check if there is a related between p class column and survived column 
+
+- The difference is that we make a contengency table for observed data and expected data 
+
+
+
+refer to Register to see the manual test and jupyter to see inbuilt function 
+
+============================================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+Applications in Machine Learning
+---------------------------------
+
+1. Feature selection 
+2. Evaluation of classification models 
+3. analyse Relationships between categorical columns 
+4. Discritization of continous variable (while converting age column to age band )
+
+
+
+

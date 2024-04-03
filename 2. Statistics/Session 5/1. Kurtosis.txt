@@ -1,0 +1,63 @@
+Kurtosis
+<-------->
+
+- 4th statistical moment
+
+(1st: mean , 2nd: std , 3rd: skewness , 4th: Kurtosis)
+
+- it tells the measureness of tailness.
+- basically it tells how fatter the tail is .
+- which means it tells the intensity/frequency of values present at tail.
+
+
+
+False Notation about kurtosis
+<---------------------------->
+
+- it is false interpretation that kurtosis is a measureness of peakedness , instead it is a measureness of fatness of the tail
+
+
+
+Practical use
+<------------->
+- in finance , there is a study of kurtosis risk
+
+
+
+Excess Kurtosis 
+<---------------->
+
+- is measure of how fatter the tail of distribution is comapared to normal distribution
+
+- normal distribution kurtosis is 0
+
+- excess kurtosis formula =  sample krutosis - 3
+
+
+its types
+<--------->
+
+1. Leptokurtic
+
+- if sample kurtosis - 3 >0 (+ve) then it is a leptokurtic
+
+- this distribution has fatter tails 
+- which indicates that there are more outliers or extreme values in the distribution
+
+
+
+
+2. Platykurtic
+
+- distribution with negative excess krutosis ie sample kurtosis - 3 < 0
+
+- this distribution has thinner tails then of normal distribution tails means there are fewer extreme value
+
+
+
+
+3. Mesokurtic
+
+- distribution with the excess kurtosis = 0
+
+

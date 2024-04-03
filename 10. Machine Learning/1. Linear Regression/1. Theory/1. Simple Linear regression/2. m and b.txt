@@ -1,0 +1,44 @@
+How to find value of m and b?
+--------------------------------
+
+
+
+2 ways
+-------
+
+1. Closed form solution 
+
+- anything that has a mathematical formula is closed form solution 
+- in this you dont do any differentiation or integration 
+
+- in linear regression the closed form solution is OLS method (Ordinary leasts square)
+
+
+2. Non closed form solution 
+
+- in this you used approaximation techniques such as differentiation and intergration to find the value 
+- in linear regression  ,you can use gradient descent
+
+
+
+
+ques if there is a direct formula (OLS) why would we use approaximation techniques?
+-------------------------------------------------------------------------------------
+
+- when you work with higher dimension (more number of input columns ) , it is difficult to use the direct formula , hence in higher dimension approaximation techqniues such as gradient descent is used .
+
+
+
+
+
+
+OLS
+-----
+
+
+- as it is closed form solution , hence you have formulas for finding the values of m and b 
+
+- refer to register to see the formulas for m and b and their proof
+- refer to jupyter to see code from scratch for OLS
+
+

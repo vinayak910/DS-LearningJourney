@@ -1,0 +1,101 @@
+Linear regression
+------------------
+
+
+- Linear regression is supervised machine learning algorithm
+- it is used to solve regression problems
+- regression problems - whose output column will be numerical 
+
+
+
+
+
+types of linear regression
+---------------------------
+
+1. simple lr :  
+
+- 1 input , 1 output
+- ex : input col : cgpa , output : Package 
+- based on cgpa , you will predict the package , this is simple linear regression 
+
+2. Multiple lr: 
+
+- if more than 1 input columns , then multiple lr 
+ex : predict package based on cgpa and experience
+
+
+3. Polynomial lr : 
+
+- when data is not linear 
+
+
+
+============================================================================================================================================================
+
+
+
+Simple Linear Regression
+-------------------------
+
+ex : you have cgpa data and package data . what if there was not data  , then the alternative would be avg package 
+- but that is not a good choice , as it will vary
+
+- but we have the data
+- what we can do is plot the data , scatter plot of cgpa and package.
+- you will find your data sort of linear.
+
+
+
+
+
+ques:  why data is sort of linear , why not perfectly linear?
+
+- because this is the real world data , and there are various factors that may also contribute in deciding the package . Ex : good interview
+- these factors are generally called stotastic errors ie which cannot be determine 
+
+
+ques : what if data will be perfectly linear?
+
+- we can simply draw the straight line but for that we need eq of line y = mx + b , where m is slope and b is the intercept)
+- if we know the slope and intercept , we know the equation of line , hence line can be drawn .
+- now for each x value (cgpa) , there will be y value(package)
+
+
+
+ques : But our data is not perfectly linear . What can we do?
+
+- the answer is you will still draw the line , but line will be best fitted .
+- best fitted means : that line will closely pass through the all data 
+- thats what is linear regression
+
+
+
+Final Definition (intution)
+---------------------------
+
+- linear regression is the supervised machine learning algorithm used to solve regression problems
+- in this , first you check the data we have is sort of linear or not . 
+- if it is sort of linear  , you will pass a best fit line . (you have to find that values of m and b , which will make the minimum error ie pass closely through all the data)
+
+- package = m*cgpa + b
+
+
+
+human interpretion of m and b
+--------------------------------
+
+1. m 
+
+- weightage ie (cgpa ke upar kitna how much depend krta hai package , vo number m hai )
+- if m value is low , then package would not too much depend on cgpa
+- if m value is high , then it means package will be highly dependble on cgpa
+
+
+
+2. b
+
+- b is the offset ie even if the cgpa become 0 , then there would still be value left for determining the package 
+
+
+refer to jupyter to see the practical

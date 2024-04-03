@@ -1,0 +1,55 @@
+Problem with Batch GD
+-----------------------
+
+1. Too many derivatives for large dataset which makes it slow.
+2. while computing dot product of whole data at once. It is difficult to store all that data at once. Hence hardware constraint.
+
+Conclusion : Not suitable for large dataset
+
+
+
+Therefore requirement of other variants of GD.
+
+
+============================================================================================================================================================
+
+Stochastic GD
+--------------
+
+- In Batch gradient descent , you update the coef one time in each epoch after looping whole data .
+
+- In stochastic GD , you update after each row. 
+- therefore if we have n rows , In 1 epochs the no of updates will be n. Hence not required high number of epochs.
+
+Note : the rows in each epoch will not be sequentially picked but randomly . 
+
+
+ Advantage
+-------------
+- it is faster as you need less number of epochs. 
+- No hardware constraint. As you need only 1 row to update. Therefore only 1 row will loaded into the memory.
+- suitable for large dataset
+
+
+ Disadvantage
+--------------
+
+- Due to randomness selection of rows ,you will not get the steady. means when applied Stochastic again then the output will be different than before.
+- May not reach the best result. 
+- The fluctuation may not be stop even after you reach near optimal solution . Thats why we use the concept of learning schedule. in this learning schedule vary from epochs to epochs. After each epoch the learning rate becomes small and fluctation starts getting small .
+
+
+
+
+Time Complexity
+----------------
+
+- For same no of epochs , the Batch GD will be faster.
+- For large dataset , Stochastic will be faster
+
+
+
+When to use stochastic Gd
+-------------------------
+- Big data
+- Non convex function . Due to randomness nature , The stochastic gives you the possiblity of coming out of local minima due to random jumps which batch gd is not cabable of . 

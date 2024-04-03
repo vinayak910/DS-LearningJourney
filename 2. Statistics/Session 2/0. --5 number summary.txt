@@ -1,0 +1,242 @@
+5 number summary
+<---------------->
+- comes under the measures of dispersion
+- tells about the spread or variability about the data
+
+To know this , you must be familiar with concepts of 
+- Quantiles
+
+============================================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+Quantiles
+<--------->
+
+- statistical measure which divide numerical data into equal sized groups/buckets
+- by equal sized buckets , same no of observations in each bucket
+
+why important?
+
+- measures variabilty 
+- tells about the distribution of data
+- identifies outliers
+
+
+several types of quartiles
+<-------------------------->
+
+1. Quartiles
+
+- divide the data into four equal parts 
+- q1(25th percentile) , q2 (50th percentile), q3 (75th percentile)
+
+2.  Deciles
+
+- when divide the data into 10 equal parts
+- d1 (10th percentile) , d2 (20th) d3 (30th)--------------------d9(90th percentile)
+
+
+3. Percentiles
+
+- when divide the data into 100 equal parts
+
+4. Quintiles
+
+- divide the data into 5 equal parts
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Things to remembers while calculating these measures
+
+- data should be sorted
+- you are basically finding the location of observation
+- They are not actual values in data
+- all other tiles can easily be derived from percentiles
+
+
+hence you only need to learn percetiles.
+
+
+============================================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+Percentiles
+<----------->
+
+- percentage vs percentile 
+- percentage 90% , means your marks are 90 out of 100 
+- 90th percentile , means if exam was given by 100 , 90 percent people are behind you , 10 percent are above you.
+
+
+basically lets say 75th percentile
+
+- 75th percentile is the value below which 75% of observation of dataset fall
+- and you need to find the value of 75th percentile
+- lets say 75th percentile value is 60 
+- it means 75 percent of people have scored less than 60
+
+
+
+
+
+
+Formula for calculating percentile value
+<---------------------------------------->
+
+
+percentile value  = percentile/100(N+1)
+
+example:
+
+q1 find the 75th percentile score from this data -> (78 , 82 , 84 ,88 , 91 , 93 , 96 , 98 , 99)
+
+steps1 : arrange in ascending order
+
+step 2 : apply formula -> (75/100)*(10 + 1) -> 8.25
+
+
+interpretation of this number : 
+
+- out of all students , student with the location 8.25 is representing 75th percentile
+- but 8.25 is not the valid position
+- which means 75th percentile value lies between 8th position and 9th position
+
+- so to find th 75th percentile value , you will use this formula
+
+- (8th position value  + x*(9th position value - 8th position value)
+
+
+- where x is the 8.25 ke point ke aage wali value ie .25
+
+
+- putting values
+(96 + 0.25(98 - 96) = 96.5
+
+means if you score 96.5 , then you will the 75th percentile point. which means 75 percent population have scored less then you.
+
+
+REFER TO NOTEBOOK for proper calculation
+
+
+
+
+
+Find percentile from value
+<------------------------------------->
+
+step 1: arrange in ascending
+step 2: apply this formula
+percentile rank = (x + 0.5y)/n
+
+x = number of values below the given value
+y = number of values equal to given value
+N = total no of values 
+
+ex : 78 , 82 , 84 , 88 , 91 , 93 , 96 , 98 , 99
+
+
+
+Find the percentile rank for score of 88 ?
+
+x = 3 
+y  = 1
+
+=> (3 + 0.5*1)/9
+=> 0.35*100 = 35th percentile
+
+
+
+
+
+
+==========================================================================================================================================================
+
+
+
+
+
+5 number summary
+<--------------->
+
+- consists of 5 values that divide the data into 4 equals parts
+- and these 5 values will tell about the distrubution , spread, central tendancy about the data
+
+a) Minimum
+b) First quartile (Q1) -> 25th percentile
+c) second quartile (Q2) /Median -> 50th percentile
+d) Third Quartile (Q3) -> 75th percentile
+e) Maximum
+
+
+By this -> BoxPlot is made
+
+
+Inter Quartile range
+<--------------------->
+- difference between 3rd quartile and 1st quartile
+- IQR =  75th percentile - 25th percentile
+
+
+
+How to create boxplot
+<--------------------->
+
+6 213 241 260 281 290 314 321 350 1500
+
+step1 : sort
+-----
+step2 : max a box and box will be made by q1 , q1 , q3
+-----
+q2 = (50/100)*11 = 5.5 -> 281 + 0.5*(290 - 281) = 285.5
+q1 = (25/100)*11 = 2.75 -> 213 + 0.75*(241 - 213) = 234
+q3 = 328.25
+
+step3:  Find minimum and maximum
+-----
+
+IQR = 94
+
+min = q1 - 1.5(IQR) -> 93
+max = q3 + 1.5(IQR) -> 469
+
+
+
+
+Benefits of Boxplot
+
+- distribution of data
+- identify outliers 
+- tell skewness
+- compare 2 categories of data 
+
+
+
+
+
+
+
+
+
+
+

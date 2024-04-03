@@ -1,0 +1,347 @@
+Random Variables
+<---------------->
+
+set of possible values from random experiment
+
+experiment 1 : tossing coin
+
+- considering H = 1 , T = 0
+
+- random variable => X = { 1 , 0 }
+
+
+experiment 2 : rolling dice
+
+random variable => Y = {1, 2, 3, 4, 5, 6}
+
+
+
+TYPES OF RANDOM VARIABLE 
+<------------------------->
+
+1. Discrete random variables : 
+
+- values are discrete (Whole integers)
+- ex : rolling a dice outcomes will be {1 , 2, 3, 4 , 5, 6} Not 1.5 , 2.8
+
+
+2. Continious random variables : 
+
+- random variable can hold range of values
+- ex : asking a student his gpa , now gpa can be in range of [0 , 10]
+- it can be 1 , 1.5 . ie will be in range
+
+
+
+
+
+PROBABILITY DISTRIBUTIONS
+<------------------------->
+
+- list of all possible outcomes of random variables along with their corrosponding probability values
+
+ex1: Tossing coin  , considering H = 1 , and T = 0
+- calculate probabilties of each event ie P(H) = 0.5 , P(T) = 0.5
+- and now make a table
+
+|---------------------------------|
+| coin toss      1(H)     0(T)    |
+|---------------------------------|
+|Probabilties    0.5      0.5     |
+|---------------------------------|
+
+
+ex 2 : Rolling a dice , their probablity distrubtions will be 
+
+----------------------------------------------------------
+dice roll         1       2     3      4      5      6
+----------------------------------------------------------
+Probabilities     1/6    1/6    1/6    1/6    1/6    1/6
+---------------------------------------------------------
+
+
+
+ex 3 : Probability distribution of 2 dice sum 
+
+---------------------------------------------------------------------------------------------------------
+sum dice numbers    2        3        4        5       6       7       8      9      10      11      12
+---------------------------------------------------------------------------------------------------------
+Probabilities      1/36     2/36      3/36     4/36   5/36    6/36    and more 
+---------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+PROBLEM WITH TABLES
+<------------------->
+
+- if the list of possible outcomes increase or working with continuous random variable  , then making a table will be very tedious , and then finding probablities
+
+Solution: 
+- Use a mathematical relation between outcomes and proabability
+- y = f(x) , where y is the probabilties , and x the possible event
+
+
+Benefits of mathematical function
+-------------------------------------
+
+1. Easily calculate probabilites for given input
+2. Since it is mathematical relation , you can easily plot a graph , and can see the shape of distribution of the probabilities
+
+and that mathematical function is called probability distribution function
+
+
+
+
+
+
+There are some famous distributions which are noticed and found in nature
+- refer to pdf
+
+
+
+
+WHY probablities distributions / Probabiliy distribution functions are important?
+<-------------------------------------------------->
+
+1. gives idea about the shape/distribution of data 
+ex : pdf for gpa in class will give idea how many student scored higher marks
+
+2. if our data follows famous distribution then we automatically know a lot more about the data 
+ex if our data matches with normal distribution , we can apply all things of normal distibution on our data.
+
+
+
+Parameters
+<---------->
+
+- Every PDF has a tuning nobe that determine the shape , location and scale of distribution
+- different distributions have different tuning norbs
+
+
+
+TYPES OF PROBABILTY DISTRIBUTION FUNCTIONS 
+<------------------------------------------>
+
+1. Probability Mass Function / PMF
+2. Probability Density function/ PDF
+
+- if you are making probability distribution for discrete random variable ex : Rolling a dice then it is called PMF
+- and if you are making probability distribution for continous random variable ex : asking student their GPA then it is called PDF.
+- and you can also make cdf using both.
+
+
+
+
+
+
+PROBABILITY MASS FUNCTION
+<------------------------->
+-  mathematical function that describes the probablity distribution of discrete random variable 
+- there are 2 conditions for assigning probabilities : 
+
+   1. probablity assigned of each value must be non negative
+   2. the sum of all probablities will be equal to one 
+
+
+ex : Making a pmf for rolling a dice
+
+y = { 1/6 if x => ( 1 , 2 , 3 , 4, 5 , 6)
+    { 0 
+
+- refer to jupyter notebook to see the PMF graph for rolling a dice
+
+
+
+
+Cumulative distribution function of PMF
+<--------------------------------------->
+
+- PMF tells the probability at one point 
+- ex it tells probablity of 5 when rolling a dice
+- But CDF of PMF will tell the probability of number to be 5 or less than 5 (<=5)
+- CDF is also mathematical fn 
+y = F(x) Where F(x) = P(X<=x)
+
+
+example of CDF at 4 will be '
+
+- f(x = 1) + f(x = 2) + f(x = 3) + f(x = 4)
+- 1/6 + 1/6 + 1/6 + 1/6 = 2/3
+
+
+Interpretation : 
+
+When calculating PMF you took x = 4 , y will tell the probablity of 4
+
+but when calculating CDF , you took x = 4 , y will tell the probablity of 4 or less than 4.
+
+
+
+
+refer to jupyter to see the graph of CDF
+
+
+
+
+
+PROBABILITY DENSITY FUNCTION/PDF
+<----------------------------->
+
+- mathematical function that describes the probabality distribution of continous random variables
+
+ Q how is it different from PMF?
+	1. it is probability distribution of continous random variable
+	2. on Y axis , it is not probability . it is called probability density.
+
+
+
+
+some questions for PDF
+----------------------
+
+q1 Why probability density on y instead of Probabilities
+
+- on X axis , there is a range . lets say marks in the range of [0 , 10] .
+- Now there is infinite values between [0 , 10]. So the probability value of particular x will be close to zero.
+- ex : lets say what is probability of 7.123 ? it is close to zero .
+- therefore it is not possible to calculate probabilities on y axis. As there are infinite values on x , it is impossible to calculate probabilties of each x value.
+- hence , instead we use probability density.
+
+
+q2 What does the area of the graph represents?
+
+- refer to image of pdf
+- the area of graph represents the probability of marks to be in the range of [0 , 10]
+- if i ask what is the probability of marks to be in range of [0 , 10]
+- the ans is 1
+- P(0<=x<=10) = 1
+
+
+q3 So what exactly is probability density?
+
+- probability density tells the probabily between 2 numbers
+- like in the above we were able to tell probability of marks between [0 , 10] is one
+- similary we can find the probability of marks between 2 numbers
+- ex 
+- probability of marks between 8 to 9.
+- P(8<=x<=9) -> you have to find the area of the graph which is by integration of the function of graph with the upper limit = 9 and lower limit = 8.
+- this area will give the probabilty between 8 to 9
+
+
+- similarly you can reduce to range to 8 to 8.001. sp roughly you can say after integrating you are finding the probablity of marks being 8 . But we know it is the probablity between 8 and 8.001. Not the probability of 8.
+  
+
+q4 How to draw this graph?
+- unlike pmf , on y axis there were probabilities . 
+- BUt in PDF , on y axis there are probability densities . Not probabilities
+
+- now to make this graph you need to do density estimation
+
+
+
+
+Density Estimation
+<----------------->
+
+- used to estimate the probability density function (PDF)
+- Density estimation can also be used for various purposes such as hypothesis testing , data analysis  ,data visualization
+
+
+
+Approches for density estimation
+<------------------------------->
+
+1. Parametric Approach : 
+- assumes our data follows specific distribution  ex : normal distribution , uniform etc.
+
+2. Non parametric Approach : 
+- doesnt assues assumption about the data , instead estimate directly from the data
+
+
+- common techniques for density estimation : Kernel density estimation (KDE) , Histogram Estimation , Gaussian Mixture models (GMM)
+
+
+
+
+
+Parametric
+<----------->
+
+- first you will plot a histogram 
+- you saw our distribution matches with one of the famous distribution
+- now you will work acc to that famous distribiution
+
+
+example: 
+- lets say our sample data matches/similar to Normal Distribution 
+- Since , it matches it with the normal distribution .
+- and we know that to calculate the pdf of normal distributions we need two parameters Mean and Std.
+- since our distribution is similar to normal distribution , we will also calculate our sample data mean and sample std.
+- once we will have the mean and std of our sample data
+- we will use pdf formula of normal distribution (which is available on wikipedia) to calculate probability densities on y axix.
+
+
+refer to jupyter notebook
+
+
+
+Non Parametric 
+<-------------->
+- What if after plotting histogram it doesnt match any famous distribution , then you will use non parametric approach
+- we can use KDE technique
+
+
+advantage
+- doesnt require any assumption , which means we can plot pdf for any plot using this approach
+
+disadvantage
+- computationally intensive and may require more data to achieve accurate estimates
+
+
+
+
+
+
+
+ KDE
+<--->
+
+- so if our data doesnt matches any famous distribution , we will use this approach
+- here , we will firstly pick a kernel
+- kernel is basically a probability distribution (Generally Gaussian/normal Distribution is used)
+- basically what you do is 
+
+- you grab each point on X axis and make that number of chosen distribution (in our case Normal Distribution) around each point by considering that point as mean.
+
+
+Explaination - Since the above distribution does not match any famous distribution here we will use non parametric.(kde).Here, you will use a kernel (Kernel is basically probability distribution generally Gaussian) .In this what you will do is you will grab each data point considering them as center (mean) and you will make a gaussian distribution for each data point.and now you will grab each point and move in perpendicular direction and us point ke upar jitne bhi norma curve aare hai unki probabilities density ko add add krenge and you will have your y value
+
+
+Important note- since you are using gaussian as kernel we know it has two parameters that is mean and std. we know that in case of kde the mean is point on x axis itself , but what about std , thats why std is hyperparameter known as bandwidth if bandwidth is very low then it will show peakedness as all points are closed to mean . then what will happen is the blue curve will start having spikes if bandwidth increases then the curve will be more spreaded out and the y values will be less and overall blue curve will start to smooth  
+
+
+
+refer to jupyter for practical
+
+
+
+
+CDF for PDF
+<---------->
+
+refer to graph
+- in PDF it was telling probability density on y axis
+- but CDF of pdf tells the probability of height being 165 or less than 165
+- basically same concept as of CDF of PMF.
+
+
+Note : 
+- When you find integratation/area of  PDF , you will get CDF of PDF
+- when you calculate slope/differentiation for each point of CDF you will get PDF
+
+
+
+

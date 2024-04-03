@@ -1,0 +1,180 @@
+tables : physically present in ram
+views : similar to tables but not actually present in ram
+
+=====================================================================
+
+- once views is created it can be use in a same way as tables
+- any changes done to table will also be reflected unders views
+
+=====================================================================
+
+- Types of views:
+<---------------->
+1. Simple views : created from single table
+2. Complex views: created from multple tables
+
+=====================================================================
+
+------------------QUERIES---------------------------
+
+1. Subset of flights and storing it in view
+
+CREATE VIEW indigo AS 
+SELECT * FROM flights
+WHERE airline = "Indigo";
+
+SELECT * FROM indigo;
+ 
+basically , views isnt stored in memory , instead it is running the query again and again .
+
+====================================================================
+
+- Benefit? -> When running complex queries we need to perform joins , and other things , again and again acc to query . But with views we can create a single time views and then performed the queries on joined views
+
+===================================================================
+
+2. CREATE A COMPLEX VIEW OF ZOMATO
+
+CREATE VIEW joined_order_data AS 
+SELECT order_id , amount , restaurant , name, date , delivery , restaurant_rating , delivery_rating FROM orders t1
+JOIN users t2
+ON t1.user_id = t2.user_id
+JOIN restaurants t3
+ON t1.r_id = t3.r_id
+
+
+SELECT r_name , SUM(amount) FROM joined_order_data
+GROUP BY r_name 
+
+
+==================================================================
+
+Types of views based on update
+<---------------------------------->
+
+a. Read only views : cannot be updated , and underlying data also cant be updated
+
+b. Updatable views : changes/modification in views also reflect changes/modification in the original table
+
+
+- To know which view is updatable or read only refer to mysql documentation
+
+==================================================================
+
+
+Important -> Materialized Views
+            <--------------------->
+
+- Not available in mysql , but in other ex oracle , postgre
+
+CONCEPT : 
+
+- views are just stored query , so in time execution  , it isnt much benefitial 
+- but material views are physical tables that stores the result of query. 
+- hence if running query again and again large data will take time.
+- But in materialized views the query is run single time , and the result is stored in form of physical table.
+
+Benefit - Time saved 
+
+===================================================================
+
+  Advantages of views
+<--------------------->
+
+- No Physical storage
+- Security : Creating a view that doesnt contain sensitive information
+- Make complex queries simple
+
+
+==================================================================
+
+USER DEFINED FUNCTIONS 
+<---------------------->
+
+1. hello world
+
+CREATE FUNCTION hello_world()
+RETURNS VARCHAR(255)
+BEGIN
+
+RETURN "Hello World";
+END
+
+
+SELECT hello_world() AS message;
+
+----------------------------------------------------------
+
+2. fn that Calculate age given birth date 
+
+CREATE FUNCTION calcualte_age(dob DATE)
+RETURN INTEGER
+BEGIN
+	DECLARE age INTEGER;
+	SET age = ROUND(DATEDIFF(DATE(NOW() , dob)/365))
+RETURN age;
+END 
+
+
+SELECT calculate_age(2010-10-10)
+
+SELECT calculate_age(dob) FROM person;
+
+-----------------------------------------------------------
+
+3. proper_name
+
+CREATE FUNCTION proper_name(name , VARCHAR(255) , gender VARCHAR(255) , married(VARCHAR(255) 
+RETURN VARCHAR(255)
+
+BEGIN 
+	DECLARE title VARCHAR(255);
+	SET name = CONCAT(UPPER(LEFT(name , 1)) , LOWER(SUBSTRING(name , 2)));
+
+
+	IF GENDER = 'M' THEN 
+		SET title = CONCAT('Mr' , ' ' , name);
+	ELSE
+		IF married = 'Y' THEN 	
+			SET title = CONCAT('Ms',' ',name);
+		ELSE
+			SET title = CONCAT('Ms',' ',name);
+		END IF;
+
+	END IF;	
+RETURN title;
+END 
+
+
+select * , proper_name(name , gender , married) FROM person;
+
+-----------------------------------------------------------------
+
+4. Find number of flights between 2 cities
+
+CREATE FUNCTION num_flights(city1 VARCHAR(255) , city2 VARCHAR(255))
+RETURN INTEGER
+BEGIN
+
+RETURN (SELECT COUNT(*) FROM flights
+WHERE source = city1 AND destination = city2);
+END
+
+
+===================================================================
+
+BENFITS
+<------->
+1. READBILITY
+2. REDUCES COMPLEXITY
+3. REUSABILITY
+
+====================================================================
+
+DETERMINISTIC VS NON DETERMINISTIC
+<--------------------------------->
+
+deterministic: same output for same input
+non deterministic : different output for same input
+
+

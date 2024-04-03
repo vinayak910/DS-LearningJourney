@@ -1,0 +1,191 @@
+- Finding the coef values ie B0 , B1 , B2 , doesnt mean they will be useful all the time , as if the data was non linear then these values will not be useful.
+
+- Blindly finding out the coef is not linear regression 
+
+- you also understand the relationship between X and y using stats and this process of studying the realtionship is called regression analysis.
+
+
+- we need to analyse the value of m and b.
+
+
+Regression Analysis
+--------------------
+
+- use to examine the relation between one dependent variable(target/y)  and one or more independent variables(input).
+
+- goal : 
+
+1. understand how dependent variable changes when one or more independent variable is altered
+2. create a model that predict the value of dependent variable 
+
+
+
+
+Flow for linear regression
+---------------------------
+
+1. define the research question 
+
+- you want to know the relation between the columns , or use the input column to predict the target column .
+
+
+2. Collect and prepare data
+
+3. Visualize the data
+
+4. Check Assumptions 
+
+5. Fit linear regression model 
+
+6. Interpret the model :
+ 
+- this is where regression analysis comes in .  
+- check how much useful the values of coef are .
+- analyse the estimated regression coeffs, thier standard errors , t - values , p - values and much more
+- refer to pdf
+
+
+7. Validate the model 
+
+8. Report results
+
+
+
+
+ques arises
+------------
+
+q1. What is statistics connection?
+
+
+Why ML problems are Statistical inference problem?
+---------------------------------------------------
+
+Statistical inference - you have sample and using sample your estimate the parameters of population
+
+- Similary you have a tabular data of 100 students of cgpa, iq , lpa that can be called as sample
+- and you are trying to find mathematical equation which will tell the lpa of all students(population) 
+
+- therefore lpa = f(cgpa , iq) .
+
+- if lets say you find the mathematical equation , that means you are kinfd of god. Because using mathematical equation you are simpling predicting the lpa for all students.
+
+- but that is not correct. 
+
+- As there are hidden/real world factors which cannot be count as input and influence the value of lpa.
+
+- ex : lpa is more , because the interviewer is his senior . Lpa is less because interviewee was not well.
+
+- These are called errors , as they cannot be governed by mathematical equation
+
+- so the new equation will be -> lpa = f(cgpa , iq) + E
+
+- where E is the error we talked about , it is generally called irreducable error. They cannot be governed by mathematical equation.
+
+- since E cannot be governed , we focus on f(cgpa , iq). WE use 2 types of algo to find fn. 
+
+
+1. Parametric 
+- assumes the nature of function
+- ex Linear regression is a parametric algo , which assumes the function f(cgpa , iq ) will be linear ie -> B0 + B1cgpa + B2iq
+- Now our work is to find the parameters not the function
+
+
+2. Non parametric
+
+- do not take any assumption about the function
+- it makes the function from scratch
+
+
+
+
+
+
+Parametric
+-----------
+
+ex linear regression
+
+assumes linear and True equation for population is 
+
+lpa = B0 + B1cgpa + B2iq
+
+this is the true equation .
+
+But when you applied linear regression , you get these coef -> b1,b2 ,b0. which will not be exactly equal to B0 , B1 , B2.
+
+ 
+Why not equal 
+----
+- because the linear regression is applied on 100 students and you are making prediction based on that 100 students data(sample). and if next time you applied on different data , the coef will be again different.
+
+- therefore the coef you calculated will be different from population coef.
+  
+- the function you get is f'() , and the true function is f() . 
+- there is also one more error which is f() - f'() (True function - your function) . it is called reducable error.
+
+- it is called reducible , because there is possiblity of making your function better , hence the error can be reduced.
+
+so if you want to predict , the true function will be 
+
+
+lpa = f'(cgpa , iq) + reducible_error + E
+
+- so our work is to reduce the reducible error
+- f'() is estimated relationship of x and y based on given data 
+- f() is true relation between X and y for population 
+
+
+refer to jupyter notebook to see practical
+
+
+conclusion : Basically the prediction you do is based on sample , but the true relationship is based on population . SO to estimate how much close we are to the population , we use different statistical tools such as confidence intervals , central limit theorm , testing etc
+
+
+ so this ques What is statistics connection? is answered.
+
+
+
+
+
+============================================================================================================================================================
+
+
+
+q2 Why is regression analysis required?
+
+
+Inference Vs Prediction (Why regression analysis is required?)
+
+
+Prediction 
+------------
+
+- you have a data you used ml model , the output you have is prediction
+
+
+Inference
+-----------
+
+in inference , you study how there is a relation between input and target. 
+ie knowing the internal working . And the study you do is inference. That's why you need regression analysis.
+
+
+concept of black box model
+---------------------------
+
+you have input and you get the output from the model you dont know the internal working . In this interpretation is hard or close to impossible .
+
+
+
+
+Conclusion
+-------------
+
+Machine learning is not only used prediction , but also about inference.
+that is where regression analysis is required (for inference)
+
+
+NOTE : generally a model that is good in inference , they are weak in prediction and vice versa. Trade off between inference and prediction .
+
+linear regression is one of those algo which are good in inference , hence regression analysis is required

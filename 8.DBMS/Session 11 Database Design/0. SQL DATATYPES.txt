@@ -1,0 +1,78 @@
+topics covered
+- SQL DATAtypes
+- Normalization
+- ER Diagram
+
+----------------------------------------------------------
+----------------------------------------------------------
+
+a. SQL datatypes
+	1. Numeric - int , decimal
+	2. text - varchar , text , enum , set, blob
+	3. Temporal/datetime - date , time , datetime , timestamp
+	4. Miscellaneous - JSON , Spatial
+
+------------------------------------------------------------------
+-----------------------------------------------------------------
+
+Numerical dtyes : refer to pdf
+
+NOTE - When the dtype is unsigned then the space to store will get doubled
+ex - singed tinyint stores -127 to 127 ,  unsigned tinyint will stored upto 
+127 + 127 = 254
+
+-------------------------------------------------------------------
+--------------------------------------------------------------------
+String Dtypes - refer to pdf
+
+	a. ENUM: only predefined values van be inserted
+
+	ex:
+	ALTER TABLE dt_demo ADD COLUMN gender ENUM('male' , 'female' , 'others);
+
+	UPDATE dt_demo
+	SET gender = 'delhi'
+
+	THIS VALUE WONT BE UPDATED INSTEAD EMPTY STRING WILL REPLACED;
+
+-----------------------------------------------------------------------
+
+	b. SET : SIMILAR TO ENUM , BUT CAN STORE MULTIPLE VALUES
+	ex: hobbies can be multiple [cricket , dancing , singing]
+
+	QUERY:
+	INSERT INTO dt_demo (hobby) VALUES
+	('sports') , ('gaming') , ('sports , gaming');
+
+------------------------------------------------------------------------
+
+	C. BLOB: refer to pdf
+
+	QUERY: ALTER TABLE dt_demo ADD COLUMN dp MEDIUMBLOB;
+	INSERT iNTO dt_demo (dp) VALUES (LOAD_FILE(path))
+
+NOTE : PATH SHOULD CONTAIN FORWARD SLASHES
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+MISCELLANEOUS DTYPES
+--------------------------------------------------------------------
+	A. SPATIAL DATATYPES:  
+		geometry
+
+	QUERIES:
+
+	ALTER TABLE dt_demo ADD COLUMN latlong GEOMETRY;
+	INSERT INTO dt_demo (latlong) VALUES (POINTS(67.4567,89.1234))
+	SELECT ST_ASTEXT(latlong) , ST_X(latlong),ST_Y(latlong) FROM dt_demo;
+----------------------------------------------------------------------
+	
+	B JSON
+
+	QUERIES:
+	
+	ALTER TABLE dt_demo ADD COLUMN desc JSON;
+	INSERT INTO dt_demo(descr) VALUES ('{"os":"android", "type":"smartphone"}')
+	
+	SELECT JSON_EXTRACT(descr, '$.type') FROM dt_demo

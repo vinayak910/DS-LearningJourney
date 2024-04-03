@@ -1,0 +1,92 @@
+Transformations
+<--------------->
+
+- if our data is normal , then it is good both for statisticians as we already know more about this distribution and Machine learning because some algo performs better when feeded normal distribution 
+
+- but real world data would not be normal but would be kind of , similar to normal
+- so transformations are way to convert the avaialable normal like data to close to normal distribution using some mathematical formula
+
+in this , we will learn Log Normal transformation , Box Cox
+
+
+sklearn have different transformations 
+<-------------------------------------->
+
+1. Function Transformers : which includes log transform , resciprocal , square ,  sqrt , custom
+2. Power Transformers : Box cox , Yeo Johnson 
+3. Quantile : will not study
+
+
+
+
+============================================================================================================================================================
+
+
+
+FUNCTION TRANSFORMER
+<-------------------->
+
+1. Log Transform
+<------------->
+
+- applied when data is right skewed
+- log doesnt work on negative values 
+- what log transform transform do is it brought down the values to equalivalent scale .
+
+to know the more about log transform refer to this chat : https://chat.openai.com/share/40281c2e-00b9-4d64-b3c4-b2ac61f10610
+
+
+2. Reciprocal 
+<---------->
+- 1/x
+- small values become large
+- large values become small
+- in some cases this transformation can make our data similar to normal
+
+
+3. square (x^2)
+<------------>
+- used for left skewed data 
+
+
+
+4. sqrt
+<----->
+- not used much 
+
+But the goal is to apply different transformation , and choose the one that gives better result
+
+
+
+
+- refer to jupyter to see all these transformations 
+
+
+
+
+============================================================================================================================================================
+
+
+POWER TRANSFORMER
+<----------------->
+
+1. BOX COX TRANSFORMATION
+
+- 2 computer scientist surname
+- applicable on numbers greater than 0
+- lambda (/\) range to -5 to 5
+- lambda can be calculated using 2 techniques 1. Maximum Likelihood , 2. Bayesian Statistics.
+
+
+
+
+
+
+
+2. Yeo Johnson Transform
+
+- variation of box cox
+- benefit - work on values less than 0 and equal to zero
+
+
+refer to jupyter notebook

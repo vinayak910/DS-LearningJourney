@@ -1,0 +1,132 @@
+NORMAL DISTRIBUTION
+<-------------------->
+
+- One of the famous Probability distributions
+- It is Probability distribution for continous random variables ie PDF(probabiity density function)
+- it is symmetrical around the mean with a bell shaped curve.
+
+Basic summary of this graph
+<---------------------------->
+
+- most of the data is around the mean
+- some of the points are at tail
+
+
+Parameters of normal distribution
+---------------------------------
+1. mean - tells the centre of data
+2. std - tells the spread of data
+
+- if you have mean and std you can make a normal distribution graph , as you have a formula for normal distribution
+- refer to eqn in pdf
+
+
+Why it is so important?
+------------------------
+- due to its commonality in nature
+- many natural things follow normal distribution such as iq scores , height , weight
+- Since it is too much seen in nature , therefore we know too much about this distribution
+- thus we know if our data somelike normal , it is a good thing
+
+
+
+============================================================================================================================================================
+
+
+
+
+STANDARD NORMAL VARIATE (Z)
+<---------------------------->
+
+- it is also the normal distribution but in standardized form
+- By standardized form it means Mean = 0 and std = 1
+
+
+Benefit of standardizing
+<------------------------->
+
+1. Compare different distributions with each other
+
+2. By standardizing the normal distributon  , we can calculate probabilities from PDF using  table (Z table for normal distribution)
+
+
+NOTE - just put the value of mean = 0 and std = 1 in equation of normal distribution , you will get equation for Standard Normal variate
+
+
+
+
+How to transform Normal distribution to standard normal variate
+<---------------------------------------------------------------->
+
+formula:            z =  (value - mean)/std
+
+- refer to jupyter notebook
+
+
+
+
+proving benefit of standardizing
+<-------------------------------->
+
+ques : 
+given : Height of adult male population follows normal distribution with a mean : 68 inches and std : 3 inches.
+find : what is the probability of randomly selected male to be taller than 72 inches
+
+
+sol :
+refer to written notebook
+
+- this type of question you can easily solve with standardizing the normal distribution 
+
+
+
+
+Z TABLE
+<--------->
+
+- table that contains probability density for each x value of standard normal variate 
+- by probablity density means area/probability upto that x value.
+
+
+
+EMPERICAL RULE
+---------------
+
+- also called 68 - 95  99.7 rule
+- which state approaximately 
+- within one standard deviation approax 68.27 percent points fall
+- wihtin two standard deviation approax 95.45 percent points fall
+- wihtin 3 standard deviation approax 99.73 percent points fall
+
+- prove already in register or refer to pdf
+
+
+============================================================================================================================================================
+
+
+PROPERTIES OF Normal Distribution
+---------------------------------
+
+- symmetrical 
+- mean , median , mode all are equal for proper normal distribution
+- Emperical rule
+- area under the curve is 1
+
+
+USES OF NORMAL DISTRIBUTION 
+<--------------------------->
+
+1. Outlier detection and remove
+
+- if the data follows normal distribution , we can  outliers consider data that fall outside 3 std outliers. 
+- and use that to remove outliers
+
+- refer to jupyer notebook of standard normal variate
+
+2. assumptions of Algorithms 
+
+- many of the algorithms work on assumption that data feeding to them is normal , or also noticed that algorithms works better when feeded normal data
+
+3. Hypothesis Testing 
+
+4. Central Limit theorm 

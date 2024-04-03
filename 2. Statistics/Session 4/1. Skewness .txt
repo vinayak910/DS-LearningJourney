@@ -1,0 +1,44 @@
+Skewness
+<-------->
+
+- it indicates that data is not symmetrical 
+- measure of asymmetry of probability distribution 
+- in skewed data , there will be one tail longer than other 
+
+In any symmetrical distribution, regardless of whether it follows a normal distribution or some other type of distribution, the mean, median, and mode will be equal.
+
+
+Different Skewness values
+<------------------------->
+positive : longer tail on right side /right skewed
+negative : longer tail on left side  /left skewed
+zero : perfect symmetrical distribution 
+
+
+Tail Event
+<---------->
+
+- outlier
+- IN finance ,probabilty of this event happening is very low , but when it occurs , it comes with great profit
+
+
+
+
+Central Tendency in different cases of skewness
+<----------------------------------------------->
+
+- refer to pdf for better understanding 
+
+1. Right skewed : Mean>Median>Mode
+2. Left skewed : Mean<Median<Mode
+3. Symmetical : Mean = median = mode
+
+
+NOTE : 
+- If the data looks like normal and have a skew between -0.5 to 0.5 , then for practical purpose we can assume normal distribution
+
+- if beween 1 and -1 . then moderate normal
+
+- if higher then -1 or 1 , then not
+
+

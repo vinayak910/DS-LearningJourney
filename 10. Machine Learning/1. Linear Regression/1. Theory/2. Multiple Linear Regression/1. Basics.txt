@@ -1,0 +1,39 @@
+Gradient Descent
+-----------------
+
+- it is optimization technique , in which if we give a differentiable function . It will give the minimum of the function.
+- refer to register to see the intuition and mathematical formulation
+
+
+Things that affect gradient descent
+-----------------------------------
+
+
+1. Effect of learning rate 
+-----------------------------
+
+- Choosing an optimal learning rate for gradient descent is crucial 
+
+- As small learning rate would take too much time to converge. Also need more epochs
+- big learning rate would lead to huge jumps in zig zag direction. and if learning rate is too much large , you will never reach the minimum
+
+
+
+2. Loss function
+-------------------
+
+- Our loss function is mse which is convex function , as it has a 1 minima . 
+
+- But in non convex function there would be more than 1 minima.
+- so there is a chance that the intialization of parameters would be close to local minima , and you will converge at local minima . But not the Global minima .
+- there is also another problem which is saddle point/platue . in non convex there may be plain surface therefore rate of slope change is very small. Hence small steps .
+- therefore gradient descent is very sensitive to loss function.
+
+
+3. Effect of data
+-------------------
+
+- if our features at same scale. Then the convergence would be faster . 
+- if not , then the convergence will be slow. due to the difference of scale.
+- that's why it is important to scale in Linear regression
+

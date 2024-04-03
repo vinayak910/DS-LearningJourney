@@ -1,0 +1,50 @@
+tell if thiis statement is True or False? 
+
+***Mlops is a set of principle to deploy machine learning models into the production***
+
+ans : this statement is false
+
+Mlops is much more thant that
+
+
+
+definition
+------------
+- MLOps refers to practice and discipline with machine learning that aims to unify and streamline the machine learning system development (dev) and machine learning system operations(Ops).
+- it involves collaboration between data scientists , ML engineers , and It professionals to automate and optimize the end to end life cycle of machine learning applications
+
+
+
+
+
+
+Mlops components
+-----------------
+
+1. Data management : Making a dataware house from database using etl
+
+2. Version control : multiple people will be working on making a model , so changes reflect to each other . Need of version control
+
+3. Automation (Pipeline) : many steps in making ml model -> preprocessing , feature engineering , eval . These whole series of steps can be automated using pipelines
+
+4. Experiment Tracking : carefully track different experiments on model building 
+
+5. CI/CD : the experiment whose results were promising CI is done . ie integrating with website in such a way model and website should both be working fine. 
+Once it is integrated and test , then you will deploy on production (CD)
+
+6. Monitoring/Retraining : check/monitor if model performance is degraded due to different drifts and if does we will trigger the experiment tracking step and again this cicd process will be done.
+
+7. Provisioning : different requirements , infrastructure comes under provisioning
+
+8. Governance : carefully quality checks , kya andar jara hai aur kya bahar jara hai. You dont fall into legal problems
+
+
+
+Key aspect
+-----------
+
+being a data scientist just by model building it doesnt mean it will help 1cr users . You need a ml system to help at such large scale with proper steps.
+thats where mlops comes.
+
+
+

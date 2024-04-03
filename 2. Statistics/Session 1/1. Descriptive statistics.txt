@@ -1,0 +1,234 @@
+- Before applying descriptive statistics, one must know the type of data
+- if we know data type , it can help in decision making ie which graph to apply , which method to apply whether mean , median or mode
+
+Types of Data
+<------------->
+
+refer to pdf
+
+============================================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Measures of Central Tendancy
+<------------------------------->
+
+- is a statistical measure which is used to find the centrality/centre of data
+- includes mean , median , mode etc.
+
+----------------------------------------------------------------------------------------------------
+
+a) MEAN
+  <------>
+- sum of all values divided by number of values
+
+-> problem with mean : if there are outliers then mean doesnt give the right representation of data
+ex - package of student (prone to outliers)
+
+
+b) MEDIAN
+<---------->
+- Middle value of dataaset when dataset is arrange in order
+-> benefit: Not prone to outliers
+
+
+c) MODE
+<-------> 
+- most frequent values
+-> benefit : when dealing with categorical column or discrete
+
+
+d) Weighted mean 
+<---------------->
+
+sum of product of value and its weight divided by sum of its weight.
+
+
+d) TRIMMED MEAN 
+<--------------->
+
+- in this you decide a trimming percentage to remove outliers from top and below
+- after removing then take the mean of rest of values is called trimmed mean
+
+
+===========================================================================================================================================================
+
+NOTE
+<---->
+
+- Measures of central tendency isnt alone enough to know everything about the data 
+
+ex : 
+1st column contains -5 , 0 , 5 . its mean will be 0
+2n column contains -10 , 0 , 10 . its mean also will be 0
+
+- in both cases the mean will be same.
+- but both distributions are different. so to know difference between these 2 columns. more things to study are required to know the difference between those columns 
+
+and one of we need to study is measures of dispersion.
+
+
+============================================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. MEASURES OF DISPERSION
+<------------------------->
+- tells about the spread or variablity of data.
+- provides information about how data is distributed around the central tendency( mean , median , mode)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+a) RANGE
+<-------->
+
+- difference between max value and lowest value is range
+ex : even though the mean of above example of both data are same ie 0 and 0 ..
+- but if we find range of these 2 different distrubutions
+- 1st data range will be 10 
+- 2nd data range will be 20 .
+
+Hence even the mean is same , we were able to differentiate between the 2 distributions using range
+
+-> Problem : Heavily affected by outliers. Hence not reliable.
+
+
+b) VARIANCE 
+<----------->
+
+- avg of difference between each data point and the mean
+- it tells about avg distant each point from mean is.
+- tell how far averagly each point is from mean of the data.
+
+funda - variance also tell about the spread but not exactly spread but proportinal to spread.
+
+disadvantage : prone to outliers. because the distance of outlier from mean will be high and we are sqauring it. hence it will be much more.
+advantage : used in inference
+
+
+Some questions
+---------------
+
+Ques1-> why squaring is done?
+
+because if not then if there are negative values they will substract each other , resulting in unintentional reduce of spread.
+
+ques2 -> Then why not use Mod ? (Mean absolute deviation) ? 
+
+because it would not help in inference .(later)
+
+
+
+c) STANDARD DEVIATION
+<--------------------->
+- square root of variance
+- Why required?
+- unit same as of data but variance unit is of square. 
+
+
+d) COFFICIENT OF VARIATION
+<--------------------------->
+
+- standard deviation divided by mean expressed as percentage(*100)
+- Need ?
+
+- if there are two different columns lets say salary and experience. 
+- mean of salary cannot be compared with mean of experience . ans same goes for std . As both are completely different quantity
+
+- but if i want to know which column data is more close to their mean 
+- then this coefficient of variation is the way which gives you normalized score in percentage about which column data is more close to their means.
+
+===========================================================================================================================================================
+
+
+
+
+
+
+GRAPHS
+<------->
+
+
+
+
+GRAPH FOR UNIVARIATE ANALYSIS (excel)
+<----------------------------->
+
+a) categorical : 
+
+1. Frequency table -> bar chart(use cat and frequency table)
+2. Relative frequency -> pie chart(use cat , and relative frequency)
+3. Cumulative frequency -> line chart (use all three col -> cat , frequency , cf)
+
+b) Numerical : 
+
+1. frequency table/buckets -> Histogram (just use numerical column and then customize bucket size)
+
+
+
+
+
+GRAPHS FOR BIVARIATE ANALYSIS (excel)
+<------------------------------------->
+
+a) Categorical - categorical:
+
+1. Crosstab/contengency table
+
+- ex: Survived and Pclass and then count
+- in excel you use pivot table and then make a stacked bar chart
+
+
+
+b) Numerical-numerical
+
+1. Scatterplot
+
+
+
+c) Numerical-categorical 
+
+1. barchart
+- x axis:  categories-> male , female
+- y axis: Numerical col and perform aggregate operation , let say mean of age.
+
+
+2. contigency table
+
+- convert age into buckets lets say 0-10 , 11-20 , 21 - 30
+- and other column -> gender -> male , female
+
+
+============================================================================================================================================================
+
+
+cross table vs pivot table
+<-------------------------->
+
+-> cross table tells the count
+-> pivot table can be used to perform aggregate operations ex age and gender where age divided into different buckets then find mean

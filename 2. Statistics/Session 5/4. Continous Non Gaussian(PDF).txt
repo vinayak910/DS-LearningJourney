@@ -1,0 +1,145 @@
+Famous Non Gaussian Continous Distrbituons
+<------------------------------------------->
+
+
+
+============================================================================================================================================================
+1. Uniform Distribution
+<----------------------->
+
+- probability distribution where all outcomes are equally likely within a given range
+- means probabilty of selected variable is equally likely within a range
+- ex rolling a dice , range of outcome is [ 1 , 6] and probability of all outcomes are 1/6.
+
+
+Types of Uniform Distribution
+<----------------------------->
+
+1. discrete : where random variable is discrete . Example dice
+2. continous : where random variable is continous
+
+
+
+Paramters of Uniform Distribution 
+<--------------------------------->
+X ~ u(a , b ) 
+
+- a and b are the parameters
+- a is the lower value and b is the higher value (basically range) 
+example : rolling a dice 
+a = 1 which is the lower value and b = 6 upper value . therfore range will be [1 to 6]
+
+
+
+Example of continous uniform distribution
+<----------------------------------------->
+
+a. height of person randomly selected from a group person where heights range from 5'6 ft to 6'0 woulfd follow uniform distribution (range is their from 5'6 to 6'0)
+
+
+
+Mathematical study of uniform distribution
+<------------------------------------------>
+
+1. PDF => y = f(x) where f(x) = { 1/(b - a) for a<=x<=b (a to b range) 
+			     { 0 if x doesnt belong in this range
+- refer to pdf of folder
+
+
+NOTE - The skeweness of continous uniform distribution is 0
+
+
+
+
+Applications in Machine Learning
+<-------------------------------->
+
+1. random intialization 
+
+2. Sampling  : WHEN data split is into training and test , to prevent the occurence of one class in different set should not be way different (Imbalanced). so the sampling internal uses uniform distribution for splitting the data
+
+3. Data Augmentation : when data is not sufficient for the algo , so you create new data from the old data 
+
+4. Hyper parameter tuning
+
+============================================================================================================================================================
+
+
+
+
+
+2. LOG NORMAL DISTRIBUTION
+<-------------------------->
+
+- these type of distributions ar very common in internet applications
+- it is a distribution which is heavy right tailed
+- NOTE - NOt all right skewed distributions are log normal 
+- only those are log normal when performing log on right skewed data , if it will give normal distribution then it is log normal distribution else it is not.
+
+- not symmetrical as it is skewed
+
+
+Parameters of Log Normal Distribution
+<------------------------------------->
+
+1. mean
+2. std
+
+
+Examples of Log normal Distribution 
+<----------------------------------->
+
+- the comments posted on internet applications such as insta , fb , reddit. Means majority of the people writes short comments , but there are some who writes long long comments
+- income distribution 
+
+
+
+
+
+
+
+============================================================================================================================================================
+ 
+
+3. Pareto Distribution 
+<---------------------->
+
+- These are one of the famous distribution which can be seen in financial and economical data 
+- Pareto distribution is a special case of power law 
+
+
+
+
+
+Power law
+-----------
+- relation between 2 variable , where one variable is proportional to the power of other variable 
+y = kx^a , k is constant
+- this law follows a rule known as 80: 20 rule
+- if something follows a power law , 20% thing will control the 80% area , and rest of 80% thing will have control over 20 % only
+- so pareto distribution is the example of power law. But 20:80 isnt necessary in pareto distribution
+
+
+
+Parameters of Pareto Distribution
+<--------------------------------->
+
+- alpha 
+if alpha value is higher then height will be more , and the tail would be thinner
+if alpha value is low , then height will be low , but tail would be fatter
+
+if alpha value is = 1.6 then we can say it is following 20 - 80 rule
+
+
+
+How to know if the given distribution is pareto distribution?
+--------------------------------------------------------------
+1. log log plot
+
+- put x values in equation of pareto  , you will get probability density of pareto distribution
+- we know that we have a pareto distribution 
+- but to prove , you can find log (x) and log(y) ie log of values and probability densities then plot it
+- if it is a straight line then you can say it is a pareto distribution
+- refer to jupyter notebook
+
+2. qq plot 

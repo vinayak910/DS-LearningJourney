@@ -1,0 +1,262 @@
+Steps For Rejection approach
+-----------------------------
+
+- contains 8 steps( Consdering the youtube example)
+
+============================================================================================================================================================
+
+
+
+
+
+
+
+step 1 : formulate null and Alternate hypothesis
+------------------------------------------------
+
+null hypothesis ->  H0: u = 6 min    (null hypothesis says avg view duration is 6 min which is same as before even after adopting new technique )
+
+Alternative Hypothesis ->  H1 : u >6min  (alternative says avg view duration is more than 6 min after adopting new technique)
+
+
+
+
+Step 2 : Select a significance level (Generally 0.05/5% or 0.01/1% is used)
+-----------------------------------------------------------------------------
+
+- significance level : It is the probability of rejecting null hypothesis when it is actually true
+
+- meaning significant level ka ye hai agr aap 100 bar test perform kr rhe ho , although null hypothesis 5 baar ya 1 bar true tha , but still apne use 5 baar , ya 1 bar reject kr dia
+
+
+
+
+Step 3 : Check assumptions (example distribution)
+--------------------------------------------------
+
+- check data distribution , parameters(population std hai ya nhi), type of data  , working with single column or multiple , based on these assumptions we decide which test to perform in next step
+
+
+
+
+Step 4: Decide which test is appropriate(Z-test, T-test, Chi-square test, ANOVA)
+---------------------------------------------------------------------------
+
+
+
+Step 5 : State the relevant test statistic
+--------------------------------------------
+
+- Z - test ka statistic is Z - score , T-test ka statistic is T-score , based on these values we decide whether to reject or not reject null hypothesis
+
+
+
+
+Step 6 :  Conduct the test
+----------------------------
+
+
+
+
+Step 7 :  Reject or not reject the Null Hypothesis
+----------------------------------------------------
+
+- Z - test ka statistic is Z - score , T-test ka statistic is T-score , based on these values we decide whether to reject or not reject null hypothesis
+
+
+
+Step 8 : Interpret the results
+--------------------------------
+
+
+
+
+Refer to register to see Hypothesis testing for 2 examples of Z test
+
+
+
+
+
+
+
+
+
+============================================================================================================================================================
+
+
+
+Rejection region 
+------------------
+
+- used in hypothesis testing to determine whether the null hypothesis should be rejected or not
+
+
+What happen if we increase alpha value too much?
+
+- if we increase alpha value the rejection region will increase . and if the rejection region increase excessively , then it will result in type error. 
+ie rejecting null hypothesis when it was actually true.
+
+- Hence there is standardized value for alpha generally 0.05 or 0.01 . Or it is decided by domain expert 
+
+
+
+
+
+
+Problem With rejection region
+-------------------------------
+
+- 1st problem :  lets say z value calculated is 1.97 , and the critical point is 1.96 , now you see after the critical point there is rejection region . abd we got the z value = 1.97 . Since it comes under rejection region you reject the null hypothesis . But as you see there is just difference of 0.01 but it comes under the rejection region. so you reject the H0. This is not good
+
+- 2nd Problem : critical value = 1.96 , lets one time z value was 2.00 you reject the H0. And lets say one time z value was 30 . You still reject the H0.
+for rejection region they both are same .
+In short , rejection approach isn't able to tell the strength of evidence. How strong our evidence is to reject the null hypothesis.
+
+
+
+Hence introduction of new approach ie P - value approach , where we calculate additional thing that is p-value which is able to tell the strength of evidence against null hypothesis.
+
+
+
+
+============================================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+Type 1 error VS type 2 error
+-------------------------------
+
+In hypothesis , there can be two results
+
+1. Reject null hypothesis
+2. Not rejecting null hypothesis
+
+
+But in these results there is chance of 2 errors:
+
+1. Rejecting null hypothesis , when it was actually true   -> Type 1 Error
+2. Not rejecting null hypothesis , when it was actually false -> Type 2 Error
+
+
+
+Type 1 Error (False Positive)
+--------------------------------
+- error occurs when sample results lead to the rejection of Null Hypothesis when it was actually true.
+
+Ex : 
+H0 : No crime 
+H1 : Crime 
+
+and the hypothesis result was we had strong evidence against null hypothesis . There H1 was the result. But in reality he did not do any crime . 
+Hence even though , Null hypothesis was right , we still reject it . this is called type 1 error or False Positive
+
+So choosing appropriate significance level / alpha is crucial . As if alpha value is increased too much , then there are high chances of False positives.
+mtlb agar alpha value faltu me zada le lia , to chances bad jayenge ki usne crime kia hai , even though usne nhi kia.
+
+- Probability of commited Type 1 error is denoted by alpha
+
+
+
+
+
+
+Type 2 Error ( False negative)
+--------------------------------
+
+- error occures when sample results lead to not rejection null hypothesis , when null hypothesis was false . 
+ex  : 
+H0 : No crime 
+H1 : Crime 
+
+hypothesis result was we didnt have strong evidence against nulll hypothesis . therefore we cannot reject the null hypothesis . But in reailty the H0 event was not true . Even though crime kia hai but prove nhi kr paye . 
+
+- Probability of commited Type 2 error is denoted by Beta
+
+If we decrease alpha too much . THe probability of rejecting the null hypothesis will decrease , which can create high chances of False negatives error.
+
+
+
+refer to pdf file to see tradeoff between Type 1 error and type 2 error
+
+
+
+
+
+
+
+============================================================================================================================================================
+
+
+
+One sided Vs Two sided 
+-----------------------
+
+
+1. One sided test
+
+- WHen researcher wants to know effect in specific direction (> or <)
+
+2. Two sided test : 
+
+- When researcheser wants to know effec in both directions 
+
+
+
+Advantages of Two sided test
+----------------------------
+
+1. Detects effect in both direction 
+2. reduces the risk of Type 1 error
+
+
+
+Disadvantages of Two sided test
+--------------------------------
+
+1. Less powerful , As alpha is divided at both sides. SO you need more proof to reject the null hypothesis
+2. Not appropriate for directional hypothesis 
+
+
+
+
+Advantages of 1 sided test : 
+-----------------------------
+
+1. More powerful : as alpha isnt divided , therefore it has more power to find the problem and reject the null hypothesis
+2. Directional Hypothesis 
+
+
+Disadvantage of 1 sided test:
+------------------------------
+
+1. Missed effect as we aer focusing on one direction , what if new technique reduces the avg view duration , but hypothesis testing will result in nomal 
+2. Increased Type 1 error
+
+
+
+
+
+
+============================================================================================================================================================
+
+
+
+
+
+
+
+Hyothesis Testing ML applications
+-----------------------------------
+
+1. Model comparison : used to check which model will perform best on population data 
+2. Feature Selection
+3. Hyper parameter tuning : comparing model performance with different hyper parameters 
+4. Assessing Model assumptions : some ML models follow assumptions , now using hypothesis testing one can assess if the assumptions are met or not 
+

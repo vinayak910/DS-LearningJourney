@@ -1,0 +1,35 @@
+How to find if a given distribution is normal or not?
+
+1. Visual inspection : Histogram or density plot 
+2. QQ Plot : Quantile Quantile Plot
+3. Statistical Tests
+
+
+
+
+
+QQ PLots
+<-------->
+
+- used to compare the similarity of 2 sets of distrbutions.
+- particular useful for determining whether  set of data follows normal distribution
+
+[X , Y]
+
+- X and Y are the 2 distributions , where Y is a theoritical distribution(We already know the type of distribution. IN our case : Y is the normal distribution), and X is our data 
+
+- if X is Comparable to Y then it is a normal distribution 
+
+
+
+Steps
+
+1. Pick a theoritical data Ex : Normal Distribution
+2. Sort our data and find its quantiles 1st percentile , 2nd percentile ..............100th percentile
+3. Do the same thing for normal distribution
+4. Now you have the quantiles for both  , and plot the scatter plot of X distribution quantiles and Y distribution Quantiles .
+5. If the points form a straight line or somewhat similar to straight line  , then you can say X is normally distribution or sort of.
+
+refer to jupyter for practical 
+
+

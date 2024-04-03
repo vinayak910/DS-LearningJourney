@@ -1,0 +1,27 @@
+Problem with Stochastic GD
+--------------------------
+
+- random , may not reach the best solution
+- not steady solution 
+
+
+
+
+Mini Batch
+------------
+
+- Mini batch is between Batch and Stochastic Gradient Descent
+- concept of batch ie group of rows
+- updates are done based on group of rows in each epoch
+- lets say we have 300 rows , and we decide a batch of 30 rows. Therefore in each epoch there will be 10 updates (30* 10 = 300)
+- Mini batch is the generalized GD , due to batch size parameter
+
+- if batch size is n , then it will be Batch GD
+- if batch size is 1 , then it will be stochastic GD. 
+
+
+Advantage
+----------
+
+- less random
+- mostly used in deep learning

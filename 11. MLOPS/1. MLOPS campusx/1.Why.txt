@@ -1,0 +1,49 @@
+- At this time , machine learning is used everywhere. Financial to health sector . Every big companies uses machine learning
+- But there is one big problem
+- Out of 100 machine learning models , only 30 of them are actually converted into products
+
+- IN two stages machine learning software are builts
+1. Model 
+2. built software around model 
+
+
+Why their is such high failure rate ?
+
+- we will understand through diff software system and how it is different from machine learning
+- software system become very matured now , so the engineering for software is much more easy than of machine learning
+
+
+
+Software System
+---------------
+
+Lets take a example of website that shows top 50 movies in their platform based on formula .in this there is no Machine learning .
+as it is using some formula for this.hence the complexity is way not too much 
+- error deubugging is easy as there is database and code base entities
+
+But after sometime you see customer leaving this platform.
+
+- so you though why dont we use personalized recommender system for movies. (Collaborative) 
+- now to make this we must collect more data of user.which will raise privacy concerns. There will also need of two more teams . data engineer which will perform etl to make a data ware house for data analytics and data scientist to make a model. which will talk to backend and then result goes to frontend.
+
+- so you see the complexity has become much more .
+
+
+breakdown in few points
+-------------------------
+
+1. Complexity : complexity is much more as their is more data flows from different points
+
+2. Error- Debugging : 
+- in software there was only code base in which error debugging is easy . but after introducing ml , there are 3 entities. so debugging will be much more harder to find. where does the error come from . if that is more from model , retrain it . if from etl than make data warehouse again etc
+
+3. Handling new data: 
+- in software new data was added and it doesnt affect the output as it is just using formula . But if thier is new data , then we will add that data to data base , new data house will be formed . then again analysis and model will be retrained. 
+
+4. Probabilistic->
+-  governence issues -> as ml needs data ,we are collecting more data from users. so we must be careful about that
+
+5. Drift 
+- concept drift ie This means that the model's assumptions about the data become invalid, leading to degraded performance. Concept drift can be caused by various factors such as changes in user behavior, changes in the environment, or changes in the underlying data-generating process.
+
+- data drift ie Data drift refers to changes in the distribution of input features over time. This means that the statistical properties of the input data (e.g., mean, variance, distribution) change, which can lead to a decrease in the model's predictive performance.

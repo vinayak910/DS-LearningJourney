@@ -1,0 +1,268 @@
+stored procedures
+<----------------->
+
+- similar to user-defined functions but more powerful
+- block of sql statements and procedural logic(execute line by line) stored in database
+- and can be executed by user or application
+
+====================================================================
+
+CREATING STORED PROCEDURE
+<------------------------>
+
+- right click on stored procedure
+- you will get this:
+
+CREATE PROCEDURE procedure_name()
+BEGIN
+
+// multiple sql statements
+
+END
+
+-----------------------------------------------------
+
+1. CREATING HELLO WORLD STORED PROCEDURE
+
+CREATE PROCEDURE hello_world ()
+
+BEGIN
+	SELECT "Hello World";
+
+END
+
+// calling stored procedure
+
+CALL hello_world();
+
+------------------------------------------------------------
+
+2. create a procedure that inserts email and name of person only if email doesnt already exists in the table. if email exists then we will not insert
+<----------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+CREATE PROCEDURE add_user(IN input_name VARCHAR(255) , IN input_email VARCHAR(255) , OUT message VARCHAR(255))
+
+BEGIN
+
+-- check if email already exists
+
+  DECLARE user_count INTEGER;
+
+  SELECT COUNT(*) INTO user_count FROM users WHERE email = input_email;
+
+  IF user_count = 0 THEN 
+	INSERT INTO users(name , email) VALUES (input_name , input_email);
+	SET message = "User Inserted";
+
+  ELSE
+	SET message = 'User already exists';
+  END IF;
+ 
+END
+
+// creating variable
+
+SET @message = '';
+
+// CALLING
+CALL add_user('Ankit' , 'ankit@gmail.com' , message);
+
+// to see the output message
+
+SELECT @message;
+
+
+-------------------------------------------------------------------------------------------------------------
+
+3. create a procedure for showing orders of different users
+
+CREATE PROCEDURE user_orders (IN input_email VARCHAR(255))
+BEGIN
+
+	DECLARE ID INTEGER;
+	SELECT user_id INTO ID FROM users WHERE email = input_email;
+
+	SELECT * FROM orders WHERE user_id = ID;
+
+END
+
+
+CALL user_orders ('vartika@gmail.com')
+
+-------------------------------------------------------------------------------------
+
+4. PLACING A ORDER
+
+CREATE PROCEDURE place_order (IN input_user_id INTEGER , IN input_r_id INTEGER , IN input_f_ids VARCHAR(255), OUT total_amount INTEGER)
+
+BEGIN 
+
+ -- insert into orders table
+ DECLARE new_order_id INTEGER;
+ DECLARE f_id1 INTEGER ;
+ DECLARE f_id2 INTEGER;
+ 
+ SET f_id1 = SUBSTRING_INDEX(input_f_ids , ',' 1);
+ SET f_id2 = SUBSTRING_INDEX(input_f_ids , ',' -1);
+
+ SELECT SUM(price) INTO total_amount FROM menu WHERE r_id = input_r_id AND f_id IN (f_id1 , f_id2);
+
+ SELECT MAX(order_id) INTO new_order_id FROM orders;
+
+ INSERT INTO orders(order_id  , user_id , r_id , amount , date) VALUES (new_order_id , input_user_id , input_r_id , total_amount , DATE(NOW)));
+
+-- insert into order details
+
+- INSERT INTO order_details (order_id , f_id) VALUES
+(new_order_id , f_id1) , (new_order_id , f_id2)
+
+END
+
+SET @total = 0;
+CALL place_order(3 , 3 , '6 , 7' , @total);
+SELECT @total;
+
+==========================================================================================
+
+TRANSACTIONS
+<------------>
+
+- sequence of operations that are performed as a single unit of work in dbms.
+ 
+- may contain one or more database operations such as inserts , update , or deletes , which are treated as single atomic operation.
+
+
+-----------------------------------------------------------
+
+- concept is All or none
+- since it is sequence of operations even if the one statements fails , the entire process will be rolled back . 
+
+
+ex : Bannk uses concept of transactions , they do not perform single queries ie one query at a time.
+instead they use transactions
+
+- lets say A pays 20 to B.
+- if think of normal queries then we have to perform update on a where 20 will substracted , then perform again update statement where you update the balance of b
+
+- what if one update executed and one not .
+- so to prevent this transactions are used
+- so if one update query is not executed.
+- the entire process will be roll back
+
+-------------------------------------------------------------------------------------
+
+Keywords
+<-------->
+
+three main commands to manage transactions
+- commit : to permanently saved the changes. once commit is done you cant rollback
+
+- rollback : undo the changes made by the transaction to state before transaction
+
+- savepoint : mark a specific point within transaction where a rollback can be performed. allows for partial rollback.
+
+
+--------------------------------------------------------------------------------
+
+autocommit
+<--------->
+
+- dbms treats all the queries such as insert ,update, delete as transactions
+
+- but these transactions doesnt require commit keyword to perform permanently changes.
+
+- instead it auto commits ie without specifically using commit keyword to perform changes permanently.
+
+
+--------------------------------------------------------------------------------------
+
+NOTES
+<----->
+
+- one can off the auto commit
+- cmd: SET autocommit = 0;
+
+- now to do permanent changes youu must use commit keyword
+ex : 
+
+INSERT INTO person (name) VALUES ('rishabh');
+COMMIT
+
+---------------------------------------------------------------------------------------------
+
+QUERIES FOR TRANSACTION
+<----------------------->
+
+1)
+
+START TRANSACTION;
+
+UPDATE person 
+SET balance = 40000
+WHERE id  = 1;
+
+UPDATE person
+SET balance = 15000 WHERE id = 4;
+
+COMMIT;
+
+
+2) using rollback
+
+- now if there is some error ie can be logical  , you can rollback
+
+START TRANSACTION;
+
+UPDATE person 
+SET balance = 40000
+WHERE id  = 1;
+
+UPDATE person
+SET balance = 15000 WHERE id = 4;
+
+ROLLBACK;
+
+3) rollback to savepoint
+
+START TRANSACTION;
+
+SAVEPOINT A;
+UPDATE person 
+SET balance = 40000 WHERE id  = 1;
+
+SAVEPOINT B;
+UPDATE person
+SET balance = 15000 WHERE id = 4;
+
+ROLLBACK TO B;
+
+4) rollback and commit together
+- now if we do rollbback alone , then it will take it to start state
+- but if you want to rollback to at point where some are already commit , and you want to do rollback upto that commit
+
+
+START TRANSACTION;
+
+UPDATE person 
+SET balance = 40000 WHERE id  = 1;
+COMMIT;
+
+UPDATE person
+SET balance = 15000 WHERE id = 4;
+
+ROLLBACK;
+
+--------------------------------------------------------------------------------------
+
+ACID properties of transaction
+<------------------------------>
+
+- Atomicity: transaction is treated as single
+- Consistency
+- isolation
+- Durability
+
+=====================================================================================
+
+

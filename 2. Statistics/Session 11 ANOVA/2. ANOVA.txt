@@ -32,7 +32,78 @@ Steps for One way Anova
 refer to register for test and geometric intution
 
 
+Assumptions
+------------
+
+1. Independence: The observations within and between groups should be independent of each other. This means that the outcome of one observation should not influence the outcome of another. Independence is typically achieved through random sampling or random assignment of subjects to groups.
+
+2. Normality: The data within each group should be approximately normally distributed. While one-way ANOVA is considered to be robust to moderate violations of normality, severe deviations may affect the accuracy of the test results. If normality is in doubt, nonparametric alternatives like the Shapiro-wilk test can be considered.
+
+3. Homogeneity of variances: The variances of the populations from which the samples are drawn should be equal, or at least approximately so. This assumption is known as homoscedasticity. If the variances are substantially different, the accuracy of the test results may be compromised. Levene's test or Bartlett's test can be used to assess the homogeneity of variances. If this assumption is violated, alternative tests such as Welch's ANOVA can be used
+
+
+refer to jupyter notebook to see practical
 
 
 
+============================================================================================================================================================
+
+Post hoc test
+------------
+- if null hypothesis is rejected ie means atleast one of the mean is significantly different.
+- to determine hich specific groups or pairs of groups have significantly different means.
+- post hoc test is performed
+
+
+
+Post hoc types
+----------------
+
+
+1. Bonferroni correction
+
+- in this you perform independent t test on each combination of two.
+
+example : A , B , C
+
+T test on different combinations
+a) A , B -> p value -0.005
+b) B , C -> p value - 0.004
+c) A , C -> P value - 0.4
+
+you will find the culprit , whose p value is very small. you can see in less p values B is common . Hence b is the culprit. ie means b have significantly different mean.
+
+But performing this , the type 1 error rate will increase. 
+- therefore you will divide the p values by no of categories. in our case which is 3. That's why it is called Bonferroni correction.
+
+
+
+
+2. Tukey's HSD (Honestly Significant Difference) test
+
+it is also same. You just need to use library. But is more powerful and provide more information
+
+refer to jupyter notebook
+
+
+
+
+
+
+Why t - test is not used for 3 and more categories?
+----------------------------------------------------
+
+1. Increased type 1 error
+2. Difficulty in interpreting results - as you need to applied t - test on all combinations
+3. Ineffciency.
+
+
+
+Applications in machine learning
+--------------------------------
+
+1. Hyperparameter tuning
+2. Feature selection
+3. Algorithm comparison
+4. Model stability assessment.
 

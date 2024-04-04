@@ -29,13 +29,7 @@ ex: Avg age of male , female , other gender. IN these there are three groups.
 Steps for One way Anova
 ------------------------
 
-1. Define null and alternative hypothesis
-----------------------------------------------
-
-- H0 : means of all groups are equal 
-- H1 : atleast one group mean is significantly different from other.
-
-2. Calculate 
+refer to register for test and geometric intution
 
 
 

@@ -1,0 +1,40 @@
+Agenda
+--------
+1. To know if the relationship between X and y is linear or not. We will perform F-test for overall significance
+
+2. Now if the relationship is linear , then to know the strength of relationship we will calculate r2 and adjusted r2 score(goodness of fit)
+
+3. if X consists of multiple columns , then we will study individual relationship with target column
+
+
+
+
+============================================================================================================================================================
+
+
+
+
+F-test for overall significance
+--------------------------------
+
+- Test to know whether the relation between X and y is linear or not
+- variant of Anova 
+
+
+We have a equation : y = B0 + B1*x
+
+
+Steps
+-------
+
+1. State the Null and Alternate Hypothesis
+--------------------------------------------
+
+Null hypothesis : all regression coef are 0 , except intercept ie means no relation between x and y
+Alternate Hypothesis : Atleast one coef is not equal to zero . 
+
+H0 : B1 = 0  
+
+H1 : B1 != 0  (ie means there is a relation between x and y (linear as their is no square)
+
+

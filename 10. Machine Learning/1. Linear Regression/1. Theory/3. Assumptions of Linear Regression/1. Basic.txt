@@ -1,0 +1,201 @@
+In regression analysis we perform different test for linear regression such as F-test for check for linearity , T - test for studying relation between independent and dependent variable.
+
+
+We know that before performing hypothesis test , there are certain assumptions we need to verify before performing hypothesis test.
+
+
+Similary the F-test and T -test . for linear regression there are certain assumptions 
+
+
+
+
+Assumptions of Linear regression
+--------------------------------
+
+1. Linearity
+2. Normality of Residuals
+3. Homoscedasticity
+4. No Auto correlation
+5. No or little Multicollinearity
+
+If these assumptions fails , then the linear regression model is of no use.
+
+
+
+
+4 points on each assumptions
+----------------------------
+
+1. What is that assumption?
+2. What if the assumption fails?
+3. how to detect?
+4. Remedy
+
+
+
+============================================================================================================================================================
+
+
+Linearity
+===========
+
+1. What?
+---------
+
+It says there is a linear relationship between independent and dependent variable.
+
+
+2. what if linearity assumption failed?
+------------------------------------------
+
+a)Bias : even though the relation is not linear , still you are bias that the relationship is linear. Which may spoil the result.
+
+b) Reduced predictive accuracy : straight line in non linear data will give less accuracy
+
+c) Invalid hypothesis test and confidence intervals 
+
+
+3. How to check this linearity assumption?
+-------------------------------------------
+
+a) scatter plots
+
+b) residual plot : 
+
+- plot agains predicted and residuals(y - y_hat).
+- if the points are randomly scattered then we can say the data is linear
+- if points made some patter then the data is not linear.
+
+c) use Polynomial regression : 
+
+- if you feel there is non linearity then you perform polynomial and cal r2 score , and then compare with original linear regression's r2 score. If the result is significantly improved. then we can say data is not linear
+
+
+4. What to do when the assumption fails?
+-----------------------------------------
+
+1. Transformations : Apply transformations on dependent or indepenedent variables to make relationship more linear.
+
+2. Polynomial regression
+
+3. Piece wise regression : data is divided into segments or "pieces," and separate linear regression models are fitted to each segment
+
+4. use non parametric methods : as they do not rely on linearity assumptions such as generalized additive models  (GAMS) , splines.
+
+
+===========================================================================================================================================================
+
+
+
+Normality of residual
+======================
+
+the error term are assumed to follow normal distribution with a mean of zero and constant variance
+
+if failed?
+------------
+
+1. Inaccurate hypothesis tests: 
+
+- In regression analysis , we do f -test and t -test. IN both there is assumption that the residuals follow a normal distribution.
+
+- In f -test , if the residual is not normal , then its square will not be chi^2 , then while dividing the distribution will not be F - distribution. Hence it lead to inaccurate results.
+
+- in T test , we calculate standard error , and if the residual distribution is nor normal , it will give inaccurate standard error , hence t - stat and its p value is not reiable.
+
+
+2. Invalid confidence interval: 
+
+- wrong standard error lead to wrong confidence interva
+
+
+3. MOdel performance : reduced predictive accuracy
+ 
+
+
+How to check this assumption
+------------------------------
+
+1. Histogram or kde of residuals
+
+2. qq plot
+
+3. statistical test 
+- like omnibus , shapiro wilk , jarque bera.
+- in regression analysis , you will see these tests , which tell about the test of normality of residuals.
+
+4. plot residual plot (predicted vs residual):
+-  if no pattern then we can say residual follows normal distribution 
+
+
+refer to jupyter and pdf for omnibus test
+
+
+remedies if failed
+-------------------
+
+a) model selection techniques
+b) robust regression: which is less sesnitive to distributions of residuals
+c)Non parametric methods
+d) use Bootstraping : doesnt rely on normality of residuals
+
+
+
+Note : the normality of residuals assumptions is not always critical , when n (sample size) > 30 , due to central limit theorm.
+
+
+============================================================================================================================================================
+
+3. Homoscedasticity
+===================
+
+- it says the spread of residuals should be constant. 
+
+What happens if this assumption failed?
+----------------------------------------
+
+- standard error isnt reliable.
+
+-  and if standard error is not reliable, T statistic and p value will not be reliable. (T test failed)
+
+- also confidence interval will also not be reliable, which means the shadow of linear regression will not be reliable. That means we cannot estimate true interval for population regression line 
+
+
+
+What is this standard error ? 
+----------------------------
+
+- it is the standard deviation of sampling distribution of means.
+
+
+ex : from population we pick sets of 100 of sample size = 30 , therefore we got distribution of 100 means . now in that the standard deviation of sampling distribution mean is standard error .
+
+standard error = population std/root(n)
+
+
+
+
+Now what is this standard error(b1) and standard error(b2) in T -test?
+-----------------------------------------------------------------------
+
+- if we have whole data , then we were able to draw a population line
+
+- but we have 100 rows ie sample data , and we draw a regression line from that sample data. and we got b1 and b0.
+
+- now for a different sample data , regression line will be different ie means we got different b1 and b0.
+
+
+
+lets just focus on slope (b0)
+------------------------------
+
+- lets say draw samples of 100 points multiple times. 
+- therefore multiple regression lines will be formed,
+- therefore multiple b1(slope)
+- now the standard deviation of the distribution of b1 will be standard error (b1). 
+- which means the regression line will vary by that standard deviation but uniformly.
+
+
+- and if the homescedaticity assumption is failed ie means the spread of residuals is not constant. 
+- which means the variance from one side is more and from one side is small .
+- which restricts the regression line movement. There is no uniformity. Hence standard error will not be reliable.

@@ -1,0 +1,69 @@
+Multicollinearity
+------------------
+
+- When two or more independent variables in multiple regression model are highly correlated. (0.8 or 0.9)
+
+ex : cgpa iq lpa 
+
+- cgpa and iq are highly correlated
+
+
+interpretation of coef : 
+
+lpa = B0 + B1*cgpa + B2*iq
+
+
+lets talk about coef:
+-------------------
+
+B1- if you keep iq constant , By increasing cgpa by 1 unit , the factor at which lpa is increased is B1
+
+B2 - if you keep cgpa constant.and increase iq by 1 unit , by how much factor the lpa will increase is B2 
+
+
+==========================================================================================================================================================
+
+Problem with multicollinearity
+-------------------------------
+
+lpa = B0 + B1*cgpa + B2*iq
+
+now , if their is multicollinearity , the interpretation of coef can be wrong.
+
+ex : if you increase cgpa by 1 unit , then iq wont remain constant as they are highly correlated. and if iq wont remain constant , then you cant interpret the value of B2. ie B2 value isnt reliable
+
+
+conclusion : IN case of multicollinearity the coefs and intercept become unreliable.
+
+==========================================================================================================================================================
+
+
+When is multicollinearity bad?
+------------------------------
+
+before undestanding this you must know the concept of prediction and inference
+
+There are two works of machine learning : prediction and inference
+
+Prediction  :
+-------------  
+- focus on using a model to make forcasts for unseen data.
+
+
+Inference   :
+---------
+- understanding the relationship between variables in model . 
+- how much the input columns , output column affect each other.
+
+ In banking scenario , inference is more important. 
+
+ex : giving loan to customer. We will use not for predictions. Instead we will study the features based on which loan will given or not will be decided.
+
+
+
+conclusion :
+------------
+
+Not bad - if you are using model for prediction , then multicollinearity would not affect
+
+bad : when you are using for inference. ie studying the relation of input output columns. as inference totally depend on coef. And if there is multicollinearity , then the coef will not be reliable . Hence we cannot inference

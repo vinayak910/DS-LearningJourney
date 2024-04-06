@@ -214,7 +214,6 @@ if you can write x1 = a1*x2 + a0 + error , then you can say x1 and x2 strong cor
 
 2. Variance Inflation factor
 ------------------------------
-
 - if you have doubt , you can perform linear regression by making 1 input col ->output. and others as input. 
 and same goes for other columns.
 
@@ -226,21 +225,5 @@ and same goes for other columns.
 
 refer to jupyter notebook  
 
-
 3. Condition number
 --------------------
-
-- condition number is a measure tells the ill conditioning of matrix , ie how much our determinant is close to zero.
-
-- if condition number more than 30 -> multicollinearity and if less then no .
-
-refer to jupyter notebook
-
-
-How to remove multicollinearity
---------------------------------
-
-1. Collect more data
-2. remove one of the highly correlated variables. whose vif is more you can drop that column.
-3. combine correlated variables. ex sqft washrooms
-4. apply partial least squared regression(PLS) : apply pca and then linear regression.

@@ -1,0 +1,43 @@
+Feature selection
+------------------
+
+you use subset of features from given features for prediction
+
+
+
+Why need of feature selection?
+-------------------------------
+
+
+3 main reasons
+
+1. Curse of dimensionality(features)
+
+- With certain no of features, we get the optimum result.
+- if we add more features , it may hinder the performance
+
+Why it is not good to add more features?
+ans : 
+- Sparcity : as you increase dimensions. The distance between points will increase and and distance will not be reliable 
+- example : distance between 2 points in 100 dimension will be more than 2 points in 2 dimension
+
+
+2. Computation Complexity
+
+- more time and space complexity , due to high no of features.
+
+
+3. Interpretability 
+
+- If there are high number of features , it is difficult to inference. ie studying about the input and output columns
+- If making model for inference , then one would prefer the low dimension data .
+
+
+
+Types of feature selection
+---------------------------
+
+
+1. Filter based technique
+2. wrapper methods
+3. Embedded techniques

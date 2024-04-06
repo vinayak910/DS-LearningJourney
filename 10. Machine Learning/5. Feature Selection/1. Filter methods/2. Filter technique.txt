@@ -1,0 +1,126 @@
+Filter Based techniques
+------------------------
+
+- individually study each feature based on statistics and then decide we should keep it or not.
+
+
+
+5 major filter based technqiues
+--------------------------------
+
+1. Variance Threshold
+2. Correlation
+3. ANOVA
+4. Chi square
+5. Mutual info
+
+
+Before applying these technique , you must remove duplicate columns if exists.
+
+in jupyter we have 563 columns , we will bring down to 100 col even after losing 463 col we will get the result close to original
+
+
+
+
+============================================================================================================================================================
+
+
+1. Variance Threshold
+-----------------------
+
+- applied on 2 types of columns
+
+a) Constant
+- if you have constant column(same values in each row) ex : column containing only ones. 
+- That means that column have zero variance. and they have no contribution in predicting y value.
+- We will drop those columns
+
+b) Quasi Constant
+
+- if you have data of 1000 points , and in one column there are 995 ones and 5 zeroes. 
+- That column have a variance close to zero. Because most of the values are same.
+- these columns are called quasi constant. 
+
+
+Steps:
+-------
+
+1. You decide a threshold for variance ex threshold = 0.1
+2. Find variance for every feature
+3. check for columns whose variance is less than threshold value(0.1)
+4. Drop those columns whose variance<0.1(threshold)
+
+
+
+How to decide the variance threshold value?
+------------------------------------------------
+
+- before applying this method , normalizing data is a good stradegy
+- generally , it is a good thing to keep threshold between 0.01 to 0.1
+
+
+
+do not blindly follow variance threshold method, there are points to be consider
+----------------------------------------------------------------------------------
+
+1. Ignore target variable :
+ 
+- This method is univariate , there might be scenario where we are keeping the column that have a high variance. But do not have a relationship with target column
+
+2. Ignores feature interaction:
+-------------------------------
+
+- doesnt account for feature interactions
+ex: lets say longitude have a high variance , and latitude have a low. this method will drop the lat . But together they might have a good relationship with the target column
+
+3. Sensitive to data scaling
+-----------------------------
+
+4. Arbitary threshold : 
+------------------------
+not always easy to define threshold value of variance
+
+============================================================================================================================================================
+
+
+2. Correlation
+---------------
+
+- Pearson corr coef (can use other methods as well)
+- pick 2 column and find the linear relationship 
+- 1 to -1
+
+
+1st approach (correlation bw input and output)
+----------------------------------------------
+
+steps:
+--------
+
+- you decide a threshold ex more than 0.3 and -0.3
+- find correlation for each input column with output column
+- if input columns have a correlation more than that threshold then only we keep it. else we drop it.
+
+
+2nd approach (correlation bw only input cols-> Multicollinearity) 
+-----------------------------------------------------------------------------
+
+- if the correlation between two input features is more than 0.95 we will drop one of the columns.
+- By this we will be eliminating multicollinearity as well as reduction of dimensionality.
+
+
+
+
+
+disadvantages
+--------------
+
+1. Linearity assumption : In a algo like decision tree there is no assumption of linearity , but still we are dropping columns based on correlation. 
+
+2. doesnt capture complex relationship
+
+we are studying f1 and f2 then dropping. But what if there is a important relation of f1 , f2 , f3 together
+
+3. Threshold Determination : can be hard to decide correlation threshold
+
+4. Sensitive to outliers

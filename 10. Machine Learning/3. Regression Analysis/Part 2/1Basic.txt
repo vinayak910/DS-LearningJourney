@@ -32,7 +32,7 @@ refer to register to see the F test and intution
 ---------- 
 
 refer to regression metrics
-
+it is used to tell the strength of the linear relationship
 
 if difference between r2 score and adjusted r2 score is high , that means there are irrelevalant columns in data. 
 

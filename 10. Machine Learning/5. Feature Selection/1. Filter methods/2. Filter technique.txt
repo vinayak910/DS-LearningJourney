@@ -124,3 +124,74 @@ we are studying f1 and f2 then dropping. But what if there is a important relati
 3. Threshold Determination : can be hard to decide correlation threshold
 
 4. Sensitive to outliers
+
+
+
+=========================================================================================================================================================
+
+
+3. ANOVA
+----------
+
+- used when input is numerical and output is categorical(generally with more than 2 classes). 
+- but can also be applied with both input and output column numerical
+
+refer to anova test first then pdf and jupyter notebook
+
+
+disadvantage
+-------------
+
+- assumption of Normality
+- Assumption of Homogeneity of Variance
+- Independence of Observations : thats why this test not applied on time series data
+- Effect of outlier : even a single outlier can affect F stat
+- doesnt accout for interaction between input features
+
+
+=====================================================================================================================================================
+
+
+4. Chi square
+--------------- 
+
+- applied when both the data are categorical
+ex : If sex contributes in predicting Survived column we will keep it else will drop
+
+refer to chi square test and then refer to pdf and jupyter
+
+
+disadvantage 
+------------
+
+1. Categorical data
+2. Independence of observation
+3. Sufficiant sample size
+4. No variable interactions 
+
+
+
+===========================================================================================================================================================
+
+
+
+Advantages and disadvantages of filter based
+
+advantage
+----------
+
+1. simplicity : no ml , only statistics
+2. Speed : Computationally efficient
+3. Scalable : can be applied on large number of features
+4. Preprocessing step : can serve as pre processing steps for other feature selection technique, and then apply computationally expensive methods like wrapper method
+
+disdvantage
+------------
+
+1. lack of feature interaction
+2. Model agnostic : selected features might not necessarliy contribute to accuracy of specific model you want to use.
+3. Statistical Measures limitation : each technique has stastical assumptions , which is also to be check when use for feature selection
+4. Threshold determination
+
+
+Good for initial stages then apply other techniques  

@@ -1,0 +1,108 @@
+Wrapper method
+
+- solves the lack of feature interaction problem of Filter based technqiue
+
+
+What are wrapper methods?
+---------------------------
+
+we do 2 things 
+
+lets say we have f1 f2 f3 f4 ----- fn Y
+
+1. IN this we generate subsets
+
+ex 1st subset - f1 f2 y 
+   2nd - f1 f2 f3 y
+   3rd - f1 f5 f16 y
+
+2. We apply machine learning model on each subset.and you measure r2 score . whichever subset has the highest score will be selected for final prediction
+
+
+
+Types of wrapper methods
+-------------------------
+
+1. Exhaustive feature selection
+2. forward selection
+3. backward elimination
+4. Recursive feature elimination 
+
+
+========================================================================================================================================================
+
+1. Exhaustive feature selection/best subset selection 
+--------------------------------------------------
+
+- we try all the subsets apply machine learning and whichever subset has the highest r2 score that subset of features will be selected. 
+
+
+Disadvantage
+-------------
+
+1. computational complexity : 
+- if n columns , you have to apply ml on 2^n - 1. 
+- can be good for n col but not more than that.
+
+2. Risk of overfitting 
+
+3. requires a Good evaluation metric : for regression problem r2 score isnt a good metric , instead use adjusted r2 score
+
+
+=========================================================================================================================================================
+
+2. Sequential backward selection/backward elimination
+-----------------------------------------------------
+
+- much faster than exhaustive approach as the number of model is reduced
+- you start from all features , and then reduce features one by one
+- in this n(n+1)/2 models are made 
+- refer to pdf to how this actually works
+
+Disadvantage
+-------------
+
+- you are not trying every combination and doing local selection in each iteration then choosing the best among locals
+
+
+==========================================================================================================================================================
+
+3. Sequential Forward Selection 
+-------------------------------
+
+- in this you start from 0 features ie using y_mean
+- and then start adding columns one by one 
+- refer pdf
+- n(n + 1)/2 no of models
+
+
+Tip : for selecting large no of columns data we will use backward elimination. 
+for selecting less no of features from data , we will use sequential forward selection
+
+
+
+Disadvantage
+- same as backward elimination 
+
+
+=====================================================================================================================================================
+
+
+
+Advantages and disadvantages of Wrapper methods
+------------------------------
+
+advantage
+
+1. Better accuracy than Filter based technique because they use the predictive power of machine learning
+
+2. Interaction of features
+
+Disadvantage
+------------
+
+1. computational complexity
+
+2. risk of overfitting
+
+3. Model specific : the entire process of wrapper method is model specific. ie feature selection is based on specified model. ie if selected features performs good on linear regression. it isnt necessary for same features to perform good for some other algo.

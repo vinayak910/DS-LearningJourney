@@ -1,0 +1,39 @@
+Recursive feature selection
+----------------------------
+
+- comes under wrapper methods
+- gives good result
+- IN this you pick any algorithm that has attribut like coef or feature_importance
+- you remove the column with least feature_importance/coef value. then train the model again.
+- in iterative manner
+
+
+Mutual info technique
+----------------------
+
+- comes under filter based
+- studying relation individually but not bw input features
+- powerful technique
+- tell the dependency between two variables
+- work for both column are categorical 
+- even when one is numerical and other is categorical (convert numericals into categories)
+- can also work if the output col is regression
+- tells how much information is obtained about one variable from other variable.
+
+refer to register and filter based pdf
+
+
+Properties
+-----------
+
+1. It is non negative
+2. It is symmetric : mutual info of one column will be same to other
+3. can capture any kind of statistical dependency : Not only linear dependency , but if there is any other dependency also.
+
+
+Disadvantages : 
+1.estimation difficulty in high dimensiondata
+2. assumes large sasmple size
+3. compututionally expensive
+4. No indication of nature of relationship
+5. Doesnt account for reduncy

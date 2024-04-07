@@ -1,0 +1,53 @@
+Problem with other techniques
+-----------------------------
+
+Filter technique : lack of feature interaction
+Wrapper : computationally expensive which makes it slow
+
+
+Embedded methods
+----------------
+
+- solve both the problems
+- feature selection is done at stage of model building using feature importance.
+
+
+- Any machine learning which has two attributes ie Coef and feature_importance comes under embedded methods
+
+Coef based: Linear regression , logistic , Ridge , Lasso , ElasticNet
+
+Feature_importance based : Decision Tree,random forest , Gradient Boosting
+
+
+IN the embedded methods we can use scikit SelectFromModel to select important features by deciding a threshold.or we can manually select. 
+
+
+interpretation : 
+-----------------
+
+if threhold = 0.1
+only those features will be selected whose coef or feature_importance is more than 0.1
+
+
+If not sure , you can set threshold to 'mean'
+
+
+
+Advantages and disadvantages of embedded
+-----------------------------------------
+
+Advantages
+-----------
+
+1. Performance : better because of feature interation
+2. Efficiency : Faster , as only one model is used
+3. Less prone to overfitting : Because of regularization techniques such as lasso and ridge
+
+
+Disadvantage
+--------------
+
+1. Model specific : feature selection is model specific
+2. Complexity : hard to interpret how model gave the importance to features
+3. Tuning required : Hyperparameters tuning is required.
+4. Stability : variation in data can change the feature importance

@@ -1,0 +1,95 @@
+we have a supervised problem where we have input cgpa , iq and we have to predict it. 
+
+IN machine learning you are tying to make a formula that will predict the lpa value. Now there are 2 things :
+
+refer to regression analysis basics.txt
+
+
+Bias Variance Tradeoff through story
+-----------------------
+
+1. setup : we have a population equation(true equation)
+   we are playing god
+ie y = x^2 + noise
+
+we have a population data of 1000 points.
+
+2. We call 3 students , and we gave different samples of 100 to each student and asked to train linear regression on their respective 100 sample data.
+
+3. They did , and all the linear regression lines/models were different as they had different samples.
+
+
+Bias : 
+------
+The inability of a machine learning to fit the training data. 
+
+if a model was able to fit good on training data , is a low bias model 
+
+if a model was unable to fit on training data ,and because of it wasnt able to give good results is a high bias model
+
+
+As you can see all three students were not able to fit thier model on training data. Hence all 3 models are high bias . 
+
+And they will be called low variance model . WHy?
+
+Variance : 
+----------
+How much the prediction of ml model change , when the training data is changed .
+
+As you can see almost there is very less distance between all three lines , therefore all their predictions are close to each other. That's why all models will be called High bias and low variance.
+
+And if the lines were very different , then the result difference between models will be high (high variance) .
+
+
+
+
+4. Now the teacher told three students that you all were not able to bring good result on training data using linear regression , so try using Polynomial regression .
+
+
+
+
+The students fit their polynomial regression with a high degree , so each model try to fit every point to thier respective training data. as you can see in the graph in jupyter notebook.
+
+So in this scenario , the model will be low bias and you can also see that for same point the result will be very different from each model for prediction ie when training data changes , you have a different/bad result , as your models are trained on their respective data. that's why this is a high variance .
+
+
+Now the models will be called low bias , high variance.
+
+Overfitting
+-------------
+
+and when model is closely related to high variance , that scenario will be overfitting
+
+
+Underfitting
+-------------
+
+if a model is closely related to high bias then it will be called overfitting
+
+
+
+Tradeoff
+----------
+
+Ideally we want low bias(good result on training data) and low variance (result is consistent even if the data is changed)
+- but achieving both together is not possible 
+
+when we decrease bias , variance will increase
+-----------------------------------------------
+
+
+When we decrease variance , bias will increase
+-----------------------------------------------
+
+As a machine learning engineer you will have to find a sweet spot
+
+
+
+Some ques
+----------
+
+q1 How would you define bias and variance mathematically?
+q2 How is bias and variance related to overfitting and underfitting mathematically?
+q3 Why there is tradeoff between bias and variance mathematically?
+
+

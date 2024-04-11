@@ -35,7 +35,73 @@ this 3.5 tells when you roll a dice very multiple times ,then  overall average w
  
 Conlusion : Expected value is roughly the population mean 
 
-
-For Continuous
-----------------
 refer to register 
+
+
+Variance of x  -> Var(x)
+------------------------
+
+- just like exoected value roughly represents population mean
+- similary var(x) -> represents variance of population
+
+Var(x) = E[x^2] - (E[x])^2
+
+refer to pdf to see derivation of this formula 
+
+
+============================================================================================================================================================
+
+
+What exactly are bias and variance mathematically?
+--------------------------------------------------
+
+Bias : to see definition refer pdf
+-----
+
+- example we have a data , and only god knows the true linear regression line(population) .
+- now what we did is , we draw 100 samples set , therefore there will be 100 linear regression lines for their respective samples.
+- the bias will be average of our function  - true function
+- = E[f'(x)] - f(x)
+- now if we particular talk about slope
+- and each sample linear regression line will have its slope.
+- now the average of sample regression line slope will be very close to true population slope
+- and the difference between those two will be buas
+- Now the bias will be true regression slope - average/mean of our sample regression slopes.
+- and we know that avg is expected value
+
+hence bias = E[m] - m
+
+if bias value is high , that means underfitting
+
+QUESTIONS
+-----------
+ques1 : What if the E[m] ie avg of sample regression lines slope is equal to m (population slope) ?
+
+- if E[m] = m , then bias will be E[m] - m -> m - m = 0
+- if the bias will be 0 , you can say your model is unbias predictor.
+
+
+
+ques 2 : Why in our case we are only finding bias for m/slope , why not for intercept.
+ 
+- Yes , we will find bias for intercept too.
+- we are taking m for example.
+- The calculation of bias depends on type of machine learning model ie parametric and non parametric model 
+- IN parametric models , we have coef/weights -> b0 , b1 , b2 , b3, b4 ........bn and we will bias for each coef.
+- Not all ml models are parametric , In non parametric models we are trying to predict directly the functions.
+- like in linear regression we have already a function ie X*B , where we are trying to predict B (coef).
+- that's why we took general case ->ie bias = E[f'(x)] - f(x) , where f(x) is the true function which we will never know , and E[f(x)] is the average of our functions
+- that's why bias comes under reducible error as it can be reduced.
+
+
+Variance  : refer to definition in pdf
+---------
+
+Var(f'(x)) = E[(f'(x) - E[f'(x))^2]
+
+This indicates on and average , when data changes how much result will change.
+how much far on average our each line is from population line
+
+if this value is very high , and when you will change the data(unseen data) , the result will change a lot . Example score on training data ->90% and test-> 80% , which indicates overfitting.
+
+that's why high variance indicates overfitting .,

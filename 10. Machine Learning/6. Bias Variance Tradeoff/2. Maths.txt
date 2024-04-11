@@ -1,0 +1,41 @@
+q1 How would you define bias and variance mathematically?
+q2 How is bias and variance related to overfitting and underfitting mathematically?
+q3 Why there is tradeoff between bias and variance mathematically?
+
+
+
+Before we have to know the concept of Expected value   
+
+==========================================================================================================================================================
+
+Expected value
+---------------
+
+It is the average outcome of random variable over a large number of trials or experiments
+
+For Discrete random variable
+-----------------------------
+
+random variable (x) = rolling a dice
+number of times = 1 lakh 
+
+E[x] = x1*p(x1) + x2*p(x2) + ...... xn*p(xn)
+
+x1 , x2 ..... xn are the different values can our random experiment take
+
+x1 -> got 1 when rolled dice
+x2 -> got 2 when rolled dice
+
+
+= 1*(1/6) + 2*(1/6) + 3*(1/6) + 4*(1/6) + 5*(1/6) + 6(1/6)
+= 3.5
+
+this 3.5 tells when you roll a dice very multiple times ,then  overall average will be 3.5
+
+ 
+Conlusion : Expected value is roughly the population mean 
+
+
+For Continuous
+----------------
+refer to register 

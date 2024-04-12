@@ -104,4 +104,4 @@ how much far on average our each line is from population line
 
 if this value is very high , and when you will change the data(unseen data) , the result will change a lot . Example score on training data ->90% and test-> 80% , which indicates overfitting.
 
-that's why high variance indicates overfitting .,
+that's why high variance indicates overfitting .

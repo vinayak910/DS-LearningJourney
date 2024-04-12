@@ -23,3 +23,29 @@ var(f'(x))  => E[(f'(x) - E[f'(x)])^2]
 
 
 ===================================================================================================================================================================
+
+
+
+Continued
+----------
+
+
+
+Bias Variance Decomposition
+----------------------------
+
+- ex : IN linear regression , we have a loss function : mse ie (y - y_hat)^2/n.
+- So what bias variance decomposition do is it divides the loss function into 3 parts ->
+
+Loss fn = Bias + variance + irreducible error
+
+exact eq of loss fn = bias^2 + variance + Var(E)
+
+- var(E) indicates variance of irreducible error
+
+- here , bias^2 + variance is reducible error and var(E) is irreducible error
+
+
+
+derivation of loss fn = bias^2 + variance + Var(E)
+----------------------------------------------------

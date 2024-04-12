@@ -1,0 +1,25 @@
+recap : 
+--------
+
+- there are some algo which have high bias and some have high variance
+
+Bias variance tradeoff
+-----------------------
+
+low bias -> high variance
+low variance -> high bias
+
+
+True function vs our function
+------------------------------
+
+y = f(x) + error
+y_hat = f'(x)
+
+
+bias(f'(x)) => E[f'(x) - f(x)]
+
+var(f'(x))  => E[(f'(x) - E[f'(x)])^2]
+
+
+===================================================================================================================================================================

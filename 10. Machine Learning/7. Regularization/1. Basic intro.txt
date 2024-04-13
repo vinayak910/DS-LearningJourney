@@ -1,0 +1,48 @@
+Regularization
+---------------
+
+When we use complex models , which introduces overfitting . and regularization is one of the famous technique to reduce overfitting.
+
+Regularization is a universal concept
+
+How regularization is implemented in different ml aglos
+-------------------------------------------------------
+
+
+1. Linear regression : 
+
+we have a loss function mse , and we try to minimize it. 
+when we use regularization , what it do is it adds extra term in the loss function .
+
+the new loss function will be -> mse + extra term . and we try to minimize it the whole new equation. It results in reducing overfitting. 
+
+
+
+2. Decision Trees
+
+- it makes nested if else statement for every point , resulting the tree very deep ie  passing closely to each point ie overfitting. 
+
+- In this how regularization will be applied is , we will cut the tree . which decrease the if else statment ie tree will not be deep , low complexity ,  reducing overfitting. 
+
+- this regularization is called pruning.
+
+3. Deep Learning
+
+- we have too many nodes. regularization will be applied by randomly deleting nodes, hence reducing complexity , resulting reducing overfitting 
+
+- this regularization is called dropout.
+
+
+
+When to use regularization?
+-----------------------------
+
+1. Prevent overfitting : when model is too much complex
+2. High dimensionality : Due to high number of features model can be complex too , ie overfit
+3. Multicollinearity : if two or more columns have high correlation , regularization can help in in this scenario.(L2 regularization/ridge)
+4. Feature selection : L1 regularization 
+5. Interpretability : due to feature selection using regularization increases interpretation
+6. Model performance : sometimes regularization may improve model performance.
+
+
+Tip : While using simple lr , you should also try both the regularization techniques , there is a good chance the better result would be with one of the regularization technique.

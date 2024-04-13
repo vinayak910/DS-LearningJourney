@@ -59,3 +59,44 @@ Non mathematical intution
 
 refer to pdf 
 
+
+Question 
+----------
+
+Why their is bias square in Bias variance decomposition ?
+- due to our loss function , since our loss function is mse . Due to this , our bias is squared.
+- if our loss function changed , the bias may also changed.
+
+
+
+
+Conclusion : 
+-------------
+
+- You are data scientist , you want to make a perfect model , but you are making multiple imperfect models.
+
+- and gap between perfect and imperfect model is error/loss.
+
+- our error is of three components
+
+1. Bias : ON and avg how far we are from prediction of actual values
+
+2. Variance : on and avg how much our prediction is far away from our predictions(as there are multiple prediction lines , the predition distance from each sample regression lines is variance)
+
+3. Noise : Noise in the data. 
+
+
+In supervise machine learning , this will always be valid. 
+
+
+
+Post credits 
+-------------
+
+Ml models and introduction of regularization
+
+
+control bias : Bias can be controlled /low by machine learning models such as high polynomial lr , neural networks , decision tree which will capture the training data , but at the same time . it will increase the variance. as there is a trade off. 
+
+
+technique to control variance : Now to control the variance , we use regularization , which will decrease the variance in the imperfect ml models . use to reduce overfitting.

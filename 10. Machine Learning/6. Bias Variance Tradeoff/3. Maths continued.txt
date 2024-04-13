@@ -96,7 +96,7 @@ Post credits
 Ml models and introduction of regularization
 
 
-control bias : Bias can be controlled /low by machine learning models such as high polynomial lr , neural networks , decision tree which will capture the training data , but at the same time . it will increase the variance. as there is a trade off. 
+control bias : Bias can be controlled /low by complex machine learning models such as high polynomial lr , neural networks , decision tree which will capture the training data , but at the same time .as we are using complex ml models to reduce bias ,  it will increase the variance. as there is a trade off. 
 
 
-technique to control variance : Now to control the variance , we use regularization , which will decrease the variance in the imperfect ml models . use to reduce overfitting.
+technique to control variance : and Now to control the variance , we use variance techinques , and one of the famous techinque is regularization , which will decrease the variance in the imperfect ml models . use to reduce overfitting.

@@ -39,7 +39,8 @@ Bias Variance Decomposition
 
 Loss fn = Bias + variance + irreducible error
 
-exact eq of loss fn = bias^2 + variance + Var(E)
+exact eq of loss fn = bias^2 + variance + Var(E)  
+- here in Var(E),E is epsilon not E 
 
 - var(E) indicates variance of irreducible error
 
@@ -48,4 +49,13 @@ exact eq of loss fn = bias^2 + variance + Var(E)
 
 
 derivation of loss fn = bias^2 + variance + Var(E)
-----------------------------------------------------
+---------------------------------------------------- 
+
+refer to register
+
+
+Non mathematical intution 
+--------------------------
+
+refer to pdf 
+

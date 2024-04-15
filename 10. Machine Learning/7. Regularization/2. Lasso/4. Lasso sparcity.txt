@@ -1,0 +1,37 @@
+q1. Why and how lasso creates sparcity?
+----------------------------------------
+
+- it means why the coef of features become zero , which causes feature selection . 
+- and why cannt ridge regression do this?
+
+
+To know this you have to know the maths behind this.
+
+
+Understanding for single input : 
+--------------------------------
+
+linear regression line eqn is : y = mx + b  
+first refer to linear regression formula of m using  OLS method . 
+
+- In ridge regression slope(m) , the lamda is added in the denominator which makes calculation different from linear regression 
+
+- for lasso regression formula of m , refer to register
+
+Since we add a mod of slope , therefore we cant differentiate . and there will be these cases of m.
+
+1. for m >0
+
+In formula the lambda is substracted in numerator , that's why if start increase lambda , the numerator may become zero , which makes the ,m  value zero.
+
+- But if we started increase lambda more , even then also the m doesnt become negative . why? -> because for m becomes negative the formula will be changed , in which instead of lamda getting substracted , the lambda will be added in numerator . and which will make the slope more and cause overfitting again. So to avoid this situation , it stops at m = 0 . 
+
+2. for m < 0 
+
+same goes for -ve value of m , it slope will stop at 0 
+
+
+q2. Why ridge doesnt?
+
+because lambda is in denominator term , and it will not be zero for large value of lambda , but very close to zero.
+

@@ -1,0 +1,59 @@
+5 key understandings about ridge
+---------------------------------
+
+
+before that there is a term shrinkage coef.
+
+Shrinkage coef : 
+-----------------
+- is the penalty term we add to the loss function
+- it is called shrinkage coef , as it brings down the value of coef. 
+
+
+
+
+Key understandings
+-------------------
+
+1. how coef are affected?
+
+- lambda can be from zero to infinity.
+- when lambda = 0 , then it is simple linear regression
+- if increase lambda too much , the coef will start getting shrink towards zero.
+- But the coef will never be zero.
+
+
+
+2. Higher values are impacted more.
+
+- lets say you applied linear regression , and you get different values for coef.
+- lets say coef :  w1 is 1000 ,w2 is 10 and w3 is 1.
+- it indicates most imp coef is w1 , second most important is w2 and least imp among them is 1.
+ 
+
+- Now if you apply ridge regression with a high lambda value , the coef with higher will shrink at fast rate. 
+
+
+3. Bias variance trade off
+
+- if a model is overfitted ie good results on training data , but high variance ie if data changes a little bit, the results will get bad.   
+
+- as you start increasing alpha , the variance reduces ie reduces overfitting.
+
+- if lamda value , is too high , the model may underfit.ie will not give results on training data.
+
+- that's why choose optimum value
+
+4. impact on the Loss function
+
+- as you start increasing alpha , the coef values starting getting shrink towards zero 
+- refer to jupyter notebook
+
+5. Why called ridge
+
+- You have to study hard constrain ridge regression
+- so having intution is better 
+- seperate mse and penalty term and make a separate graph for each equation. ie Countour plot for mse and circle for penalty. The final solution will be at  that parameter of circle from where the distance to mse minima is close.
+
+
+Tip : Use ridge when have more than or equal to 2 input columns

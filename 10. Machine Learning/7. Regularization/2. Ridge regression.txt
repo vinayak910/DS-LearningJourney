@@ -1,0 +1,15 @@
+regularization in linear regression are of 2 types 
+
+1. Ridge regularization (L2)
+2. Lasso Regularization  (L1)
+
+
+L2 / Ridge regularization
+--------------------------
+
+- We have to choose a line that doesnt overfit. ie for a training data it is giving good result , but for test data it is giving best result.
+
+- we want our model to not to be overfit, which we achieve by adding a something to the mse loss function. ANd that something in L2 is Lambda * slope^2
+- we use square of slopes , thats why it is called L2 norm. 
+
+- Now the model will find the minima on the new loss function ie mse + lambda*slope^2 , which will prevent our line to be generalized.

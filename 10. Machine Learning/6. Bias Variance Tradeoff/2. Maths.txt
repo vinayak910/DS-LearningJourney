@@ -61,6 +61,7 @@ Bias : to see definition refer pdf
 - example we have a data , and only god knows the true linear regression line(population) .
 - now what we did is , we draw 100 samples set , therefore there will be 100 linear regression lines for their respective samples.
 - the bias will be average of our function  - true function
+
 - = E[f'(x)] - f(x)
 - now if we particular talk about slope
 - and each sample linear regression line will have its slope.

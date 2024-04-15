@@ -71,7 +71,7 @@ Converting our problem to graphical problem
 - and the relation between b0 and loss function is square .
 - when plotting the graph between b0 and loss function , you will see a graph like parabola (square relation)
 - now that problem is converted into graphical you can see.
-- for certain value of b0 , the loss function will be zero.
+- for certain value of b0 , the loss function will be minimum.
 - now you know , if you have a graph , and you have to reach the minimum point of the graph , the criteria is the point where the y/loss value is minimum at that point the slope will be zero.
 
 - therefore you will differentiate the loss function wrt b0 and put it equal to zero. There you will get the value of b0 for which the loss function graph will be minimum.

@@ -39,3 +39,27 @@ refer to jupyter notebook to see practical implementation of L1
 4. impact on loss function
 
 - the slope value can cross zero
+
+
+
+lasso summary 
+---------------
+Lasso regression, also known as L1 regularization or Lasso (Least Absolute Shrinkage and Selection Operator), is a linear regression technique that adds a regularization term to the loss function to prevent overfitting and improve the model's ability to generalize to unseen data.
+
+The loss function for Lasso regression is given by:
+
+L(w) = 1/2n \* Σ(y\_i - (w^T x\_i))^2 + α \* ||w||1
+
+where w represents the model coefficients or weights, x\_i represents the input features, y\_i represents the target variable, n represents the number of training examples, and α represents the regularization parameter.
+
+The L1 regularization term, α \* ||w||1, adds a penalty proportional to the absolute value of the coefficient values. This encourages smaller coefficient values, reducing overfitting and improving generalization.
+
+The L1 regularization term has the effect of shrinking some of the coefficient values to zero, effectively eliminating them from the model. This can be useful for feature selection, as it allows us to identify the most important features for predicting the target variable.
+
+Lasso regression is particularly useful when the number of input features is larger than the number of training examples, as it can help prevent overfitting and improve the model's ability to generalize to unseen data.
+
+The regularization parameter, α, controls the strength of the regularization term. A larger value of α results in stronger regularization and smaller coefficient values, while a smaller value of α results in weaker regularization and larger coefficient values.
+
+Lasso regression can be trained using various optimization algorithms, such as coordinate descent or proximal gradient descent. Once trained, the model can be used to make predictions on new, unseen data.
+
+Lasso regression is widely used in various applications, such as predicting housing prices, stock prices, sales revenue, and many others. However, it is important to note that Lasso regression assumes a linear relationship between the input features and the target variable, and may not perform well if this assumption is violated. In such cases, non-linear regression models, such as polynomial regression or spline regression, may be more appropriate.

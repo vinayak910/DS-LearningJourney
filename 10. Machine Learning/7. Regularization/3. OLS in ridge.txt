@@ -1,0 +1,16 @@
+Just like linear regression there were two methods : 
+
+1. OLS - Directly using formula for slope and intercept or Betas for which loss function is minimum
+
+2. Gradient Descent : optimization method which step by step reaches the minima of loss function from random values of coef.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Similarly you can fit a ridge regression using using two methods.
+
+1. Directly using formula
+2. Gradient descent. 
+
+
+In the register you can find the derivation of direct formula for Betas in Ridge .

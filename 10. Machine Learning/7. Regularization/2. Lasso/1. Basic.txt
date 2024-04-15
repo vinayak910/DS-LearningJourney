@@ -1,0 +1,41 @@
+Lasso
+------
+Just like ridge , lasso is also a regularization technique to reduce overfitting.
+
+- the penalty term added to mse loss function is lamda*mod of weights/coef.
+- that's why it is called L1 norm , as there is only power of 1. 
+The big difference is :
+- IN lasso the slope/weights can easily become 0 . ie feature whose slope become zero indicates , there is no contribution of that feature in perdiction of y.
+
+
+
+Benefit of becoming slopes for features
+------------------------------------------
+ 
+- In a high dimensional data , there is high chance of overfitting.
+- if you apply ridge regression the slopes of any feature will not be zero
+- But if you apply lasso regression , for higher value of lambda , the features that are less important , their slope will become zero. ie you are performing feature selection. 
+
+- that's why you should use lasso in high dimension , as you are reducing overfitting and also doing feature selection
+refer to jupyter notebook to see practical implementation of L1 
+
+
+
+4 key points (refer to jupyter notebook)
+----------------
+
+1. How coef are affected?
+
+- if you start increasing lambda, the coef starts to shrink down hence or even become zero (ultimately performing feature selection) , the model may underfit. 
+- if lambda = 0 , then it is simple linear regression. 
+
+
+2. Coeff with higher values are affected more. 
+
+3. Impact on Bias and variance
+
+- if you start increasing lambda variance will decrease, overfitting will reduce ,but the bias will increase
+
+4. impact on loss function
+
+- the slope value can cross zero

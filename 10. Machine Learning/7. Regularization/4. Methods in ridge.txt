@@ -13,4 +13,4 @@ Similarly you can fit a ridge regression using using two methods.
 2. Gradient descent. 
 
 
-In the register you can find the derivation of direct formula for Betas in Ridge .
+In the register you can find the derivation of direct formula for Betas in Ridge also for Gradiene Descent.

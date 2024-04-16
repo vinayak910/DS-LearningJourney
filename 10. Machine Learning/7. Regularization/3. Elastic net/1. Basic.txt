@@ -1,0 +1,20 @@
+Elastic net : Combination of ridge and lasso
+-------------------------------
+situations where you should use elastic net : 
+1. let's say you have a data with high number of columns , and you dont know whether to use ridge or lasso. 
+
+2. When input columns have multicollinearity.
+
+in such case , you can apply elastic net . 
+
+In elastic net , you add both type of penalties ie square of slopes and modulus of slope . 
+
+L =  mse + alpha*w^2  + beta*|w|
+
+In sklearn , you have two main hyperparameter :
+
+1. lamda which is alpha + beta. By default the value of lamda is 1 , ie means alpha = 0.5 and beta = 0.5. This means you are equally applying l1 and l2
+
+2. l1_ratio : a/a+b 
+
+- if you set l1_ratio to 0.9 , it means you are applying 90% lasso and 

@@ -1,0 +1,18 @@
+Overfitting
+--------------
+
+- For low value of K , the model may underfit . As knn is trying to learn even minor minor changes in the training data. 
+- the decision boundary would not be smooth . Not clear partition will be there.
+
+
+
+Underfitting
+-------------
+
+For large value of k , the model may underfit. In which knn didnt try to understand training data , and knn just directly giving results.
+
+
+
+- That's why choosing the optimum k value is must. 
+
+refer to register work for better understanding. 

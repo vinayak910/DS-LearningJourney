@@ -1,0 +1,77 @@
+refer to register work to see how KNN works and intution
+--------------------------------------------------------- 
+
+====================================================================================================================================================
+- Generally accuracy score is the metric we use for evaluating model performance in classfication problems. 
+
+====================================================================================================================================================
+
+
+TIP : 
+- Whenever using KNN , its good to bring down data to the same scale. 
+- we can use standard scaler or known as Z-score normalization. Refer to standardization and normalization folder. 
+
+Why ?
+- if the scale is not same , the model will not give good results.
+- because KNN totally relies on calculating distance. and if the scale of features is not same. 
+- So while calculating distance , the feature with high scale values will dominate. 
+
+
+====================================================================================================================================================
+
+How to decide value of K ?
+---------------------------
+
+
+Two approaches 
+--------------
+
+1. Hueristic :
+- sqrt(n) -> n is the number of observations
+- lets say n = 400 observations , k will be 20
+
+- Note : you avoid even value for k ,let's say k = 20 , there is a chance that from 20 neighbors 10 may fall under 0 class and other 10 may under fall in class 1 . In this situation you cant apply majority count rule. 
+
+
+2. Experimentation 
+
+- better technique
+- what you can do is you make different knn models with different k values. We will chose k from The one model with the highest accuracy score.
+
+refer to collab notebook  
+
+
+
+====================================================================================================================================================
+
+Decision Surface/Boundary : 
+----------------------------
+
+- tool used to understand the performance of Classification problem like knn , Log Reg , DT.
+
+refer to jupyter notebook 
+Ex: 
+
+- we have 2d input data cgpa input and output-> Placement
+
+- the points you see in graph ie red and blue points are training points
+
+- the region you are seeing ie blue and red region are decision regions. 
+
+- If a new query point comes , we can directly plot the point in the graph, to see in which region it belongs. If point belong in red region , we will classify as red point(1) and if a point belongs in blue region we will classify as blue point(0) 
+
+Basically , the decision surface divides the coordinates system into two parts , red and blue corrosponding to the classes we have for output column. IN our case lets say [0 , 1]
+
+
+
+How to make decision surface ? 
+-----------------------------
+
+- plot the entire training data. ie cgpa and iq
+- calculate the axis x range and y range. 
+- generate numpy meshgrid for that range. (generating too many points)
+- Using training data you train your knn model.
+- after training , you pass each meshgrid point into the model for prediction. Either it will predict 0 or 1 for each meshgrid point. and you are encoding 0 value with the blue color and red with the 1.
+- that's how you make a decision surface. 
+
+you can also use mlxtend library

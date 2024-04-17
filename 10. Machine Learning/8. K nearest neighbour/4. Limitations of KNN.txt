@@ -1,0 +1,56 @@
+When shouldnt use KNN
+---------------------
+
+
+1. Large dataset
+=================
+
+- ex : no of observations = 10 lakh , and f = 200. 
+
+- Problem :
+
+- KNN is a lazy training technique. Laxy technique means no work is being done at training , But all the work is being at prediction . 
+- we calculate distance , sort , majority count , when we have a new query point. (when we are in prediction phase).
+- this makes training faster , as you are only storing the data points.
+- and prediction becomes very slow for large dataset, because you are doing all the steps in this phase.  
+
+
+2. High dimensional data : 
+=============================
+
+- Curse of dimensionality : concept of calculating distance isnt reliable in higher dimensions
+
+
+3. Outliers
+============
+
+- knn doesnt perform well with outliers , its sensitive to outliers. which may cause overfitting. 
+
+
+4. Non Homogenous scales
+==========================
+
+- ex : Exp and salary are two different scales column .
+
+- if we calculate distance between them , which we generally do in KNN , the salary value will dominate , which makes the calculation of distance unreliable.
+
+- that's why it is necessary to bring down the data to the same scale.
+
+
+5. Imbalanced dataset.
+========================
+
+ex : 
+No of yes points - 98%
+No of No points : 2%
+
+Results would be bias to yes points.
+
+
+6. Inference
+===============
+
+- not good for inference
+- it doesnt tell the impact of features ie cgpa and iq in predicting y.
+- it do not tell , which column has a more contribution in predicting the output column
+- in a way , it works as a black box model

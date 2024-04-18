@@ -1,0 +1,22 @@
+Overfitting 
+-------------
+- for a low value of k , the knn will ovefit
+- lets say you decide k = 1 , so the predicted salary will be same as your one nearest neighbor. 
+- - the regression curve will be pointy. 
+- so due to this , model will learn too much about the training data.
+- hence there will e high variance , if you change the data little bit , the model will perform bad -> overfitting.
+
+
+
+
+
+
+Underfitting 
+--------------
+
+
+- for very high value of k , the knn will underfit.
+- as you increase k , the regression curve will smooth out. ie not pointy.
+
+
+refer to register . 

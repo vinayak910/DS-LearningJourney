@@ -1,0 +1,29 @@
+1. Weights : uniform or distance
+
+- uniform : equal weights .
+- distance : the closer neighbor will be assigned more weightage.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. P/Distances :  2 or 1
+
+- P = 2 ->euclidient
+- p = 1 ->manhatten
+
+Problem with euclidient :
+ 
+1. curse of dimensionality : In higher dimension , the euclidient distance is not reliable
+
+2. Scale : If features of not same scale , the higher scale value will dominate over low scale features.
+
+
+NOTE : 
+- Minkowski is the umbrealla term , when you choose p = 1 , it becomes manhatten and when p = 2 ,then it becomes euclidient distance
+
+for higher dimension choose lower p value , even less than 1.
+
+- Manhatten performs better than euclidient in higher dimension.
+- The scale problem is still there , but still in euclidient you are squaring , but whereas in manhatten you are not.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------ 

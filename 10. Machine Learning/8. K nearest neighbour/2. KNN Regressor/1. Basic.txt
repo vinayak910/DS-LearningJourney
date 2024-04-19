@@ -5,4 +5,8 @@ Ex : CGPA iq package
 
 - we got query with cgpa and package value , we find query distance from each training data point . we sort it , we decide k no of nearest neighbors 
 
-- the avg of k nearest neighbors will be the predicted value.
+- the mean of k nearest neighbors will be the predicted value.
+
+- you can also use median , instead of mean , if there are outliers.
+
+

@@ -27,3 +27,14 @@ for higher dimension choose lower p value , even less than 1.
 - The scale problem is still there , but still in euclidient you are squaring , but whereas in manhatten you are not.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------ 
+
+3. Algorithm : 'ball_tree' , 'kd_tree' , 'brute'
+
+Space and Time complexity
+-------------------------
+
+- The space and time complexity of knn is O(nd) , where n is number of rows , and d = no of dimensions.
+
+- Due to this knn is slow algo.
+
+- Now to improve this , there is use of other algo ie KD_tree which brings down the complexity to O(d logn) , which makes knn faster. refer to pdf and see diagram. In short we are reducing the no of comparisons. 

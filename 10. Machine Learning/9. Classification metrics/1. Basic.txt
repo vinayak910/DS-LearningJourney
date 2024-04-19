@@ -1,0 +1,109 @@
+Performance metrics
+----------------------
+
+Typically, it is difficult to interpret ML models (especially deep learning models).
+It is difficult to understand the specific patterns identified by the model from the
+given data.
+Performance metrics allow us to determine their performance by providing unseen
+samples by evaluating the predictions.
+This makes them a must-know in M
+
+
+
+Classification metrics
+-----------------------
+
+
+1. Accuracy : 
+---------------
+
+- no of correct predictions/total no of predictions
+- tells how much good performance of our model is. 
+
+
+How much accuracy is good?
+----------------------------
+
+- It depends on the problem we are solving. 
+- higher the stakes , higher the accuracy we want.
+
+Example
+--------
+1. model for detection of cancer : 
+
+- now even if the model has 99 percent accuracy its still bad. 
+- ie out of 100 times your model was able to detect cancer. But failed one time. 
+- But that 1% of wrong prediction , can lead to loss of a life.
+
+
+2. Prediction of delievery time : 
+
+- In this context , even 80% accuracy will be considered higher.
+
+
+Problem with accuracy
+----------------------
+
+1. doesnt tell the type of mistakes.
+
+Ex : 
+- prediction of placement either 1 or 0. 
+- Now one mistake -> when actual value was 1 , but model predicted 0. 
+- other mistake -> when actual value was 0 , but model predicted 1. 
+- accuracy doesnt tell this info. It only tells how much our predictions was right.
+- This problem is solved by confusion matrix. 
+
+
+
+
+============================================================================================================================================================
+
+2. Confusion Matrix
+--------------------
+
+- tells the types of nature mistakes too.
+- true positive : Prediction was 1 , when actually it was 1.
+- False positive : Prediction was 1 , when actually it was 0. 
+- True negative : Prediction was 0 , when actually it was 0.
+- False negative : prediction was 0 , when it was actually 1. 
+
+- we know that accuracy score = no of correct/no of total predictions
+- we can finda accuracy score from Confusion matrix. 
+- accuracy = (TP + TN)/(TP + TN + FP + FN)
+
+
+
+Types of Error
+---------------
+
+Type 1 error : False positive.
+-------------
+ex : model predicted heart disease , but actually there was not.
+
+Type 2 Error : False negative .
+--------------
+ex : Model predicted no heart disease , but in actually there was indeed heart disease. 
+
+
+
+Confusion matrix for multiclass 
+--------------------------------
+
+refer to jupyter notebook
+- if you have 3 classes in y , then there will be 3 X 3 matrix. 
+Tip : accuracy = add diagnol elements/total no of predictions
+
+
+============================================================================================================================================================
+
+
+When accuracy is misleading?
+-----------------------------
+
+- Imbalanced dataset : where any of the class have very high occurence in the data.
+
+ex : No of yes : 900 , No of no : 100.
+
+IN such cases accuracy can be misleading , as model was trained in such way , that it will mostly predict yes. Because it was trained on imbalanced data.
+
+So in case of imbalanced dataset , accuracy is misleading. That's why we will study precision and recall.

@@ -100,10 +100,41 @@ Tip : accuracy = add diagnol elements/total no of predictions
 When accuracy is misleading?
 -----------------------------
 
-- Imbalanced dataset : where any of the class have very high occurence in the data.
+- Imbalanced dataset : where any of the class haveh very high occurence in the data.
 
 ex : No of yes : 900 , No of no : 100.
 
 IN such cases accuracy can be misleading , as model was trained in such way , that it will mostly predict yes. Because it was trained on imbalanced data.
 
 So in case of imbalanced dataset , accuracy is misleading. That's why we will study precision and recall.
+
+
+
+============================================================================================================================================================
+
+
+
+3. Recall
+-----------
+When false positives are more dangerous , then choose the model that have higher recall.
+
+= TP/TP + FP
+
+refer to register
+============================================================================================================================================================
+
+
+4. Precision 
+--------------
+
+- When false negatives are more dangerous Ex : detecting cancer, then choose the model with higher precision . 
+
+= TP/TP + FN
+
+
+============================================================================================================================================================
+
+
+5. F1 ratio : 
+
+- if you dont know which error is more dangerous type 1 or type 2 , then you should focus at F1 ratio . 

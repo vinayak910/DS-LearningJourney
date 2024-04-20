@@ -1,0 +1,89 @@
+PCA
+----
+
+- unsupervised machine learning model
+- complex
+- introduced in 1950
+- complex maths
+
+
+
+
+Intro
+======
+
+- feature extraction technique 
+- reduce the curse of dimensionality
+
+
+Understanding through analogy
+------------------------------
+
+-  Photograph taking match of soccer. 
+- The soccer match is actually happening in 3d environment(stadium)
+- But photos are in 2d. 
+- that's what PCA do . 
+
+- PCA brings down higher dimension data to lower dimension without losing the essence of data which was in higher dimension . 
+
+
+Benefits of PCA
+-----------------
+1. since the size of dimensions is reduce , now the ml model will run faster on data. 
+
+2. performance will be same even in lower dimension
+
+3. Visualization : Since you can bring higher dimension data to lower dimension such as in 1d 2d 3d , IN these dimensions you can visualize the data. 
+
+
+
+Feature selection tip : 
+------------------------
+
+1. Problem
+- When there are two input features ie no of rooms and no of grocery stores and you have to perform features selection. 
+- plot no of rooms and grocery store. Whosever spread is more will be selected.
+
+
+2. Problem
+- lets change the features ie no of rooms , no of bathrooms. Now if you look at spread , the spread will be almost equal. and you cannot perform feature selection. 
+
+- IN this situation you cannot perform feature selection .In this you can perform feature extraction.
+
+
+ 
+How feature extraction solves the 2nd problem?
+----------------------------------------------
+
+- Lets take a same example. 
+- where input col are no of rooms and washrooms. 
+- if you ask real estate agent , he has domain knowledge . he will suggest that instead of two columns make it 1 column ie size of room.
+- the 2d data is brought down to 1d ie size of the room
+- the size of room will contain both info room and washrooms. 
+- This is what pca does.
+
+PCA - forgets its existing features. Instead it makes new set of features and from that new set of features it chooses the subset which is most important. 
+
+
+Gemoetric intution
+-------------------
+- Shift the coordinate system , you will get new set of axis. 
+- The new axises will be called Principle components. 
+- ON Whichever principle components the spread is more . 
+- you will select that components and apply some transformation acc to thier principle components. 
+ 
+To understand bettrt , refer to geometric intution in the register. 
+
+
+
+What is variance ? 
+- refer to statistic session
+- Note : Variance is not exactly spread , but proportional to spread
+- ques : Why not Mean absolute deviation?
+- ans : Because , mod is not differentiable at zero.
+
+
+Why variance is important in PCA?
+
+refer to register
+

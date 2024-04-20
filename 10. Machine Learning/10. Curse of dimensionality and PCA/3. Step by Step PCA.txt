@@ -8,3 +8,5 @@ Step 3 : Find eigen vector and value for covariance matrix.
 
 - Its upto you , how many principle components you want to select. 
 
+ 
+refer to register for more detailed 

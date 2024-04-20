@@ -20,7 +20,7 @@ Understanding through analogy
 ------------------------------
 
 -  Photograph taking match of soccer. 
-- The soccer match is actually happening in 3d environment(stadium)
+- The soccer match is actually happening in 3d envir onment(stadium)
 - But photos are in 2d. 
 - that's what PCA do . 
 
@@ -87,3 +87,5 @@ Why variance is important in PCA?
 
 refer to register
 
+
+Refer to register to actually see , how PCA mathematically solve this problem . 

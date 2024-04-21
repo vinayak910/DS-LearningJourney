@@ -1,0 +1,3 @@
+you have to choose that many principle components for which the total variance explained by their respective eigen values is 90 percent. 
+
+refer to register to see more detailed explaination

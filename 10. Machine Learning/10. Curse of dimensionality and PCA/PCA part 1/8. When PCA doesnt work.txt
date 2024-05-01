@@ -1,3 +1,0 @@
-PCA will not work when in higher dimension the data is making a circle like structure or making some patter such as y = x^2 .
-
-refer to register

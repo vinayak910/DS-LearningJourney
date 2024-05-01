@@ -1,0 +1,12 @@
+You have 3 features f1 , f2 , f3
+
+Step 1 : Mean centering of data.
+Step 2 : Covariance matrix  -> [3 X 3]
+Step 3 : Find eigen vector and value for covariance matrix. 
+ 
+- In step 3 , there you will get 3 eigen vectos and eigen values. The vector will highest eigen value becomes Principle component 1 , the eigen vector with second highest eigen value will become principle component 2, and third eigen vector will become principle component 3. 
+
+- Its upto you , how many principle components you want to select. 
+
+ 
+refer to register for more detailed 

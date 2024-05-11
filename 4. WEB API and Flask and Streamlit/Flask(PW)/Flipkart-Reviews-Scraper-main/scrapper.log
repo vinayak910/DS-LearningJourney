@@ -1,0 +1,377 @@
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.29.254:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:02:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:02:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:02:48] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:02:51] "GET / HTTP/1.1" 200 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:02:56] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:03:00] "GET / HTTP/1.1" 200 -
+INFO:root:No engine for filetype: 'csv'
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:03:06] "POST /review HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.29.254:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:04:27] "GET / HTTP/1.1" 200 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:04:31] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:04:35] "GET / HTTP/1.1" 200 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:04:39] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:05:04] "GET / HTTP/1.1" 200 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:05:07] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:05:10] "[31m[1mGET /review HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:05:15] "GET / HTTP/1.1" 200 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:05:19] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:05:23] "GET / HTTP/1.1" 200 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:05:28] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:05:31] "GET / HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.29.254:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:06:40] "GET / HTTP/1.1" 200 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:06:44] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:06:52] "[31m[1mGET /review HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:06:56] "GET / HTTP/1.1" 200 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:07:06] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:07:11] "GET / HTTP/1.1" 200 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:07:15] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:07:17] "GET / HTTP/1.1" 200 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:07:24] "POST /review HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.29.254:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:09:15] "GET / HTTP/1.1" 200 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:09:19] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:09:23] "GET / HTTP/1.1" 200 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:09:27] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:09:30] "GET / HTTP/1.1" 200 -
+INFO:root:rating
+INFO:root:rating
+INFO:root:rating
+INFO:root:rating
+INFO:root:rating
+INFO:root:The final result {'Buyer': 'Puneet Soni', 'Ratings': '5', 'Reviews': 'Unsatisfactory', 'Description': 'The product was good but the delivery was too bad. worst experience from flipkart'}
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:09:48] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:09:49] "[33mGET /style.css HTTP/1.1[0m" 404 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.29.254:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:10:50] "GET / HTTP/1.1" 200 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:10:54] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:10:57] "GET / HTTP/1.1" 200 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:11:01] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:11:10] "GET / HTTP/1.1" 200 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:11:16] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:11:20] "GET / HTTP/1.1" 200 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:11:24] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:11:28] "GET / HTTP/1.1" 200 -
+INFO:root:The final result {'Buyer': 'Manoj  Kwatra', 'Ratings': '5', 'Reviews': 'Worth every penny', 'Description': 'Such an amazing device. Bought 3  for all my family on Flipkart big billian sale. Thanks Flipkart'}
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:11:40] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2023 18:11:41] "[33mGET /style.css HTTP/1.1[0m" 404 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.29.254:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 12:03:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 12:03:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 12:03:00] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 12:03:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:The final result {'Buyer': 'Ankur Ranjan ', 'Ratings': '5', 'Reviews': 'Worth every penny', 'Description': 'Great camera for photos and videography.Overall great performance'}
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 12:03:14] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 12:03:14] "[33mGET /style.css HTTP/1.1[0m" 404 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:26:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:26:55] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:26:55] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:26:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:HTTPSConnectionPool(host='www.flipkart.com', port=443): Max retries exceeded with url: /search?q=iphone13 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001888B9CFF10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:27:00] "POST /review HTTP/1.1" 200 -
+INFO:root:HTTPSConnectionPool(host='www.flipkart.com', port=443): Max retries exceeded with url: /search?q=iphone13 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001888B9CFDF0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:27:04] "POST /review HTTP/1.1" 200 -
+INFO:root:HTTPSConnectionPool(host='www.flipkart.com', port=443): Max retries exceeded with url: /search?q=iphone13 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001888B9CFD30>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:27:08] "POST /review HTTP/1.1" 200 -
+INFO:root:HTTPSConnectionPool(host='www.flipkart.com', port=443): Max retries exceeded with url: /search?q=iphone13 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001888B998040>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:27:12] "POST /review HTTP/1.1" 200 -
+INFO:root:HTTPSConnectionPool(host='www.flipkart.com', port=443): Max retries exceeded with url: /search?q=iphone14 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001888B974BE0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:27:19] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:27:24] "GET / HTTP/1.1" 200 -
+INFO:root:HTTPSConnectionPool(host='www.flipkart.com', port=443): Max retries exceeded with url: /search?q=iphone13 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001888B974E80>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:27:29] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:27:33] "GET / HTTP/1.1" 200 -
+INFO:root:HTTPSConnectionPool(host='www.flipkart.com', port=443): Max retries exceeded with url: /search?q=iphone (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001888B9C7AC0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:27:40] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:29:14] "GET / HTTP/1.1" 200 -
+INFO:root:HTTPSConnectionPool(host='www.flipkart.com', port=443): Max retries exceeded with url: /search?q=iphone13 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001888B9C7D60>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:29:18] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:30:46] "GET / HTTP/1.1" 200 -
+INFO:root:HTTPSConnectionPool(host='www.flipkart.com', port=443): Max retries exceeded with url: /search?q=iphone13 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001888B9C7790>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:30:50] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:30:53] "GET / HTTP/1.1" 200 -
+INFO:root:HTTPSConnectionPool(host='www.flipkart.com', port=443): Max retries exceeded with url: /search?q=iphone14 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001888B9C7490>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:30:58] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:31:34] "GET / HTTP/1.1" 200 -
+INFO:root:HTTPSConnectionPool(host='www.flipkart.com', port=443): Max retries exceeded with url: /search?q=iphone14 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001888B974E20>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:31:38] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:31:44] "GET / HTTP/1.1" 200 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:38:32] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:38:42] "[31m[1mGET /review HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:38:45] "GET / HTTP/1.1" 200 -
+INFO:root:The final result {'Buyer': 'Abhiram', 'Ratings': '5', 'Reviews': 'Wonderful', 'Description': 'Excellent product, photo quality was great and video was excellent, good battery life and if it has more than 60hz refresh rate it would be great and everything else is great'}
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:39:01] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:39:01] "[33mGET /style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:39:49] "GET / HTTP/1.1" 200 -
+INFO:root:rating
+INFO:root:rating
+INFO:root:rating
+INFO:root:The final result {'Buyer': 'NAREN MALO', 'Ratings': '5', 'Reviews': 'Worth every penny', 'Description': 'Amazing picture quality\u2764\ufe0f\U0001f44c\U0001f3fc\U0001f44c\U0001f3fc'}
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:41:30] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:41:31] "[33mGET /style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:42:24] "GET / HTTP/1.1" 200 -
+INFO:root:rating
+INFO:root:The final result {'Buyer': 'Abhiram', 'Ratings': '5', 'Reviews': 'Wonderful', 'Description': 'Excellent product, photo quality was great and video was excellent, good battery life and if it has more than 60hz refresh rate it would be great and everything else is great'}
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:42:49] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:42:50] "[33mGET /style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Dec/2023 12:43:11] "GET / HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.29.254:5000/ (Press CTRL+C to quit)
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.29.254:5000/ (Press CTRL+C to quit)
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.29.254:5000/ (Press CTRL+C to quit)
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.29.254:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 783-329-956
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\DSMP\\7. Data Analysis\\2 Data Wrangling\\1. Data Gathering\\1. Web Scraping\\2. PW(improved)\\1. Flipkart Reviews Scrapper\\Integration with rest api\\app.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\DSMP\\7. Data Analysis\\2 Data Wrangling\\1. Data Gathering\\1. Web Scraping\\2. PW(improved)\\1. Flipkart Reviews Scrapper\\Integration with rest api\\app1.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 783-329-956
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 783-329-956
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 783-329-956
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'd:\\DSMP\\7. Data Analysis\\2 Data Wrangling\\1. Data Gathering\\1. Web Scraping\\2. PW(improved)\\1. Flipkart Reviews Scrapper\\Integration with rest api\\app1.py', reloading
+INFO:werkzeug: * Detected change in 'd:\\DSMP\\7. Data Analysis\\2 Data Wrangling\\1. Data Gathering\\1. Web Scraping\\2. PW(improved)\\1. Flipkart Reviews Scrapper\\Integration with rest api\\app1.py', reloading
+INFO:werkzeug: * Detected change in 'd:\\DSMP\\7. Data Analysis\\2 Data Wrangling\\1. Data Gathering\\1. Web Scraping\\2. PW(improved)\\1. Flipkart Reviews Scrapper\\Integration with rest api\\app1.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 783-329-956
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 783-329-956
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.29.254:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'd:\\DSMP\\7. Data Analysis\\2 Data Wrangling\\1. Data Gathering\\1. Web Scraping\\2. PW(improved)\\1. Flipkart Reviews Scrapper\\Integration with rest api\\app.py', reloading
+INFO:werkzeug: * Detected change in 'd:\\DSMP\\7. Data Analysis\\2 Data Wrangling\\1. Data Gathering\\1. Web Scraping\\2. PW(improved)\\1. Flipkart Reviews Scrapper\\Integration with rest api\\app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 783-329-956
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Jan/2024 22:56:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 254-160-594
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 254-160-594
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\sympy\\series\\residues.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\sympy\\series\\series.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\sympy\\functions\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\sympy\\functions\\elementary\\integers.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 254-160-594
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\contourpy\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\contourpy\\_version.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\contourpy\\convert.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\contourpy\\dechunk.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\cookiecutter\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\cpuinfo\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\cryptography\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\cryptography\\__about__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\cssselect\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\cssselect\\parser.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\cssselect\\xpath.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\curl\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\cytoolz\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\dask\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\datashader\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\debugpy\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\debugpy\\public_api.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\diff_match_patch\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\dill\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\distributed\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 254-160-594
+INFO:werkzeug:127.0.0.1 - - [04/May/2024 23:50:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\itsdangerous\\signer.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\itsdangerous\\timed.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\itsdangerous\\url_safe.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\jedi\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\jinja2\\bccache.py', reloading
+INFO:werkzeug:127.0.0.1 - - [04/May/2024 23:50:49] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2024 23:50:49] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\jinja2\\exceptions.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\jinja2\\loaders.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\jinja2\\runtime.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\jinja2\\utils.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\joblib\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\joblib\\memory.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\joblib\\logger.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\joblib\\hashing.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\joblib\\numpy_pickle.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\joblib\\compressor.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\joblib\\parallel.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\joblib\\_cloudpickle_wrapper.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\joblib\\externals\\loky\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\joblib\\externals\\loky\\cloudpickle_wrapper.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\json5\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 254-160-594
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\mistune\\util.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 254-160-594
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\prompt_toolkit\\formatted_text\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\prompt_toolkit\\formatted_text\\ansi.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\prompt_toolkit\\formatted_text\\html.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\prompt_toolkit\\shortcuts\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\prompt_toolkit\\shortcuts\\prompt.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\prompt_toolkit\\shortcuts\\utils.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\ptyprocess\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\pure_eval\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\pyarrow\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\pyasn1_modules\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\pycparser\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\pyct\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\pydantic\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\pydantic\\errors.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\pydantic\\main.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\pydantic\\networks.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\pydantic\\tools.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\pydantic\\types.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\pydantic\\annotated_types.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\pydantic\\class_validators.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\pydantic\\config.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\pydantic\\decorator.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\pydantic\\env_settings.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\pydantic\\error_wrappers.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\pydantic\\fields.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 254-160-594
+INFO:werkzeug:127.0.0.1 - - [04/May/2024 23:51:10] "[31m[1mGET /review HTTP/1.1[0m" 405 -
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\scipy\\linalg\\_decomp_ldl.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\scipy\\linalg\\_decomp_cholesky.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\scipy\\linalg\\_decomp_qr.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\scipy\\linalg\\_decomp_qz.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\scipy\\linalg\\_decomp_svd.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\scipy\\linalg\\_decomp_schur.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\scipy\\linalg\\_decomp_polar.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\scipy\\linalg\\_matfuncs.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\scipy\\linalg\\blas.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\scipy\\linalg\\lapack.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\scipy\\linalg\\_special_matrices.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\scipy\\linalg\\_solvers.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\scipy\\linalg\\_procrustes.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\scipy\\linalg\\_sketches.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\scipy\\linalg\\_decomp_cossin.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\scipy\\misc\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\scipy\\misc\\_common.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\scipy\\ndimage\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\scipy\\ndimage\\_filters.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 254-160-594
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\sqlalchemy\\sql\\schema.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\sqlalchemy\\sql\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\sqlalchemy\\sql\\_typing.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\sqlalchemy\\sql\\expression.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\sqlalchemy\\sql\\selectable.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\sqlalchemy\\sql\\_selectable_constructors.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\sqlalchemy\\sql\\_elements_constructors.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\sqlalchemy\\sql\\elements.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\sqlalchemy\\sql\\cache_key.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\sqlalchemy\\sql\\base.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\sqlalchemy\\sql\\operators.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\sqlalchemy\\sql\\dml.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\sqlalchemy\\sql\\_dml_constructors.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\sqlalchemy\\sql\\functions.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\sqlalchemy\\sql\\lambdas.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\sqlalchemy\\sql\\visitors.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\sqlalchemy\\types.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\sqlalchemy\\sql\\sqltypes.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 254-160-594
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\zmq\\sugar\\socket.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\zmq\\sugar\\tracker.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\zmq\\sugar\\version.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\zope\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\pythonwin\\pywin\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 254-160-594
+INFO:werkzeug:127.0.0.1 - - [04/May/2024 23:52:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2024 23:52:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2024 23:52:01] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [04/May/2024 23:52:19] "POST /review HTTP/1.1" 200 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [04/May/2024 23:52:46] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2024 23:52:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2024 23:52:53] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2024 23:52:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [04/May/2024 23:53:14] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2024 23:53:35] "[31m[1mGET /review HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2024 23:53:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2024 23:53:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2024 23:53:39] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [04/May/2024 23:53:59] "POST /review HTTP/1.1" 200 -

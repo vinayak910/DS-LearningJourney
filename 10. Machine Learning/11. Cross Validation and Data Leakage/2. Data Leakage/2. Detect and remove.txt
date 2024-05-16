@@ -1,0 +1,43 @@
+Detecting Data Leakage
+=======================
+
+1. Review your features : 
+-------------------------
+- review all your input features at the start. 
+- check if there are any features that would not be available while prediction 
+
+2. Unexpectedly High Performance 
+--------------------------------
+If model performance on validation set is surprisingly good  there this could be a sign of data leakage. Because most predicting tasks are challenging and exceptionally high performance could mean that your model has access to information it shouldn't
+
+3. Inconsistence Performance Between Training and unseen data :
+---------------------------------------------------------------
+deploying the model and got to know that model performance is poor , it indicates there might be data leakage while building the model . 
+
+4. Model interpretability : 
+---------------------------- 
+interpretable models or techniques like feature importance can help understand what the model is learning , if the model places too much importance on a feature that doesn't seem directly related to the output , it could be sign of data leakage. 
+
+
+
+Remove Data leakage
+===================
+
+1. Understand the data and task 
+--------------------------------
+
+2. Careful feature selection : 
+-------------------------------
+Review all features .make sure the features are genuinely correlated to target column , not a copy or something which directly explains the target column 
+3.  Proper Data Splitting : 
+---------------------------- 
+do splitting before preprocessing
+
+4. use of pipeline in cross validation 
+---------------------------------------
+- idea is to first perform folds , then perform preprocessing steps using pipeline . by using pipeline you can perform separate preprocessing on training folds and test folds which avoids data leakage. 
+
+5. Remove duplicate data
+---------------------------
+as duplicate data introduces data leakage. 
+ 

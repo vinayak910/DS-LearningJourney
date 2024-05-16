@@ -1,0 +1,65 @@
+Data Leakage
+-------------
+ex : 
+- Lets say you split the data into train set and test and you train your model and you check accuracy on test set . You saw that accuracy was 95% . the accuracy was good so you deploy it. 
+
+- But after you deploy the model you saw that model performance very poor after customers review. 
+
+What was the reason?
+
+There is a high chance that there was a data leakage. Data leakage is a scenario when information outside from the training set is used while building model .
+ex : In the above situation we had 2 sets train and test . When you were building model using training data, some information of test data was used for building data. That's why the performance was good on set data(95%). and you deployed it. This situation is one of the example of data leakage.
+
+
+
+Ways in which Data Leakage can occur
+------------------------------------
+
+
+ a) Target leakage (output column)
+=================================
+
+- It is a situation when you take that column as your input column which will not be available while making prediction.
+
+Ex : 
+building a model for nyc-taxi trip duration. In the input columns you have different columns and one of the column was drop off time and we know drop off time directly contains the information of trip duration. Which means it explains 100% of trip duration. we trained the model with the given input columns. 
+- But while making prediction we know drop off time will not be available. If it were available why there was a need of making a model for predicting trip duration . We can simply substract the dropoff time and pick up time , we get the trip duration.
+
+This is the situation of target leakage , when you train your model with input data , in which it contains columns that will not be available while predicting. 
+
+
+
+b) High correlation with target column  
+========================================
+
+If one of the input columns is highly correlated with the target column, it doesn't necessarily mean there's data leakage. However, it's a red flag that warrants further investigation.
+
+Here are a few possible scenarios:
+
+1. Legitimate correlation: The input column might be a legitimate feature that's highly correlated with the target variable. For example, in a regression problem, the input column might be a strong predictor of the target variable. In this case, it's not data leakage, and the model can learn from this correlation.
+
+2. Data leakage: However, if the input column is highly correlated with the target variable because it's essentially a copy of the target variable or contains information from the future, then it's likely data leakage. For example, if you're predicting stock prices and one of the input columns is the stock price from the next day, that's data leakage!
+
+3. Proxy variable: The input column might be a proxy variable that's highly correlated with the target variable, but not directly related to it. For instance, in a customer churn prediction problem, a column like "number of complaints" might be highly correlated with the target variable "churned" because customers who complain a lot are more likely to churn. In this case, it's not data leakage, but rather a useful feature that the model can learn from.
+
+c) Duplicate rows
+=================
+
+Let's say you have 1000 rows , in which 200 are duplicate . You split the data , some of duplicate rows got into test and some of it into training. You trained the data , and while prediction you will see the accuracy will be good. As the rows in which the model is trained on was encountered into test set. In a way , you are using test information for building a model.
+
+d) Preprocessing leakage
+========================
+
+ex1 : you have a data , there are some missing values of age column. You used the mean to fill up the missing values. After this you split the data into training and test . But this is the case of data leakage. As while imputing missing values , you find mean of your whole data to fill missing values. and when splatted the data . In train age column the age missing values were filled with mean , and to find mean you also used the test data. 
+
+ex 2 : Standardization on whole data , and then splitting.
+
+This also occurs in cross validation 
+that's why we have to perform cross val score , before actually preprocessing applied on training set , as in cross val score data is divided into folds , and if we already applied preprocessing on training set . while making folds , the fold will have information about test fold . that's why we used pipeline. 
+
+
+e) Hyperparameter Tuning
+=========================
+Over-tuning hyperparameters on the test set, causing the model to perform well on the test set but poorly on unseen test data.
+Example: Repeatedly tuning hyperparameters based on the same test set performance.
+

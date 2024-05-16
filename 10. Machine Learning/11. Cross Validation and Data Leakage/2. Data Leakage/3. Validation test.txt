@@ -1,0 +1,17 @@
+Why we divide the data into training , validation and test
+----------------------------------------------------------
+
+train data : 
+data on which model is built. 
+
+Validation data : 
+is used for hyperparameter tuning . There might be case , when we overfit the model on validation set. as we are tuning the model parameters on same set again and again. In worst case , we overfit the model on validation set. Which means it may perform great on validation set, But may perform poor on real world data as model hyperparameters are adjusted on validation set
+
+We cant risk model deployment directly without knowing how it performs on real world data. that's why there is other set -> train set
+
+
+test 
+------
+is like that unseen data on which we cant do any change. Think of it as real world data after deployment. and since We cant risk model deployment directly without knowing how it performs on real world data.
+test data works is used for evaluating model performance. 
+

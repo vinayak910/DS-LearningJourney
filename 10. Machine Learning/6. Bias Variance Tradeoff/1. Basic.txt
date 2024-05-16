@@ -64,7 +64,7 @@ and when model is closely related to high variance , that scenario will be overf
 Underfitting
 -------------
 
-if a model is closely related to high bias then it will be called overfitting
+if a model is closely related to high bias then it will be called underfitting
 
 
 

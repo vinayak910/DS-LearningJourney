@@ -91,7 +91,7 @@ ques 2 : Why in our case we are only finding bias for m/slope , why not for inte
 - IN parametric models , we have coef/weights -> b0 , b1 , b2 , b3, b4 ........bn and we will bias for each coef.
 - Not all ml models are parametric , In non parametric models we are trying to predict directly the functions.
 - like in linear regression we have already a function ie X*B , where we are trying to predict B (coef).
-- that's why we took general case ->ie bias = E[f'(x)] - f(x) , where f(x) is the true function which we will never know , and E[f(x)] is the average of our functions
+- that's why we took general case ->ie bias = E[f'(x)] - f(x) , where f(x) is the true function which we will never know , and E[f'(x)] is the average of our functions
 - that's why bias comes under reducible error as it can be reduced.
 
 
@@ -100,6 +100,7 @@ Variance  : refer to definition in pdf
 
 Var(f'(x)) = E[(f'(x) - E[f'(x))^2]
 
+f'(x) is the particular function we took , and there are other functions as well and we are calculating average of other function performance and putting in the Var(f'(x)) formula. 
 This indicates on and average , when data changes how much result will change.
 how much far on average our each line is from population line
 

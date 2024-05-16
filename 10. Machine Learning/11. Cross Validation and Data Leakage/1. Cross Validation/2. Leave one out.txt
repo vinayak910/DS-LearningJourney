@@ -1,0 +1,47 @@
+Leave one out
+-------------
+
+
+Leave-One-Out Cross-Validation (LOOCV) is a specific type of cross-validation that involves using a single observation from the original dataset as the validation data, and the remaining observations as the training data. This process is repeated such that each observation in the dataset is used exactly once as the validation data.
+
+- if we have dataset of n rows , then there will be n models .
+ex : 1000 rows .There will be 1000 models for model evaluation
+
+
+first time : 
+- 1st row will be used as test dataset , the rest of 999 rows will be used for training. Then after training, model will do prediction on 1st row
+
+second time : 
+- 2nd row will be used for test , the rest of 999 rows will used for training. Then the model on this training set will do prediction for 2nd row.
+
+Similarly there will be other iterations , and the last would be 1000th time : 
+
+where last row will be used as test , and rest of 999 rows for training , the model will do prediction on last row.
+
+
+Hence , there will be 1000 models and 100 accuracy scores . we will average out the accuracy . This avg will be the final accuracy score. 
+
+refer to jupyter notebook to see its implementation 
+
+
+Advantages
+-----------
+
+1. Use of data : almost all data used for training , hence less bias. 
+2. No randomness : no shuffling. can be reproducible . 
+
+
+Disadvantages 
+--------------
+1. Computational expensive : n number of models
+2. High variance : accuracy depends on only one data point. Which lead to high variance. Ex : if that point is outlier , it will give different result for that point
+3. Inappropriate performance matrix : performance metrics like r2score cannot be used with LOOCV
+4. Not ideal for imabalance datasets : 
+ex : you have 1000 rows , in which 990 our yes and 10 are no . In that case there will be 990 times in which training data have only yes. which means model was never trained for no value. 
+
+
+When to use : 
+1. Small datasets : Because in small we need to utilize all datasets. 
+2. Balanced datasets
+3. Need for less biased performance estimate : 
+as it uses nearly all data for training ,so in case of high bias, using LOOCV the bias will decrease

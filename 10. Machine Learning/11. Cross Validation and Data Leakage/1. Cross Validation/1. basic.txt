@@ -1,0 +1,84 @@
+Its good practice to evaluate model performance before deployment , as without knowing how the model performs is not suitable.
+
+Hold out approach and cross validation are both approaches for evaluating model performance.
+
+Hold out approach
+------------------
+
+simply divides the data into train part and test part , 
+model is trained on training data , then it do prediction on test data . after getting results on test . we try to improve model performance by manually adjusting parameters of model or doing hyperparameter tuning 
+
+
+However it is not the best approach for several reasons : 
+
+1. Variability : very sensitive to how the data is divided
+into training and testing sets. . If the split is unfortunate, the training set may not be
+representative of the overall distribution of data, or the test set might contain unusually
+easy or difficult examples. 
+
+2. Data Inefficiency : Doesnt utilize whole data for training purpose. This means that the model doesn't get to learn from all available data, which can be particularly problematic if the dataset is small.
+
+3. Bias in performance estimation : since the data is decreased , the bias will increase .
+
+4. Less reliable for hyperparameter tuning : 
+
+
+Why use hold out approach?
+
+1. Simplicity : straightforward and easy to understand
+2. Computational Efficiency : Less intensive computation 
+3. Large datasets : in large datasets , even a small proportion of the data may be sufficient to form a representative test set. 
+  
+
+
+
+Cross Validation
+----------------
+Cross validation solves the major problem of hold out approach . The goal of cross validation is to check if the model is actually good or not.
+-  like in hold out approach , there might be a case when test data is relatively simple for model to predict and that's why this scored good on test data. But we don't know what happens if the dataset changes. maybe the performance was good on this test set only and hence we overestimate the model performance and without checking further we deploy it. and we get to know that the model performance was not good enough .   Hence cross validation is used to know how actually our model performance is good . 
+
+
+cross validation comes under the concept called resampling.
+
+Sampling simply means subset of population , which is used to estimate parameters of population data. 
+
+ex : 
+- You have a iris dataset. Which is the sample as it is not the data of all iris flowers.
+- what if you create more sample sets from the sample dataset of iris flowers is called resampling. 
+
+
+Hence resampling : creation of new samples based on one observed sample
+
+
+Resampling have 2 types . 
+1. Cross val 
+2. Bootstrap 
+
+
+
+Idea of cross validation : 
+
+- divide the data into several subsets or 'folds'
+- Some of these subsets will be used for training and some for testing
+- this process is repeated multiple times used for training and testing each time . 
+- the results from each round are usually averaged to estimate model's overall performance
+
+
+Different famous techniques of cross validation
+-----------------------------------------------
+1. Leave one out cv
+ 	- Leave p out cv
+2. K fold cv
+ 	- Normal k fold
+	- stratified k fold
+	- nested k fold
+	- repeated k fold
+
+3. Time based : for time series
+
+
+
+
+
+
+

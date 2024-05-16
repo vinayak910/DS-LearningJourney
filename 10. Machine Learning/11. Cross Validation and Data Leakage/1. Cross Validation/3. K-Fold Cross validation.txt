@@ -1,0 +1,64 @@
+K-Fold
+--------
+ 
+You have a k , generally taken as 5 or 10 as its experimentally proven that it gives good result with these k values
+
+Step 1 : Divide the all data into training and test data
+Step 2 : 
+- You go to your training data and decide k , let's say k = 5. That means you divided your training data into 5 equal folds.
+
+- ex : You have 100 rows , and k =5 . That means you will make 5 folds of each containing 20 rows
+
+Step 3 :
+- the number of folds you have , the same no of models will be trained. One on each fold.
+- and you make your one fold a validation fold. and the rest of the folds will be used for training 
+
+ex : we have 5 folds , the first model will be used for validation , and the rest of the folds will be used for training
+
+Next time fold 2 will be used for validation , and rest of used for training
+
+the same process will go for all the folds.
+Hence there will be k models trained on different folds , and each model have its accuracy ie k number of accuracy and then find avg of accuracy. 
+
+Once we are satisfied , we make predictions for test data which was at top. 
+
+
+Advantages of K fold : 
+----------------------
+
+1. Reduction of variance : 
+
+as the data is decreased , bias will be high . And we know there is a tradeoff between bias and variance , hence variance will decrease
+
+2. Computationally inexpensive : 
+
+In LOOCV the model is trained on n- 1 rows i.e. almost entire data . But here model is trained on based on data that a fold have. 
+
+
+Disadvantages of K-Fold 
+-----------------------
+
+1. potential for high bias : 
+
+- if the data inside folds is too small , then there could be high bias because Machine learning models require sufficient training data to learn effectively. If the training set is too small, the model may not capture the underlying patterns and relationships in the data, leading to underfitting and high bias
+
+2. May not work well with imbalanced classes : 
+
+if dataset have 95 yes and 5 no , then some folds can contain only yes data which lead to 100 percent accuracy and which leads to increased overall accuracy which is the wrong interpretation
+
+
+
+When to use : 
+-------------
+
+1. When you hve sufficiently large dataset : 
+
+- with large dataset , the computation might be intensive . But due to increase in data , overall estimates will be more reliable, hence computation intensiveness can can be justified by it .
+
+2. When your data is evenly distributed : 
+
+Works great with balanced dataset , for imbalanced data , use variant of k fold ie stratified K-fold which aims to ensure each fold have a good representative of the whole dataset. 
+
+
+
+

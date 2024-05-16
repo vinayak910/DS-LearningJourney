@@ -1,0 +1,9 @@
+Stratified k fold
+-----------------
+
+as i mentioned in the previous text file , the problem with using normal variant of k fold for imbalanced dataset can be bad . As it can leads to overestimation of performance . because in certain folds it may contain the data of only one class ,or very less occurrence of other class . In such case the model will biased towards the most occurred class and will mostly give output of high occurred class . which leads to high accuracy and same goes for other folds. which increase in overall avg of accuracy . But this avg accuracy will be wrong interpreted . because the data was imbalanced .
+
+
+so the solution is stratified k fold .
+
+it makes sure that in each folds , each folds will have almost same ratio of data. benefit : There will be no case in which only 1 class is present in a fold which avoids the problem of 100% accuracy . E 

@@ -1,0 +1,11 @@
+Bayesian optimization is the technique which is to find best or close to best combinations without actually traversing through all grid like Gridsearchcv or in a random manner like Randomizedsearchcv. 
+
+Some of the libraries that internally implement Bayesian optimization are optuna , hyperopt , scikit-opt
+
+
+
+slight idea about how Bayesian optimization works
+-------------------------------------------------
+
+We start with random combinations , the purpose of random combinations is not to find best combination . Instead the purpose of it know how the values in combination effect the performance of model . We have a little knowledge and then based on that knowledge we do explore and exploit . example after random combinations we got know that keeping no of trees low .this is exploit. And now by keeping this information we explore about other things. such as depth and all etc. 
+

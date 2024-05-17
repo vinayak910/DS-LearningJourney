@@ -1,0 +1,85 @@
+Ex : Gradient Boosting is one of the algo with too many hyperparameters or knobs . We don't know the best values of these hyperparameters beforehand of training .Only way to find the best value , is using experimentation. 
+
+and these experimentation can be done using hyperparameter tuning . 
+
+
+common techniques in hyperparameter tuning
+
+1. GridSearchCV
+2. RandomizedSearchCV
+
+
+
+GridSearchCV
+==============
+
+Ex : 
+- You have a data , and you are required to perform knn on that data. KNN have dif
+ferent hyperparameter such as n_neighbors , metric . We wouldn't know which values of n_neighbors and metric is suitable for making good model . 
+
+ex : there are different values can be decided for n_neighbors -> 3 , 5 , 10 . and for metric -> L1 , L2
+
+
+IN gridsearch cv , you make a grid of the hyperparameters and the values you want to test. 
+
+n_neighbors    3       5       10
+	          
+metric         |       |	|
+	       |       |	|
+L1     --------o-------o--------o--------
+	       |       |        |
+L2     --------o-------o--------o--------
+	       |       |        |
+
+
+This grid(called as parameter space) contains all the combinations of values you want to test . We know that one of the dot(combination) will give best results than others. 
+
+Grid search CV sequentially train model on each combination. and The model with combination which gives best result will be selected.  
+
+and you also perform cross val for each combination . Hence the name is GridsearchCV , Gridsearch for grids , and cv for cross validation.
+
+
+
+definition of gridsearchcv
+---------------------------
+
+an algo that performs exhaustive search over a specific grid of hyperparameters , using cross validation to determine which hyperparameters combination gives the best model performance. 
+
+
+advantage
+-----------
+- you get best combination
+
+Disadvantages
+--------------
+- Naive
+- Computationally expensive . as you trying out every combination and also performing cross validation 
+
+When should not use:
+--------------------
+
+1. ml algo with high number of parameters :
+
+- as the grid will be very high dimensional(multiple different combinations)
+
+
+2. Large data : 
+slows down the training process , and on top of that you are building model on each combination 
+
+
+
+
+
+
+RandomizedSearchCV
+==================
+
+Rather than trying out every possible combinations in a grid , you decide to try out x number of combinations. and that x number of combinations will be chosen in random way. 
+
+advantage
+---------
+- Computationally inexpensive therefore faster
+
+Disdvantage
+----------
+- may not give the best result 

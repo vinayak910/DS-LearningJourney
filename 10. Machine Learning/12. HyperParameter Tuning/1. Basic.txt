@@ -1,0 +1,38 @@
+Parameters vs Hyperparameters
+-------------------------------
+
+
+Parameters : 
+-------------
+
+- these are the values that are obtained after training of the model . The training goal is to find optimum values of parameter for which the difference between actual and prediction can be minimize.
+
+Ex : 
+- In linear regression , after training model . We get coefficient values i.e. w0 , w1 , w2. These are the parameters values. 
+
+- In neural networks , the weights are the parameters
+
+Parameters values depends on the data , as these parameters tell about the underlying patterns about the data. if data changes , the parameter values also changes. 
+
+
+
+
+Hyperparameters
+----------------
+
+These are the values which are set before training. They are like setting knobs for model training. just like increase and decreasing brightness. 
+
+- They help in controlling learning process. 
+
+Ex : 
+In neural networks , the learning rate , number of layers , no of nodes are hyperparameters 
+
+- The best values for hyperparameters often cannot be determined in advance , and must be found through trial and error
+
+
+
+
+Why the word hyper?
+
+- to differentiate between internal parameters , and hyperparameters.
+- hyperparameters are just like meta data , that controls the learning process . Basically they are used to find optimum values for finding optimum parameter. 

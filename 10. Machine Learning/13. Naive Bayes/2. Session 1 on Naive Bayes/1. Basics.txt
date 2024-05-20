@@ -1,0 +1,14 @@
+- Naive Bayes is use for classification
+- it is observed that it performs good on textual data , hence you can take naive bayes as your baseline model. 
+
+
+Understanding how naive bayes works
+------------------------------------
+
+It works based on Bayes theorem
+
+P(A|B) = P(B|A) * P(A)
+         --------------
+	     P(B)
+
+Refer to register for intuition   , mathematics formulation  

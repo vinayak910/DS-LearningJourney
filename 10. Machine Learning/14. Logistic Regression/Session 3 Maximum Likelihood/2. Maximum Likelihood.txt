@@ -1,0 +1,96 @@
+Understanding through example
+==============================
+
+Ex-1 :  Coin toss 
+-------------
+
+- Given : p(H) = 0.5
+- We tossed a coin 5 times . and all 5 times we got head i.e. HHHHH
+- we know even though the head prob is 0.5 , still we got 5 times head . Hence there is a doubt that is really P(H) = 0.5
+- What is the likelihood that P(H) = 0.5
+- L(p = 0.5 | HHHHH) = 0.5 * 0.5 * 0.5 * 0.5 * 0.5 = (0.5)^5
+- which is a very small no 
+
+
+Lets check for another case when P(H) = 0.6 , which means the coin is little bias towards H
+- We tossed a coin 5 times . and all 5 times we got head i.e. HHHHH
+- Lets calculate what is the likelihood that P(H) = 0.5
+- L(P=0.6|HHHHH) = 0.6 * 0.6 * 0.6 * 0.6 * 0.6    = (0.6)^5
+
+
+Clearly based on the data i.e. when tossed coin we got Head 5 times , P(H) = 0.6 justifies data more than P(H) = 0.5 
+- As the likelihood L(P=0.6|HHHHH) is more than L(p = 0.5 | HHHHH). 
+- You can also think logically , if the coin is more biased towards H , then the no of time tossed and we will get head will be more . 
+
+
+Ques : Which parameter value (p) will be maximum justify. i.e What should be the probability of H , that should maximum justify the situation of 5 heads
+ans : When coin is fully bias towards H i.e. P(H) = 1. 
+
+In this case likelihood will be L(P=1 | HHHHH) = 1*1*1*1*1 = 1
+
+
+
+
+
+Ex-2 : We have a box that contains 3 red balls and 2 green balls
+------------------------------------------------------------------
+
+- we are picking out 1 ball hence it is a Bernoulli event 
+- Let's assume success(1) event to be green ball . Therefore P = P(G) = 2/5
+
+- We pick out 1 ball 5 times , and in each time the ball was G. i.ie  GGGGG
+- now calculate likelihood based on given data i.e. P(G) = 2/5
+- Likelihood => L(P=2/5 | GGGGG) = 2/5 * 2/5 * 2/5 * 2/5 * 2/5 =    (2/5)^5
+- L very small no 
+
+
+Now what if there were 3 green balls , then what is the likelihood 
+- now , P = P(G) will change to 3/5
+
+likelihood => L(P=3/5 | GGGGG) = (3/5)^5
+Based on observed data i.e. GGGGG , P value being 3/5 have more likelihood than p value being 2/5
+
+Ques : What should be the value of P i.e. P(G) which will maximum justifies the GGGGG event
+ans : P(G) = 1 , will justify the GGGGG event. 
+
+In this case likelihood will be L(P=1 | GGGGG) = 1*1*1*1*1 = 1
+
+L(P=1 | GGGGG) > L(P=3/5 | GGGGG) > L(P=2/5 | GGGGG)
+Hence , L(P=1 | GGGGG) is the maximum likelihood
+
+
+
+
+ex-3 : We have data of age which is normal having mean = 150 and std = 10 .
+----------------------------------------------------------------------------
+
+- we randomly selected a random person whose height was 100 
+- What is the likelihood that h = 100 follows or how much justifies the normal distribution of mean = 150 and std = 19
+- L(mean = 150 , std = 10 | x = 100) = put the value of x , mean , std you will get Likelihood. Number would be very small 
+- that means prob/likelihood of person whose height is 100 follows the normal distribution of mean = 150 , std = 10 is very low .
+- now you have to tell x = 100 will follow / maximum justify which normal distribution ? 
+- The ans is 100 ,i.e x = 100 will maximum justify a distribution of parameter when mean = 100 . 
+
+Conclusion : MLE - We have observed data that belongs from particular distribution now our work is to find value of parameter for which likelihood is maximum 
+
+- Hence maximum likelihood estimation is method of estimating parameters for which our likelihood is maximum of a statistical model given some data . 
+
+ 
+
+Ex : 
+- We have age column that have multiple values for age , and we know that this age column follows normal distribution we find out using qqplot m kde etc.  
+- But which normal distribution it is following , as there could be multiple normal distributions
+- We have to find such normal distribution(u and std) for which our data likelihood is maximum  
+
+
+
+
+
+
+
+
+
+
+
+
+

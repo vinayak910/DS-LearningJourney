@@ -1,0 +1,8 @@
+Logistic Regression
+-------------------
+
+- It is the classification problem even though its name is regression 
+- it comes under the linear model family which means : 
+- It is applied on data which is linear , then it performs good as a line can separate the two classes 
+- ex : cgpa , iq  placement 
+- It works not well on non linear data , ex : concentric circles , in this you cant make line to separate 2 classes    

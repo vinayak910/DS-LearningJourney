@@ -1,0 +1,66 @@
+Maximum Likelihood estimation in Machine learning
+
+
+Till now , maximum likelihood estimation doing was i.e we have datapoints and we have idea of which distribution these datapoints follows , so using maximum likelihood estimation we were able to find the parameters of the distribution 
+
+so in steps what we did is :
+
+step 1 : We assumed some distribution (in above example -> Normal Distribution )
+Step 2 : then we use a likelihood function (in our case it was PDF of Normal distribution as datapoints follows normal distribution )
+Step 3 : We find the values of parameter that maximizes this likelihood function 
+
+
+
+
+How this flow can be used in machine learning ?
+------------------------------------------------
+
+- In machine learning we have a training data :
+	
+	x1 x2 x3 . . . . . . . xn  y
+
+- we try to find the distribution of data of y/output column 
+- ex : if y column is placement i.e it contains Yes or no values for placement . Then we know output column follows Bernoulli distribution 
+
+
+Hence
+
+Step 1 : We find out the distribution of y given x 
+
+	- MLE without context of machine learning was simple , we have a data that follows normal distribution then we use likelihood function to find the 	  parameter of distribution for which our likelihood was maximum 
+	- But this time the output column distribution depends on X(input data)
+
+Step 2 : Based on distribution we decide to apply ML model which is parametric in nature 
+	Ex : If data is binary , then we apply logistic regression 
+	
+	- Parametric models are those models which take some assumption about the data . 
+	- ex linear and logistic regression takes an assumption that data is linear
+	- and these models have some parameters ex : linear regression have B0 , B1 , B2 
+
+	- Whereas Non parametric models are those models which dont take any assumptions about the data.
+	- Hence they do not have any parameters 
+	- ex : Decision Trees or KNN 
+
+	- Therefore MLE technique will be applied on those models which are parametric ex : Linear regression , Logistic Regression , Neural networks 
+
+Step 3 : You randomly decide some values for parameters 
+	
+	- Ex : For logistic regression we decide random values for B0 , B1 ......... Bn
+
+Step 4 : Select a likelihood function 
+	
+	ex : We have placement data -> Yes or no. 
+	-    For normal distribution we select pdf of normal distribution , Similarly placement data follows Bernoulli  therefore we will select PMF of 	     Bernoulli ->   pmf =  p^x (1 - p)^{1 - x}
+
+Step 5 : Find out values for B0 , B1 , B2 ................Bn that will give maximum value for our likelihood function 
+
+	- and when we got this values , that means our model is trained 
+
+
+Conclusion : If we have a parametric machine learning model , then using MLE we can train that model . i.e. finding parameters of that model for which the likelihood function is maximum 
+
+
+In next chapter , we will learn how to apply MLE in Logistic regression 
+
+
+	

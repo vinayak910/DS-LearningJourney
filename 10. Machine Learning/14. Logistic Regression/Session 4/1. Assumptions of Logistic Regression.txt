@@ -1,0 +1,92 @@
+Assumptions of Logistic Regression 
+-----------------------------------
+
+1. Binary Logistic Regression requires target variable to be binary 
+
+2. Independent observations : 
+	- target value that is ex : 0 and 1 should be independent of each other. The value of one shouldn't influence the other . 
+	- that's why in MLE we multiplied the likelihood as we assumed target observations to be independent. 
+
+3. Absence of Multicollinearity : 
+	- independent columns shouldn't be too much correlated . Not give bad results for prediction , but will be bad for inference. 
+
+4. Large Sample size : 
+	- you should have good amount of data for logistic regression to be good . 
+
+5. independent variables are linearly related to odd of logs
+	- In logistic regression , it doesn't require the relationship b/w independent and dependent column to be linear  .But it requires that independent 	  variables are linearly related to odd of logs
+
+
+
+What does the 5th assumption means i.e. independent variables should have linear relation with log odds?
+--------------------------------------------------------------------------------------------------------
+
+- Understanding odds and log (odds)
+------------------------------------
+
+   1. Odds : 
+	- ratio of probability of event happening to the probability of event not happening ,
+	- If odds > 1 , the even is more likely to happen than not. and vice versa
+	- odds = p/1-p
+	- odds can be from 0 to infinity 
+
+	Ex : what are odds of getting 3 ?
+		- Prob of 3 =  1/6
+		- prob of not getting 3 = 5/6
+		- odds of getting 3 =  (1/6) / (5/6) = 0.2
+
+	Ex : A team won 1 match and loses 4 match . What are the odds of that team winning 
+		- prob of winning = 1/5
+		- prob of loosing = 4/5
+		- odds of team winning = (1/5) / (4/5) = 0.25
+
+	Ex : 4 match won , 1 match loose. odds of winning 
+		- prob of winning = 4/5
+		- prob of loosing = 1/5
+		- odds of team winning = (4/5) / (1/5)  = 4 
+
+
+	
+    2.  Log odds :
+	
+	- finding log of odds is log odds
+	- for better interpretability 
+	- bringing odds into symmetrical scale 
+
+
+
+- How log(odds) is connected to logistic regression ? 
+------------------------------------------------------
+
+	- odd = p/(1 - p)
+	- log(odd) = log(p/(1 - p))
+	- log of odds also called logits 
+
+	- ex : we have a data , we applied logistic regression , we get y_hat that is probability of getting placed 
+	
+	- cgpa	  iq	placement  y_hat
+	   8       80      1   	    0.93
+           -       -       0        0.37
+	   -       -       0        0.21
+
+	- y_hat = p =  1 / 1 + e^-bx
+	- where bx = B0 + B1x1 + B2x2 
+	- let's say after model training we got a line with parameters -> B0 = 0 , B1 = 1 , B2 = 2
+	- we have a data -> 8 , 80 
+	- bx = 0 + 1*8 + 2*80 
+	- pass this in y_hat
+	- y_hat which is the probability of getting placed
+
+	Now after some rearrangement of y_hat/p = 1 / 1 + e^-bx
+	- we got  -> p/1-p = e^bx
+	- taking log both sides 
+	- log(p/1-p) = log(e^bx)   
+	- log(p/(1-p) = Bx     (since log e cancelled each other)
+
+	this is the log of odds. 
+	- in linear regression we had Y = BX
+	- where Y is the output column and there is a linear relation between X and Y
+
+	- Similarly in	log(p/(1-p) = Bx , the relation between x and log of odds should be linear 
+
+refer to jupyter notebook

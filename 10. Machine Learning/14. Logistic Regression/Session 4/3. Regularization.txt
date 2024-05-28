@@ -1,0 +1,22 @@
+Regularization -> reduces overfitting 
+
+- In linear regression , we add some term in the loss function of linear regression (mse) to reduce overfitting .
+- In the case of logistic regression also , we have a loss function we add a term of L2 and L1 regularization .
+- lambda is hyperparameter , if increase lambda , reduces overfitting ,-> with high lambda we can underfit
+			   , if decrease lambda , increase overfitting
+- elastic net can also be applied
+
+
+Hyperparameters : 
+
+- penalty -> {l1 , l2 , elastic net} 
+
+- l1_ratio -> {0 , 1 , or between 0 and 1 }
+	   -> 0 means l2 regularization , 1 means l1 regularization , between 0 and 1 elastic net  
+
+- C       -> In the hyperparameters , we dont have value of lambda. Instead we have C which is the inverse of regularization 
+	  -> if c too big that means lambda too small and , less regularization will be applied.
+	  -> If c too small that means lambda too big , more regularization will be applied. 
+
+
+refer to jupyter notebook for regularization 

@@ -1,0 +1,19 @@
+- In linear regression there should be linear relation bw x and y , and if the relation is not linear , we can use polynomial regression 
+
+- Same concept will be applied in logistic regression 
+
+- Logistic regression does classification by fitting a line on linearly separable classes .
+
+- what if the classes are not linearly separable ? -> refer to jupyter notebook image 
+
+- good part is it is also linear model , you can also create non linear decision boundaries with the help of polynomial features 
+
+
+- applying this on x column with degree 2 
+- x will be converted into x0 , x1 , x2 
+- now we have 3 input columns , now we will have 4 parameters -> B0 , B1 , B2 , B3
+
+- But for non linear data classification other algos performs better 
+
+- refer to jupyter notebook 
+

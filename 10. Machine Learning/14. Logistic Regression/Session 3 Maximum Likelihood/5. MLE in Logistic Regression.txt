@@ -1,0 +1,66 @@
+Applying MLE specifically for Logistic Regression 
+
+
+In first class of logistic regression , there were 2 models . We were given to decide which model was better . We were able to ans by the help of no of misclassification . 
+
+But there was a better approach i.e. assigning probabilities of their class to each point using sigmoid . 
+
+and we multiplied this probabilities for both models . whichever model had more prob was selected
+
+
+
+We will do the same thing but in more formal way using MLE   
+
+
+-===========================================================================================================================================================
+
+
+
+
+
+EXAMPLE : 
+---------
+we have a data : 
+	
+	x1 x2 x3  ............. xn y 
+
+
+Step 1 : assume a distribution for y .
+	- first you have to understand that output column is depending on x (Y | X)
+
+	- IN logistic regression it is really easy to assume the output distribution. As we can clearly see the output column contains 1 and 0. which is a 	  Bernoulli distribution
+
+	- ques : Why we aren't calling it Binomial? as we have n rows and each row have 0 or 1 (Bernoulli)
+	- Ans : Because at the time of prediction we have only 1 query , and for that query we have to predict either 1 or 0 (Bernoulli)
+
+
+Step 2 : we have to select the parametric machine learning model as we have to apply MLE
+	- acc to data , we will logistic regression which is a parametric model 
+
+
+Step 3 : WE have to decide random values for parameters 
+	- let's say we have random values for parameters of logistic regression -> B0 , B1 , B2 .....
+
+Step 4 : We have to select a likelihood function 
+
+	- This step is really crucial . 
+	- Likelihood function we are going to choose depends on distribution of y .
+	- Since distribution of y is Bernoulli. Therefore likelihood function will be something like -> p^x (1 - p)^{1 - x} where p is probability of 1 
+	- our likelihood function ->  L(y | x , B)
+	- we will read it like this -> the probability or likelihood of y given x parameterized on Beta(B) 
+	- let's assume in the dataset we have only 1 pt (row)  , L(y | x , B) = p^x (1 - p)^{1 - x} which is used for single point 
+	- But here we will take assumption that , all y's are independent , therefore for every pt -> p^x (1 - p)^{1 - x} will be calculated and multiplied 	  for each row will be multiplied
+
+	- Therefore for all rows the likelihood function L(y | x , B) -> is multiplication of  p^x (1 - p)^{1 - x} for each point 
+	- Now we will take log , which will change multiplication of probabilities to addition of logs of probabilities
+	- we have to maximize this
+	- lets take -ve of logs ,  which will make this Binary Cross Entropy Loss function and now the concept of maximizing change to minimizing
+	- refer to pdf of session 3 
+	
+
+Step 5 : There is no closed form solution for finding parameters , therefore Gradient Descent will be applied 
+
+	
+
+Basically the likelihood function we had at the end in this , is same Binary Cross Entropy. That's how Binary Cross Entropy was made using MLE .
+It was for the sake of connecting the dots.  

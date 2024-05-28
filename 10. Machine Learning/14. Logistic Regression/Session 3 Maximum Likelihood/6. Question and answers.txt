@@ -1,0 +1,40 @@
+ques1 : Is MLE a general concept applicable on all machine learning algorithms ?
+
+ans   : No , MLE is not a general concept because in MLE we calculate parameters based on the data. That means it requires parameters. and no all machine 	learning algo have parameters . 
+
+	Cases , when we can't apply MLE 
+
+	1. Non-parametric methods : such as K Nearest Neighbors , Decision Trees . They do not make strong assumptions about the data . These methods dont 				    have fix set of parameters that can be optimized using MLE
+
+	2. Unsupervised Machine Learning : ex : Clustering algo don't have objective functions 
+
+	3. Reinforcement Learning 
+
+
+
+Ques 2 : is MLE is related to concept of loss function 
+
+	- basic Difference b/w MLE and loss function is , we minimizes the loss function and maximizes the MLE 
+	- But MLE and loss function are closely related . Many common loss functions can be derived from MLE under certain assumptions about the data ex 	Binary Cross Entropy . By minimizing loss function we are effectively performing maximum likelihood estimation 
+
+
+Ques 3 : Why does loss function exist ? why don't we maximize likelihood ? 
+
+	- Both are doing the same work i.e. finding best parameters . Then why the need of loss function ? 
+	- Because 
+		 
+		1. Computational reasons : more computationally efficient to  minimize the loss function than maximizing the MLE . 
+		2. Generalization : The concept of loss function is more general and can be applied to wide range of problems 
+		3. Flexibility : Loss functions can be easily customized . ex : Regularization in loss function
+
+
+
+Ques 4 Then why study about maximum likelihood ? 
+	
+	Because it gives statistical foundation for understanding loss function 
+
+	- To understand origin of loss functions
+	- Interpretability
+	- model comparison 
+	- generalization to other methods 
+	- Deeper understaning 
